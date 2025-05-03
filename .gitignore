@@ -1,0 +1,7 @@
+chroma_db/*
+!chroma_db/.gitkeep
+
+.env
+.env.*
+
+__pycache__/

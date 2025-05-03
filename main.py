@@ -1,5 +1,4 @@
 import os
-
 from dotenv import load_dotenv
 from together import Together
 
@@ -19,8 +18,6 @@ CHROMA_DIR = "chroma_db"
 
 
 
-
-
 def main():
     docs = load_documents()
     print("Documentos carregados.")
@@ -34,13 +31,17 @@ def main():
 
     conversation_history = []
 
+    conversation_history = []
+
     while True:
         question = input("Pergunte sobre (ou sair): ")
         if question.lower() == "sair":
             break
 
         quest = summarize_question(question)
+
         # print(quest)
+
         context = retrieve_context(quest)
 
         if not context:

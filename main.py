@@ -2,23 +2,17 @@ import os
 from dotenv import load_dotenv
 from together import Together
 
-from llm import generate_response
+from config import CHROMA_DIR
+from llm import generate_response, client
 from summarize.summarize_with_llm import summarize_question
 from vectorstore import create_vectorstore, retrieve_context
 from documents import load_documents, split_documents
 
 
-# OLLAMA_URL = "http://localhost:11434/api/generate"
-# MODEL = "llama2"
-load_dotenv()
-client = Together() # os.environ.get("TOGETHER_API_KEY")
-client.api_base = "https://api.together.xyz/v1"
-FOLDER_PATH = "data/docs" # pasta
-CHROMA_DIR = "chroma_db"
-
 
 
 def main():
+    load_dotenv()
     docs = load_documents()
     print("Documentos carregados.")
 
@@ -29,7 +23,6 @@ def main():
         create_vectorstore(chunks)
         print("Base vetorial criada com sucesso.\n")
 
-    conversation_history = []
 
     conversation_history = []
 

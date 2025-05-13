@@ -2,8 +2,8 @@
 import os
 import fitz
 
-from main import FOLDER_PATH
 from langchain.schema import Document
+from config import FOLDER_PATH
 
 
 def load_documents():

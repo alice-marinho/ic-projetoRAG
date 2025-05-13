@@ -1,6 +1,6 @@
 from langchain_chroma import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from main import CHROMA_DIR
+from config import CHROMA_DIR
 
 
 def create_vectorstore(docs, persist_path=CHROMA_DIR):

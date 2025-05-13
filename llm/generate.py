@@ -1,6 +1,6 @@
-from main import client
+from llm import LLMClient
 
-
+llm = LLMClient()
 def generate_response(question, context):
     final_context = "\n\n".join(context)
     prompt = f"""
@@ -23,13 +23,14 @@ def generate_response(question, context):
     Resposta:
     """
 
-    response = client.chat.completions.create(
-        model="mistralai/Mixtral-8x7B-Instruct-v0.1",
-        messages=[
-            {"role": "system", "content": "Você responde com base apenas no contexto fornecido."},
-            {"role": "user", "content": prompt}
-        ],
-        temperature=0.3,
-    )
-
-    return response.choices[0].message.content.strip()
+    # response = client.chat.completions.create(
+    #     model="mistralai/Mixtral-8x7B-Instruct-v0.1",
+    #     messages=[
+    #         {"role": "system", "content": "Você responde com base apenas no contexto fornecido."},
+    #         {"role": "user", "content": prompt}
+    #     ],
+    #     temperature=0.3,
+    # )
+    #
+    # return response.choices[0].message.content.strip()
+    return llm.chat(prompt)

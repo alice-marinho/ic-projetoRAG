@@ -24,7 +24,7 @@ import json
 load_dotenv()
 client = Together() # os.environ.get("TOGETHER_API_KEY")
 client.api_base = "https://api.together.xyz/v1"
-FOLDER_PATH = "data/docs" # pasta
+FOLDER_PATH = "../data/docs"  # pasta
 CHROMA_DIR = "chroma_db"
 
 conversation_history = []
@@ -217,7 +217,7 @@ def calculate_docs_hash(docs_dir):
     return hash_md5.hexdigest()
 
 def has_docs_changed():
-    current_hash = calculate_docs_hash("data/docs")
+    current_hash = calculate_docs_hash("../data/docs")
     if os.path.exists(HASH_FILE):
         with open(HASH_FILE, "r") as f:
             saved_hash = json.load(f).get("hash")

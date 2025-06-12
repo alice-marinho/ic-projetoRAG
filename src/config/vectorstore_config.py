@@ -1,0 +1,1 @@
+embedding_model="sentence-transformers/multi-qa-mpnet-base-dot-v1"

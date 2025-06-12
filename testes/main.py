@@ -1,9 +1,8 @@
 import os
 from dotenv import load_dotenv
-from together import Together
 
-from config import CHROMA_DIR
-from llm import generate_response, client
+from testes.configi import CHROMA_DIR
+from llm import generate_response
 from summarize.summarize_with_llm import summarize_question
 from vectorstore import create_vectorstore, retrieve_context
 from documents import load_documents, split_documents

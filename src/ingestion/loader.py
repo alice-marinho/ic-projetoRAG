@@ -3,19 +3,19 @@ import os
 import fitz
 
 from langchain.schema import Document
-from config import FOLDER_PATH
+from config.config import DATA_DIR, DOCS_DIR
 
 
 def load_documents():
     # verifica se o arquivo existe antes de abrir
-    if not os.path.exists(FOLDER_PATH):
-        raise FileNotFoundError(f"Arquivo não encontrado: {FOLDER_PATH}")
+    if not os.path.exists(DOCS_DIR):
+        raise FileNotFoundError(f"Arquivo não encontrado: {DOCS_DIR}")
 
     docs = []
 
-    for document in os.listdir(FOLDER_PATH): # ele lista os arq as pasta
+    for document in os.listdir(DOCS_DIR): # ele lista os arq as pasta
         if document.lower().endswith(".pdf"):
-            document_path = os.path.join(FOLDER_PATH, document) # cria o caminho
+            document_path = os.path.join(DOCS_DIR, document) # cria o caminho
             doc = fitz.open(document_path)
 
             for i, page in enumerate(doc):

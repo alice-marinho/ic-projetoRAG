@@ -3,7 +3,7 @@ import re
 
 import pandas as pd
 
-
+from config import config
 from config.config import *
 from utils.logger import *
 
@@ -11,6 +11,12 @@ logger = setup_logger(__name__)
 
 
 class TextCleaner:
+    def __init__(
+            self,
+            clean_data_file=config.CLEAN_DATA_FILE
+    ):
+        self.clean_data_file = clean_data_file
+
     @staticmethod
     def clean_text(texto):
         """
@@ -62,3 +68,14 @@ class TextCleaner:
             raise
 
         return text
+
+    def _format_periodo(self, ano: str, semestre: str)-> str:
+        ano = ano.strip()
+        semestre = semestre.strip()
+
+        if ano:
+            dados["Período Educacional"] = f"{ano}º Ano"
+        elif semestre:
+            dados["Período Educacional"] = f"{semestre}º Semestre"
+        else:
+            dados["Período Educacional"] = "Não informado"

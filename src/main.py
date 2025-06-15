@@ -15,6 +15,7 @@ def processing_data():
     logger = setup_logger(__name__)
     vs_manager = VectorStoreManager()
     hash_checker = DocsHashChecker()
+    dt_extractor = DocsExtractor()
 
     # Vou verificar os dados do banco
     if not os.path.exists("dados_limpos.json") or hash_checker.has_docs_changed():
@@ -27,8 +28,8 @@ def processing_data():
         for doc in docs:
             all_docs += doc.page_content + "\n"
 
-        extracted_data = extract_fields(all_docs)
-        print(type(extracted_data))
+        extracted_data = dt_extractor.extract_fields(all_docs)
+        # print(type(extracted_data))
         logging.info("Extraindo documentos")
         clean_data = TextCleaner.clean_save_json(extracted_data)
         with open('dados_limpos.json', 'r', encoding='utf-8') as f:

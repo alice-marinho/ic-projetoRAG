@@ -6,7 +6,8 @@ from data_manager import DocsHashChecker
 from config.config import CHROMA_DIR
 from ingestion import *
 from ingestion.cleanner import TextCleaner
-from rag import summarize_question, retrieve_context, generate_response
+from llm import LLMClient
+from rag import summarize_question, retrieve_context, generate_response, IntentDetector, ActivityGenerators
 from utils.logger import setup_logger
 from vectorstore import VectorStoreManager
 
@@ -92,7 +93,7 @@ def processing_data():
             logger.info(f"Processando {len(files_to_process)} arquivo(s) novos/modificados...")
 
             # Carrega apenas os documentos que mudaram
-            docs_a_processar = load_documents(filenames=files_to_process)
+            docs_a_processar = load_documents()
 
             if docs_a_processar:
                 # Bloco de Processamento
@@ -119,7 +120,7 @@ def processing_data():
                         logger.error(f"Falha na extração para {source_file} durante o refresh: {e}")
 
                 # c. Limpar dados
-                novos_dados_limpos = TextCleaner.clean_data(novos_dados_extraidos)
+                novos_dados_limpos = TextCleaner.clean_save_json(novos_dados_extraidos)
 
                 # d. Dividir em chunks
                 novos_chunks = split_json(novos_dados_limpos)
@@ -132,6 +133,24 @@ def processing_data():
         # Atualiza o arquivo de hash para o novo estado
         hash_checker.save_current_hashes()
         logger.info("Refresh inteligente concluído. Arquivo de hash atualizado.")
+
+def generate_adaptive_response(question, context, history):
+    tipo = IntentDetector.detectar_tipo_de_atividade(question)
+
+    if tipo == "geral":
+        return generate_response(question, context, history)
+
+    if tipo == "projeto":
+        prompt = ActivityGenerators.montar_prompt_projeto(question, context, history)
+    elif tipo == "prova":
+        prompt = ActivityGenerators.montar_prompt_prova(question, context, history)
+    elif tipo == "atividade":
+        prompt = ActivityGenerators.montar_prompt_atividade(question, context, history)
+    else:
+        prompt = generate_response(question, context, history)
+
+    llm = LLMClient()
+    return llm.chat(prompt)
 
 
 def main():
@@ -155,7 +174,8 @@ def main():
             print("Nenhum contexto encontrado.")
             continue
 
-        answer = generate_response(question, context, conversation_history)
+        answer = generate_adaptive_response(question, context, conversation_history)
+        # answer = generate_response(question, context, conversation_history)
         conversation_history.append({"pergunta": question, "resposta": answer})
 
         print(f"\nResposta da IA:\n{answer}\n")

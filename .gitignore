@@ -5,3 +5,5 @@ chroma_db/*
 .env.*
 
 __pycache__/
+
+data/processed/*

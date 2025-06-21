@@ -10,6 +10,7 @@ from rag import summarize_question, retrieve_context, generate_response
 from utils.logger import setup_logger
 from vectorstore import VectorStoreManager
 
+
 def processing_data():
 
     logger = setup_logger(__name__)
@@ -17,53 +18,120 @@ def processing_data():
     hash_checker = DocsHashChecker()
     dt_extractor = DocsExtractor()
 
-    # Vou verificar os dados do banco
-    if not os.path.exists("dados_limpos.json") or hash_checker.has_docs_changed():
-        logging.info("Processando documentos...")
-        # Leio os pdf e armazeno em uma variável
-        docs = load_documents()
-        logging.info("Lendo documentos pdf")
+    if not os.path.exists(CHROMA_DIR):
+        logger.info(f"Diretório '{CHROMA_DIR}' não encontrado. Iniciando recriação total...")
 
-        all_docs = ""
-        for doc in docs:
-            all_docs += doc.page_content + "\n"
+        # Carrega TODOS os documentos da pasta
+        todos_os_docs = load_documents()
+        if not todos_os_docs:
+            logger.warning("Nenhum documento encontrado para processar. Encerrando.")
+            return
 
-        extracted_data = dt_extractor.extract_fields(all_docs)
-        print(type(extracted_data))
-        logging.info("Extraindo documentos")
-        clean_data = TextCleaner.clean_save_json(extracted_data)
-        with open('dados_limpos.json', 'r', encoding='utf-8') as f:
-            clean_data = json.load(f)
+        # --- Bloco de Processamento (Extração, Limpeza, Split) ---
+        logger.info(f"Processando todos os {len(todos_os_docs)} documentos carregados...")
 
-        logger.info(f"Tipo de dados_limpos: {type(clean_data)}")
-        json_documents = split_json(clean_data)
+        # a. Agrupar texto por arquivo de origem
+        docs_agrupados = {}
+        for doc in todos_os_docs:
+            source_file = doc.metadata["source"]
+            if source_file not in docs_agrupados:
+                docs_agrupados[source_file] = ""
+            docs_agrupados[source_file] += doc.page_content + "\n"
 
+        # b. Extrair dados estruturados
+        dados_extraidos_completos = []
+        for source_file, full_text in docs_agrupados.items():
+            try:
+                extracted_data = dt_extractor.extract_fields(full_text)
+                if isinstance(extracted_data, list):
+                    for item in extracted_data:
+                        item["original_source_pdf"] = source_file
+                        dados_extraidos_completos.append(item)
+            except Exception as e:
+                logger.error(f"Falha na extração para {source_file} durante o rebuild: {e}")
 
-        logger.info(f"Tipo de dados_limpos: {type(clean_data)}")
-        # json_documents = split_json(clean_data)
+        # c. Limpar dados
+        dados_limpos = TextCleaner.clean_data(dados_extraidos_completos)
 
-        # Caso não existe o banco vetorial
-        if not os.path.exists(CHROMA_DIR):
-            vs_manager.create_vectorstore(json_documents)
-            logger.info("Base vetorial criada a partir do JSON processado.")
-        else:
-            # Se já existir, apenas adiciona os novos chunks
-            existing_store = vs_manager.load_vectorstore()
-            existing_store.add_documents(json_documents)
-            logger.info("Base vetorial atualizada com novos chunks do JSON.")
+        # d. Dividir em chunks
+        chunks_para_db = split_json(dados_limpos)
+        # --- Fim do Bloco de Processamento ---
+
+        # Cria o banco do zero com todos os chunks
+        vs_manager.create_vectorstore(chunks_para_db)
+
+        # Salva o estado atual dos hashes para futuras comparações
+        hash_checker.save_current_hashes()
+        logger.info("Recriação total concluída. Banco vetorial e arquivo de hash criados.")
+
+        ### CENÁRIO 2 - Verificações do banco já existente ###
     else:
-        print("Usando dados já processados...")
-        with open('dados_limpos.json', 'r', encoding='utf-8') as f:
-            dados_limpos = json.load(f)
-        # split_json(dados_limpos)
-        print(type(dados_limpos))
-        json_documents = split_json(dados_limpos)
-        # json_chunks = split_documents(json_documents)
+        logger.info("Banco vetorial encontrado. Verificando por mudanças nos documentos...")
 
-        if not os.path.exists(CHROMA_DIR):
-            vs_manager.create_vectorstore(json_documents)
-        else:
-            vs_manager.load_vectorstore()
+        changes = hash_checker.get_changes()
+
+        if not any(changes.values()):
+            logger.info("Nenhuma mudança detectada. O banco de dados está atualizado.")
+            return
+
+        logger.info(
+            f"Mudanças detectadas: {len(changes['added'])} adicionados, {len(changes['removed'])} removidos, {len(changes['modified'])} modificados.")
+        store = vs_manager.load_vectorstore()
+
+        ## Remover Dados Antigos ##
+        files_to_remove = changes['removed'] + changes['modified']
+        if files_to_remove:
+            logger.info(f"Removendo dados antigos de {len(files_to_remove)} arquivo(s)...")
+            for filename in files_to_remove:
+                store.delete(where={"source": filename})
+            logger.info("Dados antigos removidos com sucesso.")
+
+        ## Processar e Adicionar Novos Dados ##
+        files_to_process = changes['added'] + changes['modified']
+        if files_to_process:
+            logger.info(f"Processando {len(files_to_process)} arquivo(s) novos/modificados...")
+
+            # Carrega apenas os documentos que mudaram
+            docs_a_processar = load_documents(filenames=files_to_process)
+
+            if docs_a_processar:
+                # Bloco de Processamento
+                logger.info(f"Processando {len(docs_a_processar)} documentos novos/modificados...")
+
+                # a. Agrupar texto por arquivo de origem
+                docs_agrupados = {}
+                for doc in docs_a_processar:
+                    source_file = doc.metadata["source"]
+                    if source_file not in docs_agrupados:
+                        docs_agrupados[source_file] = ""
+                    docs_agrupados[source_file] += doc.page_content + "\n"
+
+                # b. Extrair dados estruturados
+                novos_dados_extraidos = []
+                for source_file, full_text in docs_agrupados.items():
+                    try:
+                        extracted_data = dt_extractor.extract_fields(full_text)
+                        if isinstance(extracted_data, list):
+                            for item in extracted_data:
+                                item["original_source_pdf"] = source_file
+                                novos_dados_extraidos.append(item)
+                    except Exception as e:
+                        logger.error(f"Falha na extração para {source_file} durante o refresh: {e}")
+
+                # c. Limpar dados
+                novos_dados_limpos = TextCleaner.clean_data(novos_dados_extraidos)
+
+                # d. Dividir em chunks
+                novos_chunks = split_json(novos_dados_limpos)
+
+                store.add_documents(novos_chunks)
+                logger.info("Novos dados adicionados ao banco vetorial.")
+            else:
+                logger.warning("Nenhum conteúdo válido encontrado nos novos arquivos para processar.")
+
+        # Atualiza o arquivo de hash para o novo estado
+        hash_checker.save_current_hashes()
+        logger.info("Refresh inteligente concluído. Arquivo de hash atualizado.")
 
 
 def main():

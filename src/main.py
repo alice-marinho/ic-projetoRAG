@@ -29,17 +29,17 @@ def processing_data():
             all_docs += doc.page_content + "\n"
 
         extracted_data = dt_extractor.extract_fields(all_docs)
-        # print(type(extracted_data))
+        print(type(extracted_data))
         logging.info("Extraindo documentos")
         clean_data = TextCleaner.clean_save_json(extracted_data)
         with open('dados_limpos.json', 'r', encoding='utf-8') as f:
             clean_data = json.load(f)
 
-        print(f"Tipo de dados_limpos: {type(clean_data)}")
+        logger.info(f"Tipo de dados_limpos: {type(clean_data)}")
         json_documents = split_json(clean_data)
 
 
-        print(f"Tipo de dados_limpos: {type(clean_data)}")
+        logger.info(f"Tipo de dados_limpos: {type(clean_data)}")
         # json_documents = split_json(clean_data)
 
         # Caso não existe o banco vetorial

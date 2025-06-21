@@ -29,8 +29,7 @@ def generate_response(question, context, history):
 
     Pergunta: {question}
     
-    Finalize sua resposta com uma pergunta ou ideia (de projeto ou de outra coisa) direcionada ao usuário relacionado o que foi respondido.
-    """
+    Finalize a resposta com uma pergunta curta, direta e simples, relacionada ao conteúdo respondido, que incentive o usuário a continuar a conversa. Evite sugestões muito longas ou complexas.    """
 
     llm_client = LLMClient()
     content = llm_client.chat(prompt)

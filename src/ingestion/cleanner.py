@@ -190,13 +190,3 @@ class TextCleaner:
         logger.info(f"Coluna 'Carga Horária Total' criada e colunas {workload_cols} removidas.")
 
         return df
-
-    @staticmethod
-    def _format_cargahr(item_json: dict)-> str:
-        cargas_horarias_encontradas = {}
-        for campo in WORKLOAD:
-            valor = item_json.get(campo)  # Usar .get() é seguro, retorna None se a chave não existir
-            if valor is not None:  # Apenas adiciona se o campo foi encontrado no dicionário
-                cargas_horarias_encontradas[campo] = valor
-
-        print(cargas_horarias_encontradas)

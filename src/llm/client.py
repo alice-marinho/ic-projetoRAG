@@ -11,7 +11,7 @@ class LLMClient:
         response = self.client.chat.completions.create(
             model=self.model,
             messages=[{"role": "user", "content": prompt}],
-            temperature=self.temperature,
+            temperature=self.temperature
         )
         content = response.choices[0].message.content.strip()
         return content

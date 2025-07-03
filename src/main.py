@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+
 from data_manager import DocsHashChecker
 
 from config.config import CHROMA_DIR
@@ -8,6 +9,7 @@ from ingestion import *
 from ingestion.cleanner import TextCleaner
 from llm import LLMClient
 from rag import summarize_question, retrieve_context, generate_response, IntentDetector, ActivityGenerators
+from rag.prompt_engineer import *
 from utils.logger import setup_logger
 from vectorstore import VectorStoreManager
 
@@ -52,7 +54,7 @@ def processing_data():
                 logger.error(f"Falha na extração para {source_file} durante o rebuild: {e}")
 
         # c. Limpar dados
-        dados_limpos = TextCleaner.clean_data(dados_extraidos_completos)
+        dados_limpos = TextCleaner.clean_save_json(dados_extraidos_completos)
 
         # d. Dividir em chunks
         chunks_para_db = split_json(dados_limpos)
@@ -166,13 +168,23 @@ def main():
             print("Digite uma pergunta válida.")
             continue
 
-        quest = summarize_question(question)
-        final_question = question if quest.upper() == "OK" else quest
+        reformulated = summarize_question(question)
+        #raw_keywords = extract_keywords(reformulated)
+        keywords = extract_keywords(reformulated)
+        # print(f"\n[SPACY] Palavras-chave extraídas: {raw_keywords}")
+
+        # Refinar com LLM
+        # refined_keywords = refine_keywords_llm(reformulated, raw_keywords)
+        print(f"\n[LLM] Palavras-chave refinadas: {keywords}")
+
+        final_question = expand_question_with_keywords(reformulated, keywords)
+        # final_question = question if quest.upper() == "OK" else quest
 
         context = retrieve_context(final_question)
         if not context:
             print("Nenhum contexto encontrado.")
             continue
+        # Verificação mais detalhada. Só vai consultar a base de dados própria, caso tenha correlação na base de dados.
 
         answer = generate_adaptive_response(question, context, conversation_history)
         # answer = generate_response(question, context, conversation_history)

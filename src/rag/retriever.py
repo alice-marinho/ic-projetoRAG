@@ -11,7 +11,7 @@ def retrieve_context(question):
     vectorstore = VectorStoreManager()
 
     retriever = vectorstore.load_vectorstore().as_retriever(
-        search_type="mmr",
+        search_type="mmr", # Maximal Marginal Relevance
         search_kwargs={"k": 10, "lambda_mult": 0.7}  # Ajuste para respostas mais precisas
     )
 
@@ -29,3 +29,4 @@ def retrieve_context(question):
             context_chunks.append(cleaned)
 
     return context_chunks
+

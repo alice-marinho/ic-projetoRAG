@@ -78,25 +78,31 @@ class ActivityGenerators:
             conversation_history += f"Usuário: {troca['pergunta']}\nIA: {troca['resposta']}\n"
 
         return f""" 
-    Você é um assistente educacional. O professor solicitou um projeto.
+Aja como um professor criativo e especialista em pedagogia interdisciplinar. Seu objetivo é ajudar outros educadores a criar projetos inovadores que conectem diferentes áreas do conhecimento.
 
-    ===== CONTEXTO =====
-    {context_text}
-    ====================
-    
-    Histórico recente: {history}
+Abaixo está o histórico da conversa até o momento entre o Humano e você (IA). Use-o para entender o contexto de perguntas de acompanhamento, mas não para responder à pergunta atual, a menos que seja explicitamente solicitado.
+{conversation_history}
 
-    Solicitação: {question}
+Abaixo estão os trechos de documentos relevantes. A resposta DEVE ser extraída ou sintetizada a partir destes trechos para embasar a criação do projeto.
+{context}
 
-    Crie um projeto pedagógico com a estrutura:
-    1. Introdução
-    2. Objetivo Geral
-    3. Objetivos Específicos
-    4. Metodologia
-    5. Resultados Esperados
-    6. Avaliação
+### TEMA PROPOSTO PELO USUÁRIO 
+{question}
 
-    Finalize com uma pergunta sugestiva, como: "Deseja transformar isso em um plano de aula?"
+### TAREFA PRINCIPAL E FORMATO DA RESPOSTA ###
+Com base no TEMA PROPOSTO e nos DOCUMENTOS DE REFERÊNCIA, sua tarefa é elaborar uma proposta de projeto interdisciplinar. Siga rigorosamente a estrutura abaixo:
+
+1.  **Parágrafo de Abertura:**  Reconheça o tema proposto pelo usuário e mostre entusiasmo pela ideia de conectar as disciplinas e introduza para ideia.
+
+2.  **Título do Projeto:** Crie um título criativo e chamativo para o projeto.
+
+3.  **Estrutura do Projeto:** Apresente as seguintes seções, usando os títulos em negrito:
+    * **Introdução:** Apresente o projeto, explicando a relevância de conectar as disciplinas mencionadas no tema e como isso pode enriquecer o aprendizado dos alunos.
+    * **Objetivos:** Liste com marcadores (bullet points) os principais objetivos de aprendizagem para os alunos, tanto da disciplina principal quanto da correlata.
+    * **Metodologia:** Descreva o passo a passo de como a atividade seria conduzida. Sugira atividades práticas, pesquisas ou apresentações que os alunos fariam.
+    * **Resultados Esperados:** Detalhe o que se espera que os alunos produzam ao final do projeto (ex: um seminário, um protótipo, um artigo, uma exposição de arte) e quais competências terão desenvolvido.
+
+4.  **REGRA DE OURO:** Se os documentos de referência não fornecerem informações suficientes para criar uma proposta de projeto viável sobre o tema, informe de maneira educada que o material de apoio é insuficiente para detalhar a metodologia ou os objetivos, e peça mais informações ao usuário. NÃO invente detalhes que não possam ser sustentados pelo contexto.
     """
 
     @staticmethod
@@ -127,6 +133,7 @@ class ActivityGenerators:
 
     Finalize a resposta com uma pergunta curta, direta e simples, relacionada ao conteúdo respondido, que incentive o usuário a continuar a conversa. Evite sugestões muito longas ou complexas.
     """
+    # Você é um professor que deseja realizar uma atividade conjunta com um professor de outra disciplina que tem assuntos correlatos
 
     @staticmethod
     def montar_prompt_atividade(question, context, history, max_history=5):

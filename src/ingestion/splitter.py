@@ -9,14 +9,14 @@ def split_json(clean_date):
 
     logger.info("Criando as chunks do json formatado")
     for item in clean_date:
-        # Cria um chunk único por disciplina com TODOS os campos
+        # chunk único por disciplina
         content_parts = []
 
         for field, value in item.items():
             if value and str(value).strip():
                 content_parts.append(f"{field}: {value}")
 
-        # Junta tudo em um único documento por disciplina
+        # um único documento por disciplina
         doc_content = "\n".join(content_parts)
         logger.debug("Chunks criadas e unificadas no documento")
 

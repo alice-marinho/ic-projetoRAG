@@ -14,11 +14,13 @@ DATA_DIR = BASE_DIR / "data"
 DOCS_DIR = DATA_DIR / "docs"
 HASH_FILE = DATA_DIR / "docs_hash.json"
 CHROMA_DIR = BASE_DIR / "chroma_db"
+SRC_DIR = BASE_DIR /"src"
 FOLDER_PATH = "data/docs"
 
 PROCESSED_DIR = DATA_DIR / "processed"
 RAW_DATA_FILE = PROCESSED_DIR / "dados_brutos.json"
 CLEAN_DATA_FILE = PROCESSED_DIR / "dados_limpos.json"
+CLEAN_CSV = PROCESSED_DIR / "dados_limpos.csv"
 
 # Outras configs
 # EMBEDDING_MODEL = "all-MiniLM-L6-v2"

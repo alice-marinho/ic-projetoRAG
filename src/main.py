@@ -7,9 +7,10 @@ from data_manager import DocsHashChecker
 from config.config import CHROMA_DIR
 from ingestion import *
 from ingestion.cleanner import TextCleaner
-from llm import LLMClient
 from rag import summarize_question, retrieve_context, generate_response, IntentDetector, ActivityGenerators
 from rag.prompt_engineer import *
+from searcher.course_loader import AppController
+from searcher.interdisciplinaridade import Interdisciplina
 from utils.logger import setup_logger
 from vectorstore import VectorStoreManager
 
@@ -24,13 +25,13 @@ def processing_data():
     if not os.path.exists(CHROMA_DIR):
         logger.info(f"Diretório '{CHROMA_DIR}' não encontrado. Iniciando recriação total...")
 
-        # Carrega TODOS os documentos da pasta
+        # Carrega os documentos da pasta
         todos_os_docs = load_documents()
         if not todos_os_docs:
             logger.warning("Nenhum documento encontrado para processar. Encerrando.")
             return
 
-        # --- Bloco de Processamento (Extração, Limpeza, Split) ---
+        # Bloco de Processamento (Extração, Limpeza, Split) ---
         logger.info(f"Processando todos os {len(todos_os_docs)} documentos carregados...")
 
         # a. Agrupar texto por arquivo de origem
@@ -57,11 +58,11 @@ def processing_data():
         dados_limpos = TextCleaner.clean_save_json(dados_extraidos_completos)
 
         # d. Dividir em chunks
-        chunks_para_db = split_json(dados_limpos)
+        chunks_db = split_json(dados_limpos)
         # --- Fim do Bloco de Processamento ---
 
         # Cria o banco do zero com todos os chunks
-        vs_manager.create_vectorstore(chunks_para_db)
+        vs_manager.create_vectorstore(chunks_db)
 
         # Salva o estado atual dos hashes para futuras comparações
         hash_checker.save_current_hashes()
@@ -156,10 +157,48 @@ def generate_adaptive_response(question, context, history):
 
 
 def main():
-
-    # Sistema de Q&A
-    conversation_history = []
+    # 1. Processar dados e atualizar vetor
     processing_data()
+
+    # 2. Iniciar o controller para escolher curso, semestre e matérias
+    # controller = AppController()
+    # controller.executar()
+    # curso = controller.curso
+    # semestre = controller.semestre
+    # componentes = controller.componentes
+    # # componente2 = controller.componente2
+    #
+    # print(f"[DEBUG] curso: {curso}, semestre: {semestre}, disciplina 1: {componentes}")
+    #
+    # inter = Interdisciplina(
+    #     curso= curso,
+    #     periodo= semestre,
+    #     disciplinas = componentes
+    # )
+    #
+    # resposta = inter.interdisciplinaridade_filtros()
+    #
+    # print(resposta)
+
+
+    # 3. Recuperar matérias selecionadas e gerar sugestões de projetos
+
+
+    # 4. Criar pergunta automática para gerar sugestões de projetos
+    #materia_str = ", ".join(componentes)
+    #print(materia_str)
+    #pergunta_projetos = f"Quais são boas ideias de projetos para as seguintes matérias: {materia_str}?"
+
+    # 5. Buscar contexto e gerar resposta da IA
+    #contexto = retrieve_context(componentes)
+    #sugestoes = generate_adaptive_response(pergunta_projetos, contexto, [])
+
+    # print("\nSugestões de projetos com base nas matérias escolhidas:")
+    #print(sugestoes)
+
+    # 6. Iniciar o chat normal
+    conversation_history = []
+
     while True:
         question = input("Pergunte sobre (ou sair): ")
         if question.lower() == "sair":

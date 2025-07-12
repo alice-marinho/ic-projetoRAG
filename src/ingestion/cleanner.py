@@ -18,7 +18,32 @@ class TextCleaner:
         self.clean_data_file = clean_data_file
 
     @staticmethod
-    def clean_text(texto):
+    def _padronizar_nome_curso(nome: str) -> str:
+        """
+        Padroniza nomes de cursos para evitar duplicações.
+        Exemplo:
+            - "Superior de Bacharelado em Turismo" → "Bacharelado em Turismo"
+        """
+        if not isinstance(nome, str):
+            return nome
+
+        nome = nome.strip().upper()
+
+        # Regras de substituição (ajuste conforme seus dados)
+        padroes = [
+            (r"SUPERIOR DE BACHARELADO EM", "BACHARELADO EM"),
+            (r"SUPERIOR DE TECNOLOGIA EM", "TECNÓLOGO EM"),
+            (r"TECNOLOGIA EM", "TECNÓLOGO EM"),
+            (r"TÉCNICO EM", "TÉCNICO EM"),
+        ]
+
+        for padrao, substituicao in padroes:
+            nome = re.sub(padrao, substituicao, nome, flags=re.IGNORECASE)
+
+        return nome.strip().title()
+
+    @staticmethod
+    def _clean_text(texto):
         """
         Limpa texto de campos multilinha para melhorar embedding.
         """
@@ -39,15 +64,18 @@ class TextCleaner:
         return texto
 
     @staticmethod
-    def clean_save_json(text: list, output_path: str = 'dados_limpos.json') -> list:
+    def clean_save_json(text: list, output_path: Path = CLEAN_DATA_FILE) -> list:
         """
         Aplica limpeza usando pandas e salva os dados em JSON e CSV.
         """
         logger.info("Iniciando limpeza com pandas...")
 
         try:
-            # 1. Converte para DataFrame
+            # Converte para DataFrame
             df = pd.DataFrame(text)
+
+            if "Curso" in df.columns:
+                df["Curso"] = df["Curso"].apply(TextCleaner._padronizar_nome_curso)
 
             # Cria coluna "Período Educacional" para unificar
             df["Período Educacional"] = df.apply(TextCleaner._format_periodo, axis=1)
@@ -55,7 +83,7 @@ class TextCleaner:
             # Remove colunas ano e semestre
             df.drop(columns=["Ano", "Semestre"], inplace=True, errors='ignore')
 
-            #Substitui valores nulos e vazios por "Não informado"
+            # Substitui valores nulos e vazios por "Não informado"
             df.replace(r'^\s*$', pd.NA, regex=True, inplace=True)
             df.replace("N/A", pd.NA, inplace=True)
             df.fillna("Não informado", inplace=True)
@@ -63,11 +91,11 @@ class TextCleaner:
             # Aplica limpeza de texto em campos multilinha
             for field in MULTILINE_FIELDS:
                 if field in df.columns:
-                    df[field] = df[field].astype(str).apply(TextCleaner.clean_text)
+                    df[field] = df[field].astype(str).apply(TextCleaner._clean_text)
                     df[field] = df[field].replace({pd.NA: "Não informado", "nan": "Não informado"}).fillna(
                         "Não informado")
 
-                # 6. Campos numéricos (WORKLOAD): preencher com 0
+            # Campos numéricos (WORKLOAD): preencher com 0
             for field in WORKLOAD:
                 if field in df.columns:
                     df[field] = (
@@ -78,10 +106,13 @@ class TextCleaner:
                     )
                     df[field] = pd.to_numeric(df[field], errors="coerce").fillna("0").astype(str)
 
-                # Para os demais campos: preenche com "Não informado" onde for nulo
+            # Para os demais campos: preenche com "Não informado" onde for nulo
             for col in df.columns:
                 if col not in MULTILINE_FIELDS and col not in WORKLOAD:
                     df[col] = df[col].fillna("Não informado")
+
+                    # Tira os pontos finais
+                    df[col] = df[col].astype(str).apply(lambda x: re.sub(r'\.\s*$', '', x.strip()))
 
             df = TextCleaner._sum_workload_columns(df)
 
@@ -90,7 +121,7 @@ class TextCleaner:
             logger.info(f"JSON limpo salvo: {output_path}")
 
             # Exporta para CSV
-            df.to_csv("componentes_curriculares_extraidos.csv", index=False, encoding="utf-8-sig")
+            df.to_csv(CLEAN_CSV, index=False, encoding="utf-8-sig")
             logger.info("CSV salvo com sucesso.")
 
             return df.to_dict(orient="records")
@@ -98,53 +129,6 @@ class TextCleaner:
         except Exception as e:
             logger.error(f"Erro ao processar dados com pandas: {e}")
             raise
-    # @staticmethod
-    # def clean_save_json(text: list, output_path: str = 'dados_limpos.json') -> list:
-    #     """
-    #     Aplica limpeza nos campos de texto multilinha do JSON extraído e salva em arquivo.
-    #     """
-    #     logger.info("Iniciando limpeza dos dados...")
-    #
-    #     for item in text:
-    #         item["Período Educacional"] = TextCleaner._format_periodo(item)
-    #         logger.debug(f"Campo 'Período Educacional' formatado para o item: {item.get('Período Educacional')}")
-    #
-    #         item.pop("Ano", None)
-    #         item.pop("Semestre", None)
-    #
-    #         for field in MULTILINE_FIELDS:
-    #             # verifica se existe no dicionário e se é string
-    #             if field in item and isinstance(item[field], str):
-    #                 original = item[field]
-    #                 if original is None:
-    #                     item[field] = "Não informado"
-    #                 else:
-    #                     item[field] = TextCleaner.clean_text(original)
-    #                     logger.debug(f"Campo '{field}' limpo.")
-    #
-    #             elif field in item:
-    #                 # Estes campos precisam de uma limpeza extra de espaços em branco e quebras de linha
-    #                 value = re.sub(r'\s+', ' ', value).strip()
-    #                 if not value:  # Se ficar vazio depois da limpeza, pode ser "Não informado"
-    #                     value = "Não informado"
-    #
-    #
-    #
-    #     try:
-    #         with open(output_path, 'w', encoding='utf-8') as f:
-    #             json.dump(text, f, ensure_ascii=False, indent=2)
-    #         logger.info(f"JSON limpo salvo com sucesso: {output_path}")
-    #
-    #         df = pd.DataFrame(text)
-    #         df.to_csv("componentes_curriculares_extraidos.csv", index=False)
-    #
-    #
-    #
-    #     except Exception as e:
-    #         logger.error(f"Erro ao salvar o JSON limpo: {e}")
-    #         raise
-    #
-    #     return text
 
     """
     Aqui ele formata o período para uma nova coluna "Período Educacional"

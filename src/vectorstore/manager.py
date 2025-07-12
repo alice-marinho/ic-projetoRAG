@@ -59,3 +59,45 @@ class VectorStoreManager(metaclass=SingletonMeta):
             persist_directory=str(self.persist_path),
             embedding_function=self.embeddings
         )
+
+    def buscar_chunks_por_metadados(self, curso: str, periodo: str, componente: str, k: int = 50):
+        """
+        Busca os chunks no vetor usando filtros de metadados exatos.
+        """
+        store = self.load_vectorstore()
+
+        where_filter = {
+            "Curso": curso,
+            "Período Educacional": periodo,
+            "Componente curricular": componente
+        }
+
+        try:
+            docs = store.similarity_search(
+                query=componente,
+                k=k,
+                filter=where_filter
+            )
+            return docs
+        except Exception as e:
+            logger.error(f"Erro ao buscar chunks de '{componente}': {e}")
+            return []
+
+    def buscar_chunks_por_texto(self, texto_busca: str, k: int = 10):
+        """
+        Busca chunks com base em conteúdo textual (ementa, objetivos, etc.), sem usar metadados.
+        """
+        store = self.load_vectorstore()
+
+        try:
+            docs = store.similarity_search(query=texto_busca, k=k)
+
+            if not docs:
+                logger.warning(f"Nenhum chunk encontrado para: {texto_busca}")
+            return docs
+
+        except Exception as e:
+            logger.error(f"Erro ao buscar chunks de '{texto_busca}': {e}")
+            return []
+
+

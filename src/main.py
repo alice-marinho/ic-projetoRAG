@@ -1,5 +1,3 @@
-import json
-import logging
 import os
 
 from data_manager import DocsHashChecker
@@ -7,10 +5,10 @@ from data_manager import DocsHashChecker
 from config.config import CHROMA_DIR
 from ingestion import *
 from ingestion.cleanner import TextCleaner
-from rag import summarize_question, retrieve_context, generate_response, IntentDetector, ActivityGenerators
+from rag import retrieve_context, generate_response, IntentDetector, ActivityGenerators
 from rag.prompt_engineer import *
-from searcher.course_loader import AppController
-from searcher.interdisciplinaridade import Interdisciplina
+from rag.routing.router import get_router_decision
+from rag.routing.routing_models import BuscaComposta, BuscaSimples
 from utils.logger import setup_logger
 from vectorstore import VectorStoreManager
 
@@ -156,47 +154,29 @@ def generate_adaptive_response(question, context, history):
     return llm.chat(prompt)
 
 
+def process_user_question(question: str, conversation_history):
+    """
+    Orquestra o fluxo completo, começando pela verificação/roteamento.
+    """
+    decisao = get_router_decision(question)
+
+    contextos = []
+
+    if isinstance(decisao, BuscaSimples):
+        print(f"[INFO] Rota decidida: Busca Simples. Query: '{decisao.query}'")
+        # contextos = retrieve_context(decisao.query)
+
+    elif isinstance(decisao, BuscaComposta):
+        print(f"[INFO] Rota decidida: Busca Composta. Sub-Queries: {decisao.sub_queries}")
+        contextos_combinados = []
+        for sub_query in decisao.sub_queries:
+            contextos_individuais = retrieve_context(sub_query)
+            contextos_combinados.extend(contextos_individuais)
+        # contextos = list(set(contextos_combinados))
+
+
 def main():
-    # 1. Processar dados e atualizar vetor
     processing_data()
-
-    # 2. Iniciar o controller para escolher curso, semestre e matérias
-    # controller = AppController()
-    # controller.executar()
-    # curso = controller.curso
-    # semestre = controller.semestre
-    # componentes = controller.componentes
-    # # componente2 = controller.componente2
-    #
-    # print(f"[DEBUG] curso: {curso}, semestre: {semestre}, disciplina 1: {componentes}")
-    #
-    # inter = Interdisciplina(
-    #     curso= curso,
-    #     periodo= semestre,
-    #     disciplinas = componentes
-    # )
-    #
-    # resposta = inter.interdisciplinaridade_filtros()
-    #
-    # print(resposta)
-
-
-    # 3. Recuperar matérias selecionadas e gerar sugestões de projetos
-
-
-    # 4. Criar pergunta automática para gerar sugestões de projetos
-    #materia_str = ", ".join(componentes)
-    #print(materia_str)
-    #pergunta_projetos = f"Quais são boas ideias de projetos para as seguintes matérias: {materia_str}?"
-
-    # 5. Buscar contexto e gerar resposta da IA
-    #contexto = retrieve_context(componentes)
-    #sugestoes = generate_adaptive_response(pergunta_projetos, contexto, [])
-
-    # print("\nSugestões de projetos com base nas matérias escolhidas:")
-    #print(sugestoes)
-
-    # 6. Iniciar o chat normal
     conversation_history = []
 
     while True:
@@ -206,28 +186,38 @@ def main():
         if not question.strip():
             print("Digite uma pergunta válida.")
             continue
+        # answer = orquestrar_resposta(question, conversation_history)
+        answer = process_user_question(question, conversation_history)
 
-        reformulated = summarize_question(question)
-        #raw_keywords = extract_keywords(reformulated)
-        keywords = extract_keywords(reformulated)
+        # reformulated = rewrite_query(question)
+
+        ##### KEY WORDS ########
+        # keywords = extract_keywords(reformulated)
         # print(f"\n[SPACY] Palavras-chave extraídas: {raw_keywords}")
 
         # Refinar com LLM
         # refined_keywords = refine_keywords_llm(reformulated, raw_keywords)
-        print(f"\n[LLM] Palavras-chave refinadas: {keywords}")
+        # print(f"\n[LLM] Palavras-chave refinadas: {keywords}")
 
-        final_question = expand_question_with_keywords(reformulated, keywords)
+        # final_question = expand_question_with_keywords(reformulated, keywords)
         # final_question = question if quest.upper() == "OK" else quest
 
-        context = retrieve_context(final_question)
-        if not context:
-            print("Nenhum contexto encontrado.")
-            continue
-        # Verificação mais detalhada. Só vai consultar a base de dados própria, caso tenha correlação na base de dados.
-
-        answer = generate_adaptive_response(question, context, conversation_history)
+        ##### RETRIVER SEM O FLUXO NOVO ########
+        # # context = retrieve_context(reformulated)
+        # if not context:
+        #     print("Nenhum contexto encontrado.")
+        #     continue
+        # else:
+        #     for i, doc in context:
+        #         print(f"\n--- Chunk {i + 1} ---")
+        #         print(f"Conteúdo: {doc.page_content[:100]}...")  # Mostra os primeiros 100 caracteres
+        #         print(f"Metadados: {doc.metadata}")
+        #         print("-" * 20)
+        # # Verificação mais detalhada. Só vai consultar a base de dados própria, caso tenha correlação na base de dados.
+        #
+        # #answer = generate_adaptive_response(question, context, conversation_history)
         # answer = generate_response(question, context, conversation_history)
-        conversation_history.append({"pergunta": question, "resposta": answer})
+        # conversation_history.append({"pergunta": question, "resposta": answer})
 
         print(f"\nResposta da IA:\n{answer}\n")
 

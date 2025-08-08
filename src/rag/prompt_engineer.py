@@ -53,14 +53,6 @@ def summarize_question(question):
         "Pergunta original:\n\n"
         f"{question}"
     )
-    # prompt = (
-    #     "Aja como um especialista em processamento de linguagem natural. "
-    #     "Para todas as minhas perguntas, dê a melhor versão delas e ao final me permita escolher entre a sua e a minha. "
-    #     "Somente melhore, não me dê informações ou respostas das perguntas"
-    #     "Responda apenas com a pergunta reformulada, sem explicações e tudo em Português - BR."
-    #     "Aqui está a pergunta:\n\n"
-    #     f"{question}"
-    # )
 
     llm_client = LLMClient()
     suggested_question = llm_client.chat(prompt)

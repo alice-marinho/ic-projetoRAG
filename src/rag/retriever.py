@@ -1,6 +1,6 @@
 import re
-from typing import List
 
+from rag.query_transformations.self_querying import create_self_query_retriever
 from vectorstore import VectorStoreManager
 
 
@@ -13,16 +13,18 @@ def retrieve_context(question: str, k : int = 5) -> list[str] | list[dict]:
     try:
         vectorstore = VectorStoreManager()
 
-        retriever = vectorstore.load_vectorstore().as_retriever(
-            search_type="mmr", # Maximal Marginal Relevance
-            search_kwargs={"k": k, "lambda_mult": 0.5}  # Ajuste para respostas mais precisas
-        )
+        # retriever = vectorstore.load_vectorstore().as_retriever(
+        #     search_type="mmr", # Maximal Marginal Relevance
+        #     search_kwargs={"k": k, "lambda_mult": 0.5}  # Ajuste para respostas mais precisas
+        # )
+        actual_vectorstore = vectorstore.load_vectorstore()
 
+        retriever = create_self_query_retriever(actual_vectorstore)
         docs = retriever.invoke(question)
 
         print(f"\n[DEBUG] Contextos recuperados para a pergunta: '{question}'")
 
-        seen = set()
+        seen = set() # Remover duplicados
         context_chunks = []
 
         for doc in docs:

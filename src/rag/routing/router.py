@@ -26,6 +26,22 @@ def get_router_decision(question: str) -> Union[BuscaSimples, BuscaComposta]:
     """
     Analisa a pergunta do usuário e decide qual rota de busca seguir.
     """
+
+    # --- Heurística antes do LLM ---
+    heuristicas_composta = [
+        " e ",
+        " e/ou ",
+        "comparar",
+        "diferença entre",
+        "comparação",
+        "vs",
+        "versus"
+    ]
+
+    if any(h in question.lower() for h in heuristicas_composta):
+        print("[INFO] Heurística detectou pergunta composta.")
+        return BuscaComposta(sub_queries=[])
+
     llm = ChatTogether(
         model=LLM_MODEL,
         temperature=0

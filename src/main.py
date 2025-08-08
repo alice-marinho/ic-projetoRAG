@@ -7,6 +7,7 @@ from ingestion import *
 from ingestion.cleanner import TextCleaner
 from rag import retrieve_context, generate_response, IntentDetector, ActivityGenerators
 from rag.prompt_engineer import *
+from rag.query_transformations.sub_query_decomposition import get_sub_queries
 from rag.routing.router import get_router_decision
 from rag.routing.routing_models import BuscaComposta, BuscaSimples
 from utils.logger import setup_logger
@@ -167,11 +168,13 @@ def process_user_question(question: str, conversation_history):
         # contextos = retrieve_context(decisao.query)
 
     elif isinstance(decisao, BuscaComposta):
-        print(f"[INFO] Rota decidida: Busca Composta. Sub-Queries: {decisao.sub_queries}")
+        sub_queries = get_sub_queries(question)
+        print(f"[INFO] Rota decidida: Busca Composta. Sub-Queries: {sub_queries}")
         contextos_combinados = []
-        for sub_query in decisao.sub_queries:
+        for sub_query in sub_queries:
             contextos_individuais = retrieve_context(sub_query)
             contextos_combinados.extend(contextos_individuais)
+            print(contextos_individuais)
         # contextos = list(set(contextos_combinados))
 
 

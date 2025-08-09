@@ -10,10 +10,19 @@ prompt_roteador = ChatPromptTemplate.from_messages(
         (
             "system",
             """Você é um assistente especialista em rotear perguntas de um usuário para um sistema de busca.
-            Sua tarefa é analisar a pergunta e direcioná-la para a ferramenta correta: 'BuscaSimples' ou 'BuscaComposta'.
 
-            - Use 'BuscaSimples' se a pergunta for sobre um único conceito ou disciplina.
-            - Use 'BuscaComposta' se a pergunta pedir para unir, combinar ou comparar dois ou mais conceitos ou disciplinas.
+            Sua tarefa é analisar cuidadosamente a pergunta e decidir qual tipo de busca usar:
+            
+            - Use **BuscaSimples** se a pergunta for sobre um único conceito, disciplina ou tema.  
+              Exemplos:  
+              - "Qual é a ementa da disciplina 'Algoritmos'?"  
+              - "Qual é o conteúdo programático de 'História da Ciência e da Tecnologia' para o curso de ADS?"
+            
+            - Use **BuscaComposta** se a pergunta envolver a combinação, comparação, ou múltiplos conceitos ou disciplinas.  
+              Exemplos:  
+              - "Qual a diferença entre 'Língua Portuguesa 1' e 'Matemática 1'?"  
+              - "Crie um projeto que una 'Programação' e 'Marketing'."  
+              - "Quais são as competências de 'História' e 'Geografia' para o ensino médio?"
     
             Apenas diga qual rota usar.
             """,
@@ -21,6 +30,7 @@ prompt_roteador = ChatPromptTemplate.from_messages(
         ("human", "{question}"),
     ]
 )
+
 
 def get_router_decision(question: str) -> Union[BuscaSimples, BuscaComposta]:
     """

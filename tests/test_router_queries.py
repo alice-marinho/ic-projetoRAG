@@ -17,7 +17,13 @@ TEST_QUERIES = [
     ("Qual a diferença de carga horária entre 'Língua Portuguesa 1' e 'Matemática 1' no primeiro ano do Técnico em "
      "Informática?", "composta"),
     ("Qual é a ementa da matéria 'Algoritmos' para o Técnico em Informática?","simples"),
-    ("Fale mais sobre o conteúdo programático de 'História da Ciência e da Tecnologia' para o curso de ADS.", "simples")
+    ("Fale mais sobre o conteúdo programático de 'História da Ciência e da Tecnologia' para o curso de ADS.",
+     "simples"),
+    ("Monte uma prova para o 1º ano do Técnico em Informática com questões que avaliem a capacidade de interpretação "
+     "de texto de 'Língua Portuguesa 1' aplicada a problemas de lógica de programação da disciplina de 'Algoritmos'",
+     "composta"),
+    ("Desenvolva um projeto de pesquisa para o 1º ano do Ensino Médio que conecte o conteúdo de História (com foco em Renascimento) e Arte",
+     "composta")
 ]
 
 class TestRouterQueries(unittest.TestCase):

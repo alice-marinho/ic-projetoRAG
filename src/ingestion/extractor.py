@@ -57,7 +57,7 @@ class DocsExtractor:
             json.dump(extracted_data, f, ensure_ascii=False, indent=4)
         logger.debug("JSON gerado com sucesso: dados_brutos.json")
 
-        print(type(extracted_data))
+        # print(type(extracted_data))
 
         return extracted_data
 

@@ -2,7 +2,7 @@ import shutil
 import uuid
 import logging
 
-from google.genai import client
+# from google.genai import client
 from langchain.retrievers import ParentDocumentRetriever
 from langchain_core.stores import InMemoryStore
 from langchain_google_genai import GoogleGenerativeAIEmbeddings

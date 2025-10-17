@@ -1,9 +1,9 @@
 from typing import Union
-from langchain_core.prompts import ChatPromptTemplate
-from langchain_together import ChatTogether
-from rag.routing.routing_models import BuscaSimples, BuscaComposta, Router
 
-from config.llm_config import LLM_MODEL
+from langchain_core.output_parsers import PydanticOutputParser
+from langchain_core.prompts import ChatPromptTemplate
+from rag.routing.models.search import BuscaSimples, BuscaComposta, Router
+from utils.logger import setup_logger
 
 prompt_roteador = ChatPromptTemplate.from_messages(
     [
@@ -24,7 +24,13 @@ prompt_roteador = ChatPromptTemplate.from_messages(
               - "Crie um projeto que una 'Programação' e 'Marketing'."  
               - "Quais são as competências de 'História' e 'Geografia' para o ensino médio?"
     
+            Alerta!!! : Caso a pergunta tenha tom de continuidade/ seja uma pergunta complementar (aquela que 
+            necessita de contexto anterior para responder) Coloque como BuscaSimples.
+            
             Apenas diga qual rota usar.
+            
+            **Importante**: você deve responder **apenas em JSON** no seguinte formato:
+            {{ "route": "<BuscaSimples | BuscaComposta>" }} e caso for BuscaComposta utilize o formato: 
             """,
         ),
         ("human", "{question}"),
@@ -32,35 +38,17 @@ prompt_roteador = ChatPromptTemplate.from_messages(
 )
 
 
-def get_router_decision(question: str) -> Union[BuscaSimples, BuscaComposta]:
+def get_router_decision(question: str, llm_client) -> Union[BuscaSimples, BuscaComposta]:
     """
     Analisa a pergunta do usuário e decide qual rota de busca seguir.
     """
 
-    # --- Heurística antes do LLM ---
-    heuristicas_composta = [
-        " e ",
-        " e/ou ",
-        "comparar",
-        "diferença entre",
-        "comparação",
-        "vs",
-        "versus"
-    ]
+    logger = setup_logger(__name__)
 
-    if any(h in question.lower() for h in heuristicas_composta):
-        print("[INFO] Heurística detectou pergunta composta.")
-        return BuscaComposta(sub_queries=[])
+    parser = PydanticOutputParser(pydantic_object=Router)
+    chain = prompt_roteador | llm_client | parser
 
-    llm = ChatTogether(
-        model=LLM_MODEL,
-        temperature=0
-    )
-
-    structured_llm = llm.with_structured_output(Router) # Modelo de retorno do Pydantic
-    chain = prompt_roteador | structured_llm
-
-    print(f"[INFO] Roteando a pergunta: '{question}'")
+    logger.info("\n[INFO] Roteando a pergunta\n")
 
     # retorna uma instância de 'Router'
     router_result = chain.invoke({"question": question})

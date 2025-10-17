@@ -2,7 +2,7 @@ from langchain.prompts import PromptTemplate
 from config import llm_config
 from llm import LLMClient  # certifique-se que o caminho está correto
 
-# Instanciar seu cliente com Together
+# Instanciar seu cliente
 llm_client = LLMClient()
 
 # Template da reformulação de consulta
@@ -11,9 +11,8 @@ Dada a consulta original, reescreva-a para que seja mais específica, detalhada 
 
 - Retorne apenas a pergunta reescrita
 
-Pergunta original: {original_query}
-
-Pergunta reescrita:"""
+Pergunta Original: "{original_query}"
+Pergunta Expandida e Otimizada:"""
 
 # Criar prompt com LangChain
 query_rewrite_prompt = PromptTemplate(
@@ -24,6 +23,6 @@ query_rewrite_prompt = PromptTemplate(
 def rewrite_query(original_query: str) -> str:
     # Preencher o prompt com o texto original
     prompt = query_rewrite_prompt.format(original_query=original_query)
-    # Usar o LLM da Together para obter a resposta
+    # Usar o LLM para obter a resposta
     response = llm_client.chat(prompt)
     return response

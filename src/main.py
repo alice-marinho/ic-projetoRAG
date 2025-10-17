@@ -1,39 +1,50 @@
-import os
-
 from data_manager import DocsHashChecker
-
 from config.config import CHROMA_DIR
 from ingestion import *
 from ingestion.cleanner import TextCleaner
-from rag import retrieve_context, generate_response, IntentDetector, ActivityGenerators
-from rag.prompt_engineer import *
+from llm import LLMClient
+from rag import ConversationManager
+from rag.agents import RetrievalDecisionAgent
+#from rag.chat.conversation_history import MemoryManager
+# from rag.generator import show_history, get_session_history
 from rag.query_transformations.sub_query_decomposition import get_sub_queries
+from rag.retriever import retrieve_final_context
 from rag.routing.router import get_router_decision
-from rag.routing.routing_models import BuscaComposta, BuscaSimples
+from rag.routing.models.search import BuscaSimples
 from utils.logger import setup_logger
 from vectorstore import VectorStoreManager
+from vectorstore.mongo_db import MongoDocstore
+from rag.chat.conversation_history import SessionManager  # <--- Adiciona isso
 
 
-def processing_data():
+def processing_data(reload):
 
     logger = setup_logger(__name__)
-    vs_manager = VectorStoreManager()
-    hash_checker = DocsHashChecker()
-    dt_extractor = DocsExtractor()
 
-    if not os.path.exists(CHROMA_DIR):
+    # reload = input("Deseja refazer o banco de dados? s/n\n")
+    if reload == "s":
+        print("===")
+
+    # Execute antes de reindexar
+    #if not os.path.exists(CHROMA_DIR):
         logger.info(f"Diretório '{CHROMA_DIR}' não encontrado. Iniciando recriação total...")
+        vs_manager = VectorStoreManager()
+        mongo_manager = MongoDocstore()
 
-        # Carrega os documentos da pasta
+        vs_manager.clean_storage()
+        mongo_manager.clear()
+
+        VectorStoreManager._instances = {}  # Limpa a instância Singleton
+        vs_manager = VectorStoreManager()
+        hash_checker = DocsHashChecker()
+        dt_extractor = DocsExtractor()
         todos_os_docs = load_documents()
         if not todos_os_docs:
             logger.warning("Nenhum documento encontrado para processar. Encerrando.")
             return
 
-        # Bloco de Processamento (Extração, Limpeza, Split) ---
         logger.info(f"Processando todos os {len(todos_os_docs)} documentos carregados...")
 
-        # a. Agrupar texto por arquivo de origem
         docs_agrupados = {}
         for doc in todos_os_docs:
             source_file = doc.metadata["source"]
@@ -41,7 +52,6 @@ def processing_data():
                 docs_agrupados[source_file] = ""
             docs_agrupados[source_file] += doc.page_content + "\n"
 
-        # b. Extrair dados estruturados
         dados_extraidos_completos = []
         for source_file, full_text in docs_agrupados.items():
             try:
@@ -53,35 +63,32 @@ def processing_data():
             except Exception as e:
                 logger.error(f"Falha na extração para {source_file} durante o rebuild: {e}")
 
-        # c. Limpar dados
         dados_limpos = TextCleaner.clean_save_json(dados_extraidos_completos)
 
-        # d. Dividir em chunks
-        chunks_db = split_json(dados_limpos)
-        # --- Fim do Bloco de Processamento ---
-
-        # Cria o banco do zero com todos os chunks
-        vs_manager.create_vectorstore(chunks_db)
+        vs_manager.organize_disciplines(dados_limpos)
 
         # Salva o estado atual dos hashes para futuras comparações
         hash_checker.save_current_hashes()
         logger.info("Recriação total concluída. Banco vetorial e arquivo de hash criados.")
 
-        ### CENÁRIO 2 - Verificações do banco já existente ###
+        ### Verificações do banco já existente ###
     else:
         logger.info("Banco vetorial encontrado. Verificando por mudanças nos documentos...")
 
+        vs_manager = VectorStoreManager()
+        hash_checker = DocsHashChecker()
+        dt_extractor = DocsExtractor()
         changes = hash_checker.get_changes()
 
         if not any(changes.values()):
             logger.info("Nenhuma mudança detectada. O banco de dados está atualizado.")
+            vs_manager.load_vectorstore()
             return
 
         logger.info(
             f"Mudanças detectadas: {len(changes['added'])} adicionados, {len(changes['removed'])} removidos, {len(changes['modified'])} modificados.")
         store = vs_manager.load_vectorstore()
 
-        ## Remover Dados Antigos ##
         files_to_remove = changes['removed'] + changes['modified']
         if files_to_remove:
             logger.info(f"Removendo dados antigos de {len(files_to_remove)} arquivo(s)...")
@@ -89,19 +96,15 @@ def processing_data():
                 store.delete(where={"source": filename})
             logger.info("Dados antigos removidos com sucesso.")
 
-        ## Processar e Adicionar Novos Dados ##
         files_to_process = changes['added'] + changes['modified']
         if files_to_process:
             logger.info(f"Processando {len(files_to_process)} arquivo(s) novos/modificados...")
 
-            # Carrega apenas os documentos que mudaram
             docs_a_processar = load_documents()
 
             if docs_a_processar:
-                # Bloco de Processamento
                 logger.info(f"Processando {len(docs_a_processar)} documentos novos/modificados...")
 
-                # a. Agrupar texto por arquivo de origem
                 docs_agrupados = {}
                 for doc in docs_a_processar:
                     source_file = doc.metadata["source"]
@@ -109,7 +112,6 @@ def processing_data():
                         docs_agrupados[source_file] = ""
                     docs_agrupados[source_file] += doc.page_content + "\n"
 
-                # b. Extrair dados estruturados
                 novos_dados_extraidos = []
                 for source_file, full_text in docs_agrupados.items():
                     try:
@@ -136,51 +138,86 @@ def processing_data():
         hash_checker.save_current_hashes()
         logger.info("Refresh inteligente concluído. Arquivo de hash atualizado.")
 
-def generate_adaptive_response(question, context, history):
-    tipo = IntentDetector.detectar_tipo_de_atividade(question)
 
-    if tipo == "geral":
-        return generate_response(question, context, history)
+class ProcessQuestion:
+    # def __init__(self, session):
+    def __init__(self):
+        self.llm_client = LLMClient().llm
+        self.context_cache = []
 
-    if tipo == "projeto":
-        prompt = ActivityGenerators.montar_prompt_projeto(question, context, history)
-    elif tipo == "prova":
-        prompt = ActivityGenerators.montar_prompt_prova(question, context, history)
-    elif tipo == "atividade":
-        prompt = ActivityGenerators.montar_prompt_atividade(question, context, history)
-    else:
-        prompt = generate_response(question, context, history)
+        # self.session_id = session
+        # self.session_history = SessionManager().get_session(session_id=self.session_id)
+        self.session_history = SessionManager()
 
-    llm = LLMClient()
-    return llm.chat(prompt)
-
-
-def process_user_question(question: str, conversation_history):
-    """
-    Orquestra o fluxo completo, começando pela verificação/roteamento.
-    """
-    decisao = get_router_decision(question)
-
-    contextos = []
-
-    if isinstance(decisao, BuscaSimples):
-        print(f"[INFO] Rota decidida: Busca Simples. Query: '{decisao.query}'")
-        # contextos = retrieve_context(decisao.query)
-
-    elif isinstance(decisao, BuscaComposta):
-        sub_queries = get_sub_queries(question)
-        print(f"[INFO] Rota decidida: Busca Composta. Sub-Queries: {sub_queries}")
-        contextos_combinados = []
-        for sub_query in sub_queries:
-            contextos_individuais = retrieve_context(sub_query)
-            contextos_combinados.extend(contextos_individuais)
-            print(contextos_individuais)
-        # contextos = list(set(contextos_combinados))
+        # self.response_manager = ConversationManager(self.session_id)
+        self.response_manager = ConversationManager()
+        self.decision_agent = RetrievalDecisionAgent()
+        # self.session_id = session_id
+        pass
 
 
-def main():
-    processing_data()
-    conversation_history = []
+    # Recuperação
+    def process_user_question(self, question: str, session_id):
+        """
+        Orquestra o fluxo completo, começando pela verificação/roteamento.
+        :param question = Pergunta do usuário
+        :param conversation_history = Histórico da conversa do usuário
+        """
+
+        final_context = []
+
+        # history_text = "\n".join([msg.content for msg in self.session_history.messages])
+        # need_retrieval = self.decision_agent.needs_retrieval(question, history_text)
+        need_retrieval = self.decision_agent.needs_retrieval(question, session_id)
+
+        if need_retrieval:
+            decisao = get_router_decision(question,self.llm_client)
+
+
+            # print(final_context)
+
+            if decisao == 'BuscaSimples':
+                busca_obj = BuscaSimples(query=question) # Aqui ele verifica se está conforme o modelo PyDantic
+                print(f"[INFO] Rota decidida: Busca Simples. Query: '{busca_obj.query}'")
+                final_context = retrieve_final_context(busca_obj.query)
+
+            elif decisao == 'BuscaComposta':
+                busca_obj = get_sub_queries(question, self.llm_client)
+                # print(f"Tipo retornado por get_sub_queries: {type(busca_obj)}")
+                # print(f"Conteúdo retornado: {busca_obj}")
+
+                logger = setup_logger(__name__)
+                logger.info(f"\n\nRota decidida: Busca Composta. Sub-Queries: {busca_obj}\n\n")
+                docs_combinados = {}
+                for sub_query in busca_obj.sub_queries:
+                    individual_contexts = retrieve_final_context(sub_query)
+                    print(f"\n\nSub-query: {sub_query} -> {len(individual_contexts)} chunks encontrados\n\n")
+                    for doc in individual_contexts:
+                        docs_combinados[doc.page_content] = doc
+
+                    final_context = list(docs_combinados.values())
+                    # time.sleep(20)
+                    # contextos = list({doc.page_content: doc for doc in final_context}.values())
+                    # print(contextos)
+        else:
+            return self.response_manager.generate_response(
+                question,
+                [doc.page_content for doc in self.context_cache],
+                session_id= session_id,
+                cache_context=self.context_cache
+                # session_id=self.session
+            )
+        self.context_cache = final_context
+
+        if not final_context:
+            return "Desculpe, não encontrei contexto para responder."
+
+        final_context_str = [doc.page_content for doc in final_context]
+
+
+        return self.response_manager.generate_response(question, final_context_str, self.context_cache)
+
+def chat_loop(session, question_process):
 
     while True:
         question = input("Pergunte sobre (ou sair): ")
@@ -189,40 +226,85 @@ def main():
         if not question.strip():
             print("Digite uma pergunta válida.")
             continue
-        # answer = orquestrar_resposta(question, conversation_history)
-        answer = process_user_question(question, conversation_history)
-
-        # reformulated = rewrite_query(question)
-
-        ##### KEY WORDS ########
-        # keywords = extract_keywords(reformulated)
-        # print(f"\n[SPACY] Palavras-chave extraídas: {raw_keywords}")
-
-        # Refinar com LLM
-        # refined_keywords = refine_keywords_llm(reformulated, raw_keywords)
-        # print(f"\n[LLM] Palavras-chave refinadas: {keywords}")
-
-        # final_question = expand_question_with_keywords(reformulated, keywords)
-        # final_question = question if quest.upper() == "OK" else quest
-
-        ##### RETRIVER SEM O FLUXO NOVO ########
-        # # context = retrieve_context(reformulated)
-        # if not context:
-        #     print("Nenhum contexto encontrado.")
-        #     continue
-        # else:
-        #     for i, doc in context:
-        #         print(f"\n--- Chunk {i + 1} ---")
-        #         print(f"Conteúdo: {doc.page_content[:100]}...")  # Mostra os primeiros 100 caracteres
-        #         print(f"Metadados: {doc.metadata}")
-        #         print("-" * 20)
-        # # Verificação mais detalhada. Só vai consultar a base de dados própria, caso tenha correlação na base de dados.
-        #
-        # #answer = generate_adaptive_response(question, context, conversation_history)
-        # answer = generate_response(question, context, conversation_history)
-        # conversation_history.append({"pergunta": question, "resposta": answer})
-
+        answer = question_process.process_user_question(question,session)
         print(f"\nResposta da IA:\n{answer}\n")
+
+
+def main():
+    question_process = ProcessQuestion()
+    reload = input("Deseja refazer o banco de dados? s/n\n")
+    processing_data(reload)
+    # conversation_history = []
+    session_manager = SessionManager()
+
+
+    while True:
+        print("\n=== Menu de Sessões ===")
+        print("1. Criar nova sessão")
+        print("2. Continuar sessão existente")
+        print("3. Listar sessões")
+        print("4. Sair")
+        opcao = input("Escolha: ")
+
+        if opcao == "1":
+            name = input("Digite um nome para a nova sessão: ")
+            session_id = session_manager.create_session(name)
+            session = session_manager.get_session(session_id)
+            print(f"Nova sessão criada: {name} (id={session_id})")
+            chat_loop(session, question_process)
+
+
+        elif opcao == "2":
+            sessions = session_manager.list_sessions()
+            if not sessions:
+                print("Nenhuma sessão existente. Crie uma nova primeiro.")
+                continue
+
+            print("\nSessões disponíveis:")
+            for sid, name in sessions.items():
+                print(f"{sid}: {name}")
+
+            session_id = input("Digite o ID da sessão que deseja continuar: ")
+            if session_id not in sessions:
+                print("ID inválido.")
+                continue
+            session = session_manager.get_session(session_id)
+            chat_loop(session, question_process)
+
+
+        elif opcao == "3":
+            sessions = session_manager.list_sessions()
+            if not sessions:
+                print("Nenhuma sessão criada ainda.")
+            else:
+                print("\nSessões existentes:")
+                for sid, name in sessions.items():
+                    print(f"{sid}: {name}")
+            continue
+
+        elif opcao == "4":
+            print("Saindo...")
+            break
+
+        else:
+            print("Opção inválida.")
+            continue
+
+
+        # while True:
+        #     question = input("Pergunte sobre (ou sair): ")
+        #     if question.lower() == "sair":
+        #         break
+        #     if not question.strip():
+        #         print("Digite uma pergunta válida.")
+        #         continue
+        #     # answer = orquestrar_resposta(question, conversation_history)
+        #     # question = rewrite_query(question)
+        #     answer = question_process.process_user_question(question, session)
+        #
+        #     # show_history()
+        #
+        #     print(f"\nResposta da IA:\n{answer}\n")
 
 if __name__ == "__main__":
     main()

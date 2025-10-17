@@ -1,8 +1,8 @@
-from config.llm_config import LLM_MODEL, LLM_API_KEY
-from langchain_together import ChatTogether
+from langchain_core.language_models.chat_models import BaseChatModel
 
 
-def gerar_resposta_final(original_question: str, context_list: list[str], conversation_history: list) -> str:
+
+def gerar_resposta_final(original_question: str, context_list: list[str], conversation_history: list, llm_client: BaseChatModel) -> str:
     """
     Gera a resposta final para o usuário usando a técnica de Step-Back Prompting.
 
@@ -13,6 +13,8 @@ def gerar_resposta_final(original_question: str, context_list: list[str], conver
 
     Returns:
         A resposta final gerada pelo LLM.
+        :param conversation_history:
+        :param llm_client:
     """
     print("[INFO] Montando o prompt final com a técnica Step-Back...")
 
@@ -40,13 +42,8 @@ def gerar_resposta_final(original_question: str, context_list: list[str], conver
         Agora, usando o princípio que você identificou na Etapa 1 como sua linha de raciocínio principal, elabore uma resposta completa, rica e detalhada para a pergunta original do usuário. Organize a resposta de forma clara e use os detalhes específicos do contexto para embasar seus argumentos e sugestões.
         """
 
-    llm_generator = ChatTogether(
-        model=LLM_MODEL,
-        temperature=0.1,
-    )
-
     print("[INFO] Enviando prompt para o LLM Gerador...")
-    response = llm_generator.invoke(prompt_template)
+    response = llm_client.invoke(prompt_template)
 
     # O objeto de resposta da LangChain geralmente tem o texto no atributo .content
     final_answer = response.content if hasattr(response, 'content') else str(response)

@@ -4,7 +4,7 @@
   - Algoritmos padrão (como sha256)
   - Configurações reutilizadas por várias partes do sistema
 """
-
+import os
 from pathlib import Path
 
 # Diretórios
@@ -12,8 +12,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent # Aqui ele traça onde 
 
 DATA_DIR = BASE_DIR / "data"
 DOCS_DIR = DATA_DIR / "docs"
-HASH_FILE = DATA_DIR / "docs_hash.json"
-CHROMA_DIR = BASE_DIR / "chroma_db"
+HASH_DIR = DATA_DIR / "hash_dir"
+HASH_FILE = HASH_DIR / "docs_hash.json"
+
+STORAGE = os.path.join(BASE_DIR, "storage")
+DOC_STORE = os.path.join(STORAGE, "doc_store")
+CHROMA_DIR = os.path.join(STORAGE, "chroma_db")
+
 SRC_DIR = BASE_DIR /"src"
 FOLDER_PATH = "data/docs"
 

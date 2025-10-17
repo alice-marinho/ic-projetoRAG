@@ -1546,3 +1546,5 @@ Decisão: NO
 (psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:650c:e656:26eb:8047:8989), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
 
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2978153f28e41938aae15, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>

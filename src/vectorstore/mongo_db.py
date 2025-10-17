@@ -8,7 +8,7 @@ import pickle
 from pymongo.errors import ConnectionFailure
 from pymongo.server_api import ServerApi
 
-from config.vectorstore_config import MONGO_DATABASE
+from database.db_config import MONGO_DATABASE
 from utils.logger import setup_logger
 
 logger = setup_logger(__name__)

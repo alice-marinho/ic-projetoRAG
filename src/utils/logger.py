@@ -9,8 +9,7 @@ def setup_logger(name: str, log_file: str = "logs/app.log", level: int = logging
 
     # Cria o formatador (como a mensagem será exibida)
     formatter = logging.Formatter(
-        fmt='[%(asctime)s] [%(levelname)s] [%(name)s] %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S'
+        fmt='[%(levelname)s] [%(name)s] %(message)s'
     )
 
     # Cria handler para salvar log em arquivo

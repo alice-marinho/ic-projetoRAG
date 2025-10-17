@@ -9,6 +9,7 @@ from database.models import Session as SessionModel, Base
 from database.base import Base
 from database.db_config import DATABASE_URL
 from utils.logger import setup_logger
+import streamlit as st
 
 
 # from rag.generator import get_session_history
@@ -19,17 +20,22 @@ class SessionManager:
 
     def __init__(self, db_url = DATABASE_URL):
         # engine cria conexão, envia comandos e gerencia o pool de conexões
-        self.engine = create_engine(db_url)
+        db_url = DATABASE_URL or st.secrets.get("DATABASE_URL")
+        if not db_url:
+            raise ValueError("❌ DATABASE_URL não encontrada. Defina no .env (local) ou em st.secrets (cloud).")
+
+        self.engine = create_engine(db_url, echo=False, pool_pre_ping=True)
+        self.SessionDB = sessionmaker(bind=self.engine)
+        self.sessions = self.load_sessions()
         try:
             with self.engine.connect() as conn:
                 logger.debug("Conexão bem-sucedida!\n")
+
         except Exception as e:
             logger.error(f"Erro na conexão: \n{e}")
 
         Base.metadata.create_all(self.engine)
-        self.SessionDB = sessionmaker(bind=self.engine)
 
-        self.sessions = self.load_sessions()
 
         # Guarda as memórias por ID
         # self.sessions = {}

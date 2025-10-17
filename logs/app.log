@@ -1474,3 +1474,45 @@ Decisï¿½o: NO
 [INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
 [INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
 [INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2822b20080d6ccbb054cb, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2828120080d6ccbb054cc, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2830620080d6ccbb054cd, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f283a420080d6ccbb054ce, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2843020080d6ccbb054cf, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f284dd20080d6ccbb054d0, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+

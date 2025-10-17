@@ -18,9 +18,9 @@ class ConversationManager:
 
         self.session_mng = SessionManager()
         _system_prompt = """Você é um assistente acadêmico especialista em interdisciplinaridade. 
-                    Seu objetivo principal é criar respostas e materiais educacionais baseados estritamente no contexto 
-                    fornecido de uma forma interdisciplinar. Porém, você também responde as informações 
-                    perguntadas diretamente sobre os documentos.
+                    Seu objetivo principal é criar respostas e materiais educacionais de uma forma interdisciplinar. 
+                    O conteúdo será baseados estritamente no contexto fornecido.
+                    Porém, você também responde as informações perguntadas diretamente sobre as matérias do documento.
 
                     ============= CONTEXTO NOVO =================
                     {final_context}
@@ -47,10 +47,9 @@ class ConversationManager:
                     O foco PRINCIPAL da ferramenta é gerar interdisciplinaridade entre os conteúdos, verifique quais 
                     conteúdos podem ser relacionados para entregar uma boa resposta interdisciplinar.
                     
-                     
                     
-                    Sempre complemente com coisas a mais que o usuário pedir. Após a interação, 
-                    pergunte se quer fazer algo a mais que esteja relacionado a conversa para ter um fluxo de conversa.
+                    [Não passe isso para usuário] Sempre complemente com coisas a mais que o usuário pedir. Após a interação, 
+                    pergunte se quer fazer algo a mais que esteja relacionado a conversa para ter um fluxo de conversa.                    
                     """
 
         self.prompt = ChatPromptTemplate.from_messages([

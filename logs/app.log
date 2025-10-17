@@ -1,26 +1,1476 @@
-[2025-06-21 16:53:21] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 16:53:21] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 17:33:30] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 17:33:30] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 17:33:56] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 17:33:56] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 17:42:13] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 17:42:13] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 17:42:46] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 17:42:46] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 18:00:21] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 18:00:21] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 18:09:11] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 18:09:11] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 18:09:49] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 18:09:49] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-21 18:25:22] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-21 18:25:22] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-27 16:14:45] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-27 16:14:45] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-29 09:57:14] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-29 09:57:14] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-29 11:28:51] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-29 11:28:51] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
-[2025-06-29 12:44:10] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
-[2025-06-29 12:44:10] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
+[2025-06-21 16:53:21] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 16:53:21] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 17:33:30] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 17:33:30] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 17:33:56] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 17:33:56] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 17:42:13] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 17:42:13] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 17:42:46] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 17:42:46] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 18:00:21] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 18:00:21] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 18:09:11] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 18:09:11] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 18:09:49] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 18:09:49] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-21 18:25:22] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-21 18:25:22] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-27 16:14:45] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-27 16:14:45] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-29 09:57:14] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-29 09:57:14] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-29 11:28:51] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-29 11:28:51] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[2025-06-29 12:44:10] [INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[2025-06-29 12:44:10] [INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a carga horï¿½ria de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a ementa de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'qual ï¿½ a ementa de lingua portuguesa?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Quais matï¿½rias contem o primeiro ano do ensino medio?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual a ementa de algoritmos?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'O que vocï¿½ faz?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:652d:21b7:8d2c:78a1:afcf), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:6511:53ca:e80a:6f85:6ec3), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'quais sï¿½o suas funï¿½ï¿½es?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 760 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a carga horï¿½ria de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a ementa de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'qual ï¿½ a ementa de lingua portuguesa?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Quais matï¿½rias contem o primeiro ano do ensino medio?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual a ementa de algoritmos?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'O que vocï¿½ faz?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:652d:21b7:8d2c:78a1:afcf), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:6511:53ca:e80a:6f85:6ec3), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'quais sï¿½o suas funï¿½ï¿½es?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 760 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a carga horï¿½ria de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a ementa de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'qual ï¿½ a ementa de lingua portuguesa?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Quais matï¿½rias contem o primeiro ano do ensino medio?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual a ementa de algoritmos?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'O que vocï¿½ faz?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:652d:21b7:8d2c:78a1:afcf), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:6511:53ca:e80a:6f85:6ec3), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'quais sï¿½o suas funï¿½ï¿½es?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 760 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Banco vetorial encontrado. Verificando por mudanï¿½as nos documentos...
+[INFO] [main] Nenhuma mudanï¿½a detectada. O banco de dados estï¿½ atualizado.
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a carga horï¿½ria de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual ï¿½ a ementa de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'qual ï¿½ a ementa de lingua portuguesa?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Quais matï¿½rias contem o primeiro ano do ensino medio?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'Qual a ementa de algoritmos?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'O que vocï¿½ faz?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:652d:21b7:8d2c:78a1:afcf), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexï¿½o:
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:6511:53ca:e80a:6f85:6ec3), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: YES
+
+
+[INFO] [rag.routing.router]
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperaï¿½ï¿½o de contexto para a pergunta: ====
+ 'quais sï¿½o suas funï¿½ï¿½es?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificaï¿½ï¿½o de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query nï¿½o retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH a Distï¿½ncia', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [rag.retrieval_decision_agent]
+
+Decisï¿½o: NO
+
+
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretï¿½rio 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' nï¿½o encontrado. Iniciando recriaï¿½ï¿½o total...
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 760 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horï¿½ria Total' criada e colunas ['CH Ensino', 'CH a Distï¿½ncia', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriaï¿½ï¿½o total concluï¿½da. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexï¿½o com o MongDB (Nuvem) estabelicida

@@ -5,5 +5,13 @@ chroma_db/*
 .env.*
 
 __pycache__/
+*.pyc
 
 data/processed/*
+
+# Ignorar pastas de ambiente virtual
+.venv/
+venv/
+
+alembic.ini
+/alembic/

@@ -24,3 +24,365 @@
 [2025-06-29 11:28:51] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
 [2025-06-29 12:44:10] [INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
 [2025-06-29 12:44:10] [INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [main] Banco vetorial encontrado. Verificando por mudanças nos documentos...
+[INFO] [main] Nenhuma mudança detectada. O banco de dados está atualizado.
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH a Distância', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriação total concluída. Banco vetorial e arquivo de hash criados.
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Qual é a carga horária de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Qual é a ementa de lingua portuguesa 1?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'qual é a ementa de lingua portuguesa?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificação de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais matérias contem o primeiro ano do ensino medio?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificação de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Qual a ementa de algoritmos?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'O que você faz?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:652d:21b7:8d2c:78a1:afcf), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:6511:53ca:e80a:6f85:6ec3), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'quais são suas funções?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Verificação de metadados falhou. Acionando fallback...
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH a Distância', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriação total concluída. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 265 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Ensino', 'CH a Distância', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriação total concluída. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 760 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Ensino', 'CH a Distância', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriação total concluída. Banco vetorial e arquivo de hash criados.
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida

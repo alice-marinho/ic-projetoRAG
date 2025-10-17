@@ -56,6 +56,7 @@ class TextCleaner:
         texto = re.sub(r'\n\s*CUBATÃO\s*\n', '\n', texto, flags=re.IGNORECASE)
         texto = re.sub(r'\nC[ÂA]MPUS\s*CUBATÃO\s*\n', '\n', texto, flags=re.IGNORECASE)
         texto = re.sub(r'\n\s*TÉCNICO EM [A-ZÀ-Ú ]+\s*\n', '\n', texto, flags=re.IGNORECASE)
+        texto = re.sub(r'(?i)TÉCNICO EM INFORMÁTICA INTEGRADO AO ENSINO MÉDIO\s*\n', '', texto)
         texto = re.sub(r'\n+', '\n', texto)
         texto = re.sub(r'[ \t]+', ' ', texto)
         texto = texto.replace('\n', ' ')

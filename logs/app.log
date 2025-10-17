@@ -1516,3 +1516,33 @@ Decisão: NO
 Decisão: NO
 
 
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f28f437d7969501a78a61c, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:6511:53ca:e80a:6f85:6ec3), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:650c:e656:26eb:8047:8989), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:650c:e656:26eb:8047:8989), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:650c:e656:26eb:8047:8989), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2928c89243dd2d32caa12, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:650c:e656:26eb:8047:8989), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2940ac285e46652b0a093, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+(psycopg2.OperationalError) connection to server at "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" (2600:1f1e:2f:650c:e656:26eb:8047:8989), port 5432 failed: ERROR:  password authentication failed for user 'neondb_owner'
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)

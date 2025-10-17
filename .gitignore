@@ -7,3 +7,7 @@ chroma_db/*
 __pycache__/
 
 data/processed/*
+
+alembic
+alembic/*
+alembic.ini

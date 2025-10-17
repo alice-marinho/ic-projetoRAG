@@ -18,11 +18,9 @@ class SessionManager:
     """Gerencia o histórico da conversa e fornece acesso ao buffer de memória."""
 
     def __init__(self, db_url = DATABASE_URL):
-
-        logger = setup_logger(__name__)
         # engine cria conexão, envia comandos e gerencia o pool de conexões
+        self.engine = create_engine(db_url)
         try:
-            self.engine = create_engine(db_url)
             with self.engine.connect() as conn:
                 logger.debug("Conexão bem-sucedida!\n")
         except Exception as e:

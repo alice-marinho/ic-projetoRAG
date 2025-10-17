@@ -4774,3 +4774,24 @@ Decisão: NO
 
 
 [INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f270bf404ea8339bdd62f4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [rag.chat.conversation_history] Erro na conexão: 
+No module named 'psycopg2'
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f27306f7496ea85233d667, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2738c814d5414b47a07a8, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [__main__] Banco vetorial encontrado. Verificando por mudanças nos documentos...
+[INFO] [__main__] Mudanças detectadas: 1 adicionados, 0 removidos, 2 modificados.
+[INFO] [__main__] Removendo dados antigos de 2 arquivo(s)...
+[INFO] [__main__] Dados antigos removidos com sucesso.
+[INFO] [__main__] Processando 3 arquivo(s) novos/modificados...
+[INFO] [__main__] Processando 803 documentos novos/modificados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH a Distância', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [ingestion.splitter] Criando as chunks do json formatado
+[INFO] [__main__] Novos dados adicionados ao banco vetorial.
+[INFO] [__main__] Refresh inteligente concluído. Arquivo de hash atualizado.

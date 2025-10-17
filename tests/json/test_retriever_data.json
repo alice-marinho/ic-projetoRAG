@@ -1,0 +1,64 @@
+[
+  {
+    "query": "Qual é a ementa da matéria Algoritmos?",
+    "expected_course": "Técnico Em Informática Integrado Ao Ensino Médio",
+    "expected_subject": "Algoritmos"
+  },
+  {
+    "query": "Qual a carga horária  de Língua Portuguesa?",
+    "expected_course": "Técnico Em Informática Integrado Ao Ensino Médio",
+    "expected_subject": "Língua Portuguesa 1"
+  },
+  {
+    "query": "Quais são os objetivos da disciplina Turismo e Hospitalidade?",
+    "expected_course": "Bacharelado Em Turismo",
+    "expected_subject": "Turismo e Hospitalidade"
+  },
+  {
+    "query": "Monte um plano de aula detalhado para introduzir o conceito de responsividade com Flexbox.",
+    "expected_course": "Tecnólogo Em Análise E Desenvolvimento De Sistemas",
+    "expected_subject": "Desenvolvimento Web"
+  },
+  {
+    "query": "Gere uma atividade sobre figuras de linguagem.",
+    "expected_course": "Técnico Em Informática Integrado Ao Ensino Médio",
+    "expected_subject": "Língua Portuguesa 1"
+  },
+  {
+    "query": "Gere uma atividade de tradução técnica para a turma de ADS. A atividade deve usar um trecho da documentação de um framework JavaScript",
+    "expected_course": "Tecnólogo Em Análise E Desenvolvimento De Sistemas",
+    "expected_subject": "Desenvolvimento Web"
+  },
+  {
+    "query": "Qual a carga horária prevista para o conteúdo de geometria plana?",
+    "expected_course": "Técnico Em Informática Integrado Ao Ensino Médio",
+    "expected_subject": "Matemática 1"
+  },
+  {
+    "query": "Quais são os objetivos da disciplina que ensina leis de Newton em Automação?",
+    "expected_course": "Tecnólogo Em Automação Industrial",
+    "expected_subject": "Física Teórica 1"
+  },
+  {
+    "query": "Qual a ementa sobre cálculo diferencial e integral?",
+    "expected_course": "Tecnólogo Em Automação Industrial",
+    "expected_subject": "Cálculo Diferencial e Integral 1"
+  },
+  {
+    "query": "Preciso de detalhes sobre ética e responsabilidade social.",
+    "expected_course": "Bacharelado Em Turismo",
+    "expected_subject": "Ética e Responsabilidade Social"
+  },
+  {
+    "query": "Fale mais sobre o conteúdo programático de História da Ciência e da Tecnologia?",
+    "expected_course": "Tecnólogo Em Análise E Desenvolvimento De Sistemas",
+    "expected_subject": "História da Ciência e da Tecnologia"
+  }
+,
+  {
+    "query": "Monte uma prova para o 1º ano do Técnico em Informática com questões que avaliem a capacidade de interpretação de texto de 'Língua Portuguesa 1' aplicada a problemas de lógica de programação da disciplina de 'Algoritmos'",
+    "expected_course": "Técnico Em Informática Integrado Ao Ensino Médio",
+    "expected_subject": "Língua Portuguesa 1"
+  }
+
+]

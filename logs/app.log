@@ -1548,3 +1548,740 @@ Decisão: NO
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
 [ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
  localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f2978153f28e41938aae15, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f41bacf42090bf4d87c37d, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f41bdff42090bf4d87c37e, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f41d59f42090bf4d87c37f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f41d80f42090bf4d87c380, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f42794f42090bf4d87c381, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f427c2f42090bf4d87c382, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f4285c2ef7da1543d8a27a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f4288a2ef7da1543d8a27b, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f42adbecc827f9392bd393, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f42b01ecc827f9392bd394, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f42d21a7de7344e5fa1bf6, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f42d57a7de7344e5fa1bf7, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f431ce0c324dab2455df12, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f4320a0c324dab2455df13, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f4367fc3b6599369a3a5c4, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f436a9c3b6599369a3a5c5, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f4394abc94a28778a2fb0a, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[ERROR] [vectorstore.mongo_db] Erro ao conectar com MongoDB:
+ SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms),SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 68f43970bc94a28778a2fb0b, topology_type: ReplicaSetNoPrimary, servers: [<ServerDescription ('ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-00.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-01.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>, <ServerDescription ('ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('SSL handshake failed: ac-it9k5qo-shard-00-02.jwazrp0.mongodb.net:27017: [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1028) (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 803 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH a Distância', 'CH Presencial', 'CH Ensino'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriação total concluída. Banco vetorial e arquivo de hash criados.
+[INFO] [main] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [main] Processando todos os 803 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH a Distância', 'CH Presencial', 'CH Ensino'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [main] Recriação total concluída. Banco vetorial e arquivo de hash criados.
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?', 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?', 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?', 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?', 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?', 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?', 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?', 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para destacar as civilizações antigas em um website interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, modelos) em um website sobre civilizações antigas para torná-lo mais interativo?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos das civilizações antigas para destacar em um website?', 'Quais elementos geográficos eram importantes para as civilizações antigas e como posso representá-los interativamente em um website?', 'Como posso incorporar atividades práticas de laboratório (ex: simulações, modelos 3D) relacionadas às civilizações antigas no website?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos das civilizações antigas para destacar em um website?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos eram importantes para as civilizações antigas e como posso representá-los interativamente em um website?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como posso incorporar atividades práticas de laboratório (ex: simulações, modelos 3D) relacionadas às civilizações antigas no website?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos das civilizações antigas para destacar em um website?', 'Quais elementos geográficos eram importantes para as civilizações antigas e como posso representá-los interativamente em um website?', 'Como posso incorporar atividades práticas de laboratório (ex: simulações, modelos 3D) relacionadas às civilizações antigas no website?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos das civilizações antigas para destacar em um website?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos eram importantes para as civilizações antigas e como posso representá-los interativamente em um website?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como posso incorporar atividades práticas de laboratório (ex: simulações, modelos 3D) relacionadas às civilizações antigas no website?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [vectorstore.mongo_db] Conexão com o MongDB (Nuvem) estabelicida
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?', 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?', 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais aspectos históricos a serem abordados em um website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais elementos geográficos são relevantes para o contexto das civilizações antigas e como apresentá-los interativamente?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório (ex: simulações, reconstruções virtuais) ao conteúdo do website sobre civilizações antigas?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais tópicos a serem abordados ao estudar as civilizações antigas sob a perspectiva da História?', 'Quais são os aspectos geográficos mais relevantes para o estudo das civilizações antigas e como eles influenciaram seu desenvolvimento?', 'Como integrar atividades práticas de laboratório no estudo das civilizações antigas para demonstrar tecnologias ou experimentos da época?']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais tópicos a serem abordados ao estudar as civilizações antigas sob a perspectiva da História?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os aspectos geográficos mais relevantes para o estudo das civilizações antigas e como eles influenciaram seu desenvolvimento?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como integrar atividades práticas de laboratório no estudo das civilizações antigas para demonstrar tecnologias ou experimentos da época?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [main] 
+
+Rota decidida: Busca Composta. Sub-Queries: sub_queries=['Quais são os principais tópicos de interpretação de texto em Língua Portuguesa para o ensino médio?', 'Quais são os conceitos fundamentais de lógica de programação em Algoritmos para o ensino médio?', 'Como a interpretação de texto é aplicada na resolução de problemas de lógica de programação?', 'Exemplos de questões que combinam interpretação de texto e lógica de programação.']
+
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os principais tópicos de interpretação de texto em Língua Portuguesa para o ensino médio?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quais são os conceitos fundamentais de lógica de programação em Algoritmos para o ensino médio?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Como a interpretação de texto é aplicada na resolução de problemas de lógica de programação?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Exemplos de questões que combinam interpretação de texto e lógica de programação.'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Qual o objetivo da disciplina Algoritmo ministrada no curso de ensino médio integrado ao técnico de informática?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Qual o objetivo da disciplina Algoritmo ministrada no curso de ensino médio integrado ao técnico de informática?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.agents.retrieval_decision_agent] 
+
+Decisão: YES
+
+
+[INFO] [rag.routing.router] 
+[INFO] Roteando a pergunta
+
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Qual o objetivo da disciplina Algoritmo ministrada no curso de ensino médio integrado ao técnico de informática?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ Cannot import lark, please install it with 'pip install lark'..
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...

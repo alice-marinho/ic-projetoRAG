@@ -16,6 +16,7 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from config.config import CHROMA_DIR
 from config.llm_config import GEMINI_API_KEY
 from config.vectorstore_config import EMBEDDING_PROVIDER, EMBEDDING_SENTENCE_MODEL, EMBEDDING_GEMINI_MODEL
+from database.db_config import MONGO_DATABASE
 from vectorstore.mongo_db import MongoDocstore
 
 logger = logging.getLogger(__name__)
@@ -52,7 +53,7 @@ class VectorStoreManager(metaclass=SingletonMeta):
 
         # self.retriever = None
         # self.vectorstore = None
-        self.docstore = MongoDocstore(uri="mongodb://localhost:27017/", db_name="rag_db", collection_name="parents")
+        self.docstore = MongoDocstore(uri=MONGO_DATABASE, db_name="rag_db", collection_name="parents")
         self.child_splitter = RecursiveCharacterTextSplitter(chunk_size=400, chunk_overlap=50)
 
         self.retriever = ParentDocumentRetriever(

@@ -200,9 +200,11 @@ class ProcessQuestion:
                     # contextos = list({doc.page_content: doc for doc in final_context}.values())
                     # print(contextos)
         else:
+            final_context_str = [doc.page_content for doc in final_context]
+
             return self.response_manager.generate_response(
-                question,
-                [doc.page_content for doc in self.context_cache],
+                question=question,
+                context = [doc.page_content for doc in self.context_cache],
                 session_id= session_id,
                 cache_context=self.context_cache
                 # session_id=self.session
@@ -214,8 +216,12 @@ class ProcessQuestion:
 
         final_context_str = [doc.page_content for doc in final_context]
 
-
-        return self.response_manager.generate_response(question, final_context_str, self.context_cache)
+        cache_context_str = [doc.page_content for doc in self.context_cache]
+        return self.response_manager.generate_response(
+            question=question,
+            context=final_context_str,
+            session_id=session_id,
+            cache_context=cache_context_str)
 
 def chat_loop(session, question_process):
 

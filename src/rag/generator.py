@@ -77,8 +77,10 @@ class ConversationManager:
 
     def generate_response(self, question, context, session_id, cache_context):
         final_context = "\n\n".join(context)
-        cache_context_str = "\n\n".join(cache_context) if cache_context else ""
-
+        # cache_context_str = "\n\n".join(cache_context) if cache_context else ""
+        # cache_context_str = "\n\n".join(
+        #     f"{doc.page_content} (metadata: {doc.metadata})" for doc in cache_context
+        # ) if cache_context else ""
 
         response = self.chain_with_history.invoke(
             {

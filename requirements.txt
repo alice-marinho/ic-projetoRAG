@@ -14,7 +14,7 @@ ipywidgets==8.1.7
 js==1.0
 keyring==25.6.0
 kubernetes==34.1.0
-langchain
+langchain~=0.3.27
 langchain_chroma
 langchain_community
 langchain_core
@@ -42,3 +42,11 @@ typing_extensions==4.15.0
 urllib3_secure_extra==0.1.0
 zstandard==0.23.0
 psycopg2-binary
+
+alembic
+langchain-google-genai~=2.1.12
+langchain-community~=0.3.31
+langchain-core~=0.3.79
+sentence-transformers~=5.1.1
+pathlib~=1.0.1
+lark

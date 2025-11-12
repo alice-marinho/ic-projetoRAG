@@ -7,6 +7,7 @@ from langchain_core.runnables.history import RunnableWithMessageHistory
 
 from llm import LLMClient
 from rag.chat.conversation_history import SessionManager
+from utils.logger import setup_logger
 
 
 class ConversationManager:
@@ -14,13 +15,21 @@ class ConversationManager:
 
 
     def __init__(self):
+        self.logger = setup_logger(__name__)
         self.llm_client =  LLMClient(0.7).llm
 
         self.session_mng = SessionManager()
-        _system_prompt = """Você é um assistente acadêmico especialista em interdisciplinaridade. 
-                    Seu objetivo principal é criar respostas e materiais educacionais de uma forma interdisciplinar. 
-                    O conteúdo será baseados estritamente no contexto fornecido.
-                    Porém, você também responde as informações perguntadas diretamente sobre as matérias do documento.
+        _system_prompt = """Você é um assistente acadêmico especializado em interdisciplinaridade e integração de conhecimentos.
+        Seu objetivo é criar respostas, explicações e materiais educacionais que conectem diferentes áreas do saber de forma clara,
+        coerente e contextualizada.
+        Todas as respostas devem ser baseadas estritamente no contexto fornecido, mantendo precisão conceitual e rigor acadêmico.
+
+        Quando solicitado, você também pode responder diretamente sobre conteúdos específicos das disciplinas mencionadas no documento, 
+        sempre buscando evidenciar suas relações com outras áreas quando possível.
+
+        Use uma linguagem didática, acessível e organizada, adequada para professores e estudantes.
+
+        Se o contexto não fornecer informação suficiente, explique isso explicitamente antes de tentar complementar com inferências baseadas em conhecimento geral.
 
                     ============= CONTEXTO NOVO =================
                     {final_context}
@@ -76,14 +85,14 @@ class ConversationManager:
 
 
     def generate_response(self, question, context, session_id, cache_context):
-        final_context = "\n\n".join(context)
-        cache_context_str = "\n\n".join(cache_context) if cache_context else ""
 
+        final_context = "\n\n".join(context)
+        cache_context_str = "\n\n".join(cache_context)
 
         response = self.chain_with_history.invoke(
             {
                 "final_context": final_context,
-                "cache_context": cache_context,
+                "cache_context": cache_context_str,
                 "question": question
                 # "history": self.get_session()
             },
@@ -94,26 +103,21 @@ class ConversationManager:
 
         return response
 
+    # def generate_response_fix(self, question, fix_chunk, session_i):
+    #     final_context = "\n\n".join(context)
+    #     cache_context_str = "\n\n".join([doc.page_content for doc in cache_context]) if cache_context else ""
+    #
+    #     response = self.chain_with_history.invoke(
+    #         {
+    #             "final_context": final_context,
+    #             "cache_context": cache_context,
+    #             "question": question
+    #             # "history": self.get_session()
+    #         },
+    #         config={"configurable": {"session_id": session_id}}
+    #     )
 
+        # print(store)
 
+        # return response
 
-# from langchain_community.chat_message_histories import ChatMessageHistory
-#
-# def get_session_history(session_id: str)-> BaseChatMessageHistory:
-#     store = {}
-#     if session_id not in store:
-#         store[session_id] = ChatMessageHistory()
-#     return store[session_id]
-
-
-# def show_history(session_id):
-#     if session_id not in store:
-#         print("Nenhuma conversa para este session_id.")
-#         return
-#
-#     history = store[session_id].messages
-#     print(f"--- Histórico de conversa (session_id={session_id}) ---")
-#     for i, msg in enumerate(history):
-#         role = msg.type  # 'human' ou 'ai'
-#         print(f"{i+1}. [{role}] {msg.content}")
-#     print("---------------------------------------------")

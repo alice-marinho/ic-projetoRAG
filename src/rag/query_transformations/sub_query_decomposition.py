@@ -7,14 +7,11 @@ prompt_sub_query = ChatPromptTemplate.from_messages([
     (
         "system",
         """Você é um assistente de decomposição de perguntas complexas.
-        Sua tarefa é transformar uma questão ampla em 3 a 5 sub-queries independentes, 
-        claras e objetivas, que possam ser buscadas separadamente e que juntas ajudem 
-        a compor uma resposta completa à pergunta original.
+        Sua tarefa é transformar uma questão ampla em até 5 sub-queries objetivas e diretas.
         
         Regras importantes:
         - Cada sub-query deve explorar um aspecto / tópico da pergunta.
         - As sub-queries não podem ser redundantes e não podem reescrever a pergunta.
-        - Cada sub-query deve ser autoexplicativa e poder ser entendida isoladamente.
         - Evite generalidades: seja específico ao relacionar os conceitos.
         - Não é necessário pegar todas as informações que contém na pergunta, porém pegue aquilo que auxiliará na resposta
 
@@ -22,8 +19,7 @@ prompt_sub_query = ChatPromptTemplate.from_messages([
         Pergunta: "Crie uma prova de 'IA' e 'Ética' com 10 questões."
         Sub-queries:
         - "Qual é o conteúdo da disciplina de Inteligência Artificial?"
-        - "Quais são as informações sobre o tema 'Ética'?"
-        - "Qual conteúdo da máteria de Ética?
+        - "Quais é o conteúdo da disciplina de 'Ética'?"
 
         Gere as sub-queries como uma lista.
         """,

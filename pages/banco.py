@@ -2,8 +2,7 @@ import time
 
 import streamlit as st
 
-from main import processing_data
-
+from utils.data_processing import processing_data
 
 # === Seção 1: Banco de Dados ===
 st.header("📁 Banco de Dados")

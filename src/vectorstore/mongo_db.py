@@ -8,14 +8,14 @@ import pickle
 from pymongo.errors import ConnectionFailure
 from pymongo.server_api import ServerApi
 
-from database.db_config import MONGO_DATABASE
+from database.db_config import MONGO_DATABASE, DATABASE_URL_TEST
 from utils.logger import setup_logger
 
 logger = setup_logger(__name__)
 class MongoDocstore(BaseStore):
 
-    #def __init__(self, uri="mongodb://localhost:27017/",
-    def __init__(self, uri=MONGO_DATABASE,
+    def __init__(self, uri="mongodb://localhost:27017/",
+    #def __init__(self, uri=DATABASE_URL_TEST,
                  db_name="rag_db_mongo",
                  collection_name="parents_store"):
         try:

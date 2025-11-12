@@ -5,7 +5,7 @@ import pytest
 
 from main import ProcessQuestion
 from rag.query_transformations.sub_query_decomposition import get_sub_queries
-from src.rag.retriever import retrieve_final_context
+from src.rag import RAGRetriever
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -36,6 +36,9 @@ COMPOSITE_CASES = [
 with open(DATA_FILE, "r", encoding="utf-8") as f:
     TEST_DATA = json.load(f)
 
+
+retriever = RAGRetriever()
+
 @pytest.mark.parametrize("case", TEST_DATA)
 def test_retriever_final_context(case):
 
@@ -46,7 +49,7 @@ def test_retriever_final_context(case):
     expected_course = case["expected_course"]
     expected_subject = case["expected_subject"]
 
-    docs = retrieve_final_context(query, k=30)
+    docs = retriever.retriever_final_context(query, k=30)
     # print(len(docs))
 
     retrieved_courses = [doc.metadata.get("curso", "") for doc in docs]
@@ -59,7 +62,7 @@ def test_retriever_final_context(case):
 @pytest.mark.parametrize("case", SIMPLE_CASES)
 def test_busca_simples_retriever(case):
     process.process_user_question(case["question"], conversation_history=[])
-    docs = retrieve_final_context(case["question"])
+    docs = retriever.retriever_final_context(case["question"])
 
     retrieved_courses = [doc.metadata.get("curso", "") for doc in docs]
     retrieved_subjects = [doc.metadata.get("componente", "") for doc in docs]

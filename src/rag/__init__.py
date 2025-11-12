@@ -1,5 +1,4 @@
 from .generator import ConversationManager
-from .retriever import retrieve_context
+from .retriever import RAGRetriever
 
-__all__ = ["ConversationManager",
-           "retrieve_context"]
+__all__ = ["ConversationManager", "RAGRetriever"]

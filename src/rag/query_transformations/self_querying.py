@@ -27,13 +27,16 @@ class SelfQuery:
             AttributeInfo(
                 name="curso",
                 description="O nome do curso de graduação ao qual a disciplina pertence. \
-                Exemplos: 'Análise e Desenvolvimento de Sistemas', 'Ciência da Computação', 'ADS'",
+                Exemplos: 'Análise e Desenvolvimento de Sistemas', 'Ciência da Computação', 'ADS'. filter=Comparison(comparator='like', attribute='curso', value='Informática')",
                 type="string"
             ),
             AttributeInfo(
                 name="componente",
-                description="O nome da disciplina, matéria ou componente curricular. Exemplo: 'Algoritmos', 'Língua Portuguesa 1'",
-                type="string"
+                description="O nome da disciplina, matéria ou componente curricular. EXEMPLO: 'Algoritmos', "
+                            "'Língua Portuguesa 1'Me fale sobre Língua Portuguesa e Algoritmos,"
+                    "filter=Operation(operator='or', arguments=[Comparison(comparator='like', attribute='componente', "
+                            "value='Língua Portuguesa 1'), Comparison(comparator='eq', attribute='componente', value='Algoritmos')])",
+                type="list[string]"
             ),
             AttributeInfo(
                 name="periodo",

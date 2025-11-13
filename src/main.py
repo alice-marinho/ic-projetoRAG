@@ -51,41 +51,49 @@ class ProcessQuestion:
                 f"PERMISSÃO NEGADA: Usuário {user_id} tentou acessar sessão {session_id} que não lhe pertence.")
             return "Erro: Você não tem permissão para acessar esta sessão."
         final_context = []
-        need_retrieval = self.decision_agent.needs_retrieval(question, session_id)
+        # need_retrieval = self.decision_agent.needs_retrieval(question, session_id)
 
-        if need_retrieval:
-            self.logger.info("Decisão: Recuperação de contexto é necessária.")
-            decisao = get_router_decision(question,self.llm_client)
+        # if need_retrieval:
+        #     self.logger.info("Decisão: Recuperação de contexto é necessária.")
+        #     decisao = get_router_decision(question,self.llm_client)
+        #
+        #
+        #     # print(final_context)
+        #
+        #     if decisao == 'BuscaSimples':
+        #         busca_obj = BuscaSimples(query=question) # Aqui ele verifica se está conforme o modelo PyDantic
+        #         self.logger.info(f"Rota decidida: Busca Simples. Query: '{busca_obj.query}'")
+        #         final_context = self.retriever.retriever_final_context(busca_obj.query)
+        #
+        #     elif decisao == 'BuscaComposta':
+        #         busca_obj = get_sub_queries(question, self.llm_client)
+        #         # print(f"Tipo retornado por get_sub_queries: {type(busca_obj)}")
+        #         # print(f"Conteúdo retornado: {busca_obj}")
+        #
+        #         self.logger.info(f"\n\nRota decidida: Busca Composta. Sub-Queries: {busca_obj}\n\n")
+        #         docs_combinados = {}
+        #         for sub_query in busca_obj.sub_queries:
+        #             individual_contexts = self.retriever.retriever_final_context(sub_query)
+        #             print(f"\n\nSub-query: {sub_query} -> {len(individual_contexts)} chunks encontrados\n\n")
+        #             for doc in individual_contexts:
+        #                 docs_combinados[doc.page_content] = doc
+        #
+        #         final_context = list(docs_combinados.values())
+        #     self.context_cache = final_context
+        #             # time.sleep(20)
+        #             # contextos = list({doc.page_content: doc for doc in final_context}.values())
+        #             # print(contextos)
+        # else:
+        #     self.logger.info("Decisão: Recuperação não é necessária. Usando cache de contexto.")
+        #     final_context = self.context_cache
 
+        try:
+            final_context = self.retriever.retriever_final_context(question)
+        except Exception as e:
+            self.logger.error(f"Falha direta no retriever_final_context: {e}")
+            final_context = []
 
-            # print(final_context)
-
-            if decisao == 'BuscaSimples':
-                busca_obj = BuscaSimples(query=question) # Aqui ele verifica se está conforme o modelo PyDantic
-                self.logger.info(f"Rota decidida: Busca Simples. Query: '{busca_obj.query}'")
-                final_context = self.retriever.retriever_final_context(busca_obj.query)
-
-            elif decisao == 'BuscaComposta':
-                busca_obj = get_sub_queries(question, self.llm_client)
-                # print(f"Tipo retornado por get_sub_queries: {type(busca_obj)}")
-                # print(f"Conteúdo retornado: {busca_obj}")
-
-                self.logger.info(f"\n\nRota decidida: Busca Composta. Sub-Queries: {busca_obj}\n\n")
-                docs_combinados = {}
-                for sub_query in busca_obj.sub_queries:
-                    individual_contexts = self.retriever.retriever_final_context(sub_query)
-                    print(f"\n\nSub-query: {sub_query} -> {len(individual_contexts)} chunks encontrados\n\n")
-                    for doc in individual_contexts:
-                        docs_combinados[doc.page_content] = doc
-
-                final_context = list(docs_combinados.values())
-            self.context_cache = final_context
-                    # time.sleep(20)
-                    # contextos = list({doc.page_content: doc for doc in final_context}.values())
-                    # print(contextos)
-        else:
-            self.logger.info("Decisão: Recuperação não é necessária. Usando cache de contexto.")
-            final_context = self.context_cache
+        self.context_cache = final_context
 
         if not final_context:
             self.logger.warning("Nenhum contexto encontrado para gerar a resposta")

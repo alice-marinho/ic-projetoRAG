@@ -1,0 +1,13 @@
+.venv
+
+chroma_db/*
+!chroma_db/.gitkeep
+
+.env
+.env.*
+
+__pycache__/
+
+alembic
+alembic/*
+alembic.ini

@@ -51,7 +51,7 @@ class ProcessQuestion:
                 f"PERMISSÃO NEGADA: Usuário {user_id} tentou acessar sessão {session_id} que não lhe pertence.")
             return "Erro: Você não tem permissão para acessar esta sessão."
         final_context = []
-        # need_retrieval = self.decision_agent.needs_retrieval(question, session_id)
+        need_retrieval = self.decision_agent.needs_retrieval(question, session_id)
 
         # if need_retrieval:
         #     self.logger.info("Decisão: Recuperação de contexto é necessária.")
@@ -87,11 +87,15 @@ class ProcessQuestion:
         #     self.logger.info("Decisão: Recuperação não é necessária. Usando cache de contexto.")
         #     final_context = self.context_cache
 
-        try:
-            final_context = self.retriever.retriever_final_context(question)
-        except Exception as e:
-            self.logger.error(f"Falha direta no retriever_final_context: {e}")
-            final_context = []
+        if need_retrieval:
+            try:
+                final_context = self.retriever.retriever_final_context(question)
+            except Exception as e:
+                self.logger.error(f"Falha direta no retriever_final_context: {e}")
+                final_context = []
+        else:
+            self.logger.info("Decisão: Recuperação não é necessária. Usando cache de contexto.")
+            final_context = self.context_cache
 
         self.context_cache = final_context
 
@@ -105,14 +109,14 @@ class ProcessQuestion:
         #
         return self.response_manager.generate_response(
             question,
-            context=final_context_str,
+            context=final_context,
             session_id=session_id,
             cache_context= cache_context_str)
 
+
     def generate_answer(self, question: str, context_chunks, session_id: str, user_id: str):
         """
-        Gera uma resposta diretamente a partir de chunks fornecidos manualmente (sem retriever).
-        Usado para o caso do formulário interdisciplinar.
+        Gera uma resposta diretamente a partir de chunks fornecidos manualmente (do banco).
         """
         user_sessions = self.session_history.list_sessions(user_id)
         if session_id not in user_sessions:
@@ -122,60 +126,30 @@ class ProcessQuestion:
             return "Erro: Você não tem permissão para acessar esta sessão."
 
         if not context_chunks:
-            self.logger.warning("Nenhum chunk fornecido manualmente para gerar resposta.")
+            self.logger.warning("Nenhum chunk fixo encontrado para gerar resposta.")
             return "Desculpe, não há conteúdo disponível para gerar uma resposta."
 
-        # Log e cache de contexto
-        self.logger.info(f"Gerando resposta interdisciplinar com {len(context_chunks)} chunks fornecidos.")
-
+        self.logger.info(f"Gerando resposta interdisciplinar com {len(context_chunks)} chunks fixos.")
         final_context_str = []
-        self.context_cache = []
+        try:
+            for chunk in context_chunks:
+                if "page_content" in chunk:
+                    final_context_str.append(chunk["page_content"])
+                elif "content" in chunk:
+                    final_context_str.append(chunk["content"])
+                else:
+                    self.logger.warning(f"Chunk no modo formulário não tem 'page_content': {chunk.keys()}")
 
-        # Primeiro, verifica se o que recebemos é uma lista
-        if not isinstance(context_chunks, list):
-            self.logger.warning("context_chunks não é uma lista. Tratando como string única.")
-            final_context_str = [str(context_chunks)]
-            self.context_cache = [{"page_content": str(context_chunks)}]
+            cache_context_str = final_context_str
 
-        elif context_chunks:  # Se a lista não estiver vazia
+            if not final_context_str:
+                self.logger.error("Falha ao processar context_chunks, lista de strings vazia.")
+                return "Erro: Falha ao ler os documentos da sessão."
 
-            if isinstance(context_chunks[0], str):
-                # --- Caso 1: É uma lista de strings [str, str, ...] ---
-                self.logger.info("context_chunks é uma lista de strings.")
-                final_context_str = context_chunks
-                self.context_cache = [{"page_content": chunk} for chunk in context_chunks]
+        except TypeError:
+            self.logger.error("Erro de tipo no generate_answer. Esperava list[dict].")
+            return "Erro: Formato de dados inesperado na sessão."
 
-            elif isinstance(context_chunks[0], dict):
-                # --- Caso 2: É uma lista de dicionários [dict, dict, ...] ---
-                self.logger.info("context_chunks é uma lista de dicionários.")
-                self.context_cache = context_chunks  # O cache é a lista de dicts original
-
-                # Constrói a lista de strings com segurança
-                for chunk_dict in context_chunks:
-
-                    # --- A CORREÇÃO PRINCIPAL ESTÁ AQUI ---
-                    if "page_content" in chunk_dict:
-                        final_context_str.append(chunk_dict["page_content"])
-                    elif "content" in chunk_dict:  # Fallback
-                        final_context_str.append(chunk_dict["content"])
-                    else:
-                        self.logger.warning(
-                            f"Dicionário no chunk não tem 'page_content' ou 'content': {list(chunk_dict.keys())}")
-
-            else:
-                self.logger.error(f"Formato de context_chunks inesperado: {type(context_chunks[0])}")
-        cache_context_str = []
-        if isinstance(self.context_cache, list) and self.context_cache:
-            for chunk_dict in self.context_cache:
-                if "page_content" in chunk_dict:
-                    cache_context_str.append(chunk_dict["page_content"])
-                elif "content" in chunk_dict:
-                    cache_context_str.append(chunk_dict["content"])
-        if not final_context_str:
-            self.logger.error("Falha ao processar context_chunks. Contexto final está vazio.")
-            return "Erro: Não consegui processar os documentos selecionados."
-
-        # Gera a resposta diretamente
         response = self.response_manager.generate_response(
             question=question,
             context=final_context_str,

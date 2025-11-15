@@ -22,6 +22,17 @@ class ConversationManager:
         _system_prompt = """Você é um assistente acadêmico especializado em interdisciplinaridade e integração de conhecimentos.
         Seu objetivo é criar respostas, explicações e materiais educacionais que conectem diferentes áreas do saber de forma clara,
         coerente e contextualizada.
+        
+        Verifique se a pergunta é insuficiente de informações, ou seja forma vaga (ex.: "Quero uma atividade"):
+        pergunta do usuário: {question}
+        Apenas pergunte:
+                 1. Qual disciplina deseja trabalhar?
+                 2. Qual é o semestre ou bimestre desta matéria?
+                 3. Qual é o tema central?
+                 4. Qual tipo de atividade você deseja? (exercício, projeto, estudo de caso, avaliação etc.)
+       Para conseguir informações do próprio usuário, NÃO sugira disciplinas, cursos, níveis ou códigos e 
+       NÃO apresente opções. 
+       
         Todas as respostas devem ser baseadas estritamente no contexto fornecido, mantendo precisão conceitual e rigor acadêmico.
 
         Quando solicitado, você também pode responder diretamente sobre conteúdos específicos das disciplinas mencionadas no documento, 
@@ -47,11 +58,10 @@ class ConversationManager:
                     2.  **Tratamento de Informação Ausente:** Se a informação necessária para responder à pergunta NÃO estiver no CONTEXTO, responda de forma clara e direta: "A informação não está disponível nos arquivos analisados."
                     3.  **Linguagem:** Todas as respostas devem ser em Português do Brasil.
                     4.  **Estrutura e Formatação:** Utilize formatação Markdown para estruturar a resposta de maneira clara e visualmente agradável. Quando necessário, coloque enunciados mais elaborados, estruture de uma forma completa.
-                    5.  **Análise Interdisciplinar:** Ao receber a pergunta, identifique os temas e associe-os ao conteúdo programático das disciplinas descritas no contexto, mesmo que o nome da disciplina não esteja explícito.
-                        5.1 **Informações dos Planos de Aula **Além disso, você também responde perguntas relacionadas 
-                        aos PPCs, como detalhes das ementas, horário, e entre outras informações contidas nos Planos de Aulas.
-                    6.  Utilize a criatividade para geração das atividades solicitadas pelo usuário, para interligar 
+                    Atividades e Interdisciplinaridade:
+                    5.  Utilize a criatividade para geração das atividades solicitadas pelo usuário, para interligar 
                     os conteúdos que contenham nos planos de aula.
+                    6. De sempre respostas estruturadas e completas, quando for solicitado atividade interdisciplinar faça algo robusto e completo, de atividade, prova ou o que for, já mastigada para que não seja necessário que o professor planeje e sim tenha em mão.
                     
                     O foco PRINCIPAL da ferramenta é gerar interdisciplinaridade entre os conteúdos, verifique quais 
                     conteúdos podem ser relacionados para entregar uma boa resposta interdisciplinar.
@@ -86,38 +96,17 @@ class ConversationManager:
 
     def generate_response(self, question, context, session_id, cache_context):
 
-        final_context = "\n\n".join(context)
-        cache_context_str = "\n\n".join(cache_context)
+        # final_context = "\n\n".join(context)
+        # cache_context_str = "\n\n".join(cache_context)
 
         response = self.chain_with_history.invoke(
             {
-                "final_context": final_context,
-                "cache_context": cache_context_str,
+                "final_context": context,
+                "cache_context": cache_context,
                 "question": question
                 # "history": self.get_session()
             },
             config={"configurable": {"session_id": session_id}}
         )
-
-        # print(store)
-
         return response
-
-    # def generate_response_fix(self, question, fix_chunk, session_i):
-    #     final_context = "\n\n".join(context)
-    #     cache_context_str = "\n\n".join([doc.page_content for doc in cache_context]) if cache_context else ""
-    #
-    #     response = self.chain_with_history.invoke(
-    #         {
-    #             "final_context": final_context,
-    #             "cache_context": cache_context,
-    #             "question": question
-    #             # "history": self.get_session()
-    #         },
-    #         config={"configurable": {"session_id": session_id}}
-    #     )
-
-        # print(store)
-
-        # return response
 

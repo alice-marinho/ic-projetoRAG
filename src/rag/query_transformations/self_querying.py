@@ -35,7 +35,9 @@ class SelfQuery:
                 description="O nome da disciplina, matéria ou componente curricular. EXEMPLO: 'Algoritmos', "
                             "'Língua Portuguesa 1'Me fale sobre Língua Portuguesa e Algoritmos,"
                     "filter=Operation(operator='or', arguments=[Comparison(comparator='like', attribute='componente', "
-                            "value='Língua Portuguesa 1'), Comparison(comparator='eq', attribute='componente', value='Algoritmos')])",
+                            "value='Língua Portuguesa 1'), Comparison(comparator='eq', attribute='componente', value='Algoritmos')])"
+                            "IMPORTANTE: Você DEVE usar uma busca 'contém' (like) para este campo, "
+                            "já que os nomes reais podem ser mais longos (ex: 'Algoritmos' deve encontrar 'Algoritmos de Programação').",
                 type="list[string]"
             ),
             AttributeInfo(

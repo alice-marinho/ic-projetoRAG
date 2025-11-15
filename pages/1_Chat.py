@@ -1,4 +1,3 @@
-# Seu novo arquivo: Chat.py
 import streamlit as st
 import sys
 import os
@@ -34,61 +33,50 @@ if "process_question_instance" not in st.session_state:
 session_manager = st.session_state.session_manager
 pq = st.session_state.process_question_instance
 
-# --- INICIALIZAÇÃO DO ESTADO DO CHAT ---
+# --- INICIALIZAÇÃO DO ESTADO DO CHAT---
 if "active_session_id" not in st.session_state:
     st.session_state.active_session_id = None
 if "messages_to_display" not in st.session_state:
     st.session_state.messages_to_display = []
-if "current_session_is_form" not in st.session_state:
-    st.session_state.current_session_is_form = False
-if "current_session_chunks" not in st.session_state:
-    st.session_state.current_session_chunks = None
+if "current_fixed_context" not in st.session_state:
+    st.session_state.current_fixed_context = None
 
 # --- LÓGICA DE TRANSIÇÃO DO FORMULÁRIO ---
-# Verifica se o usuário acabou de vir do formulário
-if st.session_state.get("from_form", False):
-    # Pega os chunks salvos pelo formulário (CORRIGIDO PARA "selected_chunks")
-    form_chunks = st.session_state.get("selected_chunks")
+if "transition_session_id" in st.session_state:
+    new_session_id = st.session_state.transition_session_id
+    del st.session_state.transition_session_id  # Limpa o flag
 
-    if form_chunks:
-        # 1. Cria uma nova sessão para este chat de formulário
-        new_session_id = session_manager.create_session(
-            user_id=current_user_id,
-            name="Chat Interdisciplinar"
-        )
-        st.session_state.active_session_id = new_session_id
+    st.session_state.active_session_id = new_session_id
 
-        # 2. Configura o estado da sessão atual
-        st.session_state.messages_to_display = [
-            AIMessage(content="Olá! 👋 Vamos criar uma atividade com base nos planos que você selecionou.")
-        ]
-        st.session_state.current_session_is_form = True
-        st.session_state.current_session_chunks = form_chunks
+    # Carrega os detalhes do banco
+    session_details = session_manager.get_session_details(new_session_id)
+    if session_details:
+        st.session_state.current_fixed_context = session_details.fixed_context
+    else:
+        st.session_state.current_fixed_context = None
 
-        # 3. Limpa os flags globais para não afetar outras sessões
-        del st.session_state["from_form"]
-        del st.session_state["selected_chunks"]
-        if "metadata_list" in st.session_state:
-            del st.session_state["metadata_list"]
-
-        st.success("Sessão interdisciplinar iniciada!")
-        st.rerun()  # Recarrega a página para refletir a nova sessão
+    st.session_state.messages_to_display = [
+        AIMessage(content="Olá! 👋 Vamos criar uma atividade com base nos planos que você selecionou.")
+    ]
+    st.rerun()
 
 # --- SIDEBAR: GERENCIADOR DE SESSÕES ---
 with st.sidebar:
     st.header("Gerenciador de Sessões")
 
-    new_name = st.text_input("Nome da nova sessão (RAG Puro):")
-    if st.button("Criar Sessão") and new_name.strip():
+    if "editing_chat_id" not in st.session_state:
+        st.session_state.editing_chat_id = None
+
+    if st.sidebar.button("➕ Novo Chat", use_container_width=True):
         new_session_id = session_manager.create_session(
             user_id=current_user_id,
-            name=new_name
+            fixed_context=None
         )
         st.session_state.active_session_id = new_session_id
-        st.session_state.messages_to_display = []  # Nova sessão RAG puro
-        st.session_state.current_session_is_form = False  # É RAG puro
-        st.session_state.current_session_chunks = None  # É RAG puro
-        st.success(f"Sessão '{new_name}' criada!")
+        st.session_state.messages_to_display = []
+        st.session_state.current_fixed_context = None
+        st.session_state.editing_chat_id = None # modo edição
+        st.success("Novo chat criado!")
         st.rerun()
 
     st.divider()
@@ -96,28 +84,63 @@ with st.sidebar:
     sessions = session_manager.list_sessions(user_id=current_user_id)
     if sessions:
         st.write("Selecione uma sessão:")
-
-        # Inverte o dicionário para ordenar por nome
-        sorted_sessions = sorted(sessions.items(), key=lambda item: item[1])
+        sorted_sessions = sessions.items()
 
         for session_id, session_name in sorted_sessions:
-            if st.button(session_name, key=session_id, use_container_width=True):
-                if session_id != st.session_state.active_session_id:
-                    st.session_state.active_session_id = session_id
+            if session_id == st.session_state.editing_chat_id:
+                # MODO DE EDIÇÃO
+                with st.container(border=True):
+                    new_name = st.text_input(
+                        "Novo nome:",
+                        value=session_name,
+                        key=f"input_{session_id}"
+                    )
 
-                    # Carrega histórico do banco
-                    session_obj = session_manager.get_session(session_id)
-                    st.session_state.messages_to_display = session_obj.messages
+                    col1, col2 = st.columns(2)
+                    with col1:
+                        if st.button("Salvar", key=f"save_{session_id}", use_container_width=True):
+                            if new_name.strip():
+                                session_manager.update_session_title(session_id, new_name.strip())
+                                st.session_state.editing_chat_id = None
+                                st.rerun()
+                            else:
+                                st.error("O nome não pode ficar em branco.")
+                    with col2:
+                        if st.button("Cancelar", key=f"cancel_{session_id}", use_container_width=True):
+                            st.session_state.editing_chat_id = None
+                            st.rerun()
 
-                    # ATENÇÃO: Esta lógica assume que SESSÕES DE FORMULÁRIO NÃO SÃO SALVAS
-                    # Se você quiser que o modo "form" seja persistente,
-                    # você precisará adicionar "is_form" e "chunks" ao seu
-                    # SessionModel no banco de dados.
-                    # Por enquanto, assumimos que qualquer sessão carregada é RAG Puro.
-                    st.session_state.current_session_is_form = False
-                    st.session_state.current_session_chunks = None
+            else:
+                col1, col2, col3 = st.columns([0.7, 0.15, 0.15])
+                with col1:
+                    if st.button(session_name, key=session_id, use_container_width=True):
+                        if session_id != st.session_state.active_session_id:
+                            st.session_state.active_session_id = session_id
+                            session_obj = session_manager.get_session(session_id)
+                            st.session_state.messages_to_display = session_obj.messages
+                            session_details = session_manager.get_session_details(session_id)
+                            if session_details:
+                                st.session_state.current_fixed_context = session_details.fixed_context
+                            else:
+                                st.session_state.current_fixed_context = None
 
-                    st.rerun()
+                            st.session_state.editing_chat_id = None # Sai do modo de edição
+                            st.rerun()
+                with col2:
+                    if st.button("✏️", key=f"edit_{session_id}", use_container_width=True):
+                        st.session_state.editing_chat_id = session_id
+                        st.rerun()
+                with col3:
+                    if st.button("🗑️", key=f"delete_{session_id}", use_container_width=True):
+                        session_manager.delete_session(session_id)
+
+                        # recarrega
+                        st.session_state.active_session_id = None
+                        st.session_state.messages_to_display = []
+                        st.session_state.current_fixed_context = None
+                        st.session_state.editing_chat_id = None
+
+                        st.rerun()
     else:
         st.info("Nenhuma sessão criada ainda.")
 
@@ -125,17 +148,25 @@ with st.sidebar:
 if not st.session_state.active_session_id:
     st.info("👈 Crie uma nova sessão ou use o Formulário de Disciplinas para começar.")
 else:
-    # Exibe o status da sessão atual
-    if st.session_state.current_session_is_form:
-        st.success("🎯 Modo Interdisciplinar: Respondendo com base nos documentos selecionados.")
+    if st.session_state.current_fixed_context:
+        st.success("🎯 Modo Interdisciplinar: Respondendo com base nos documentos salvos nesta sessão.")
     else:
         st.info("📚 Modo RAG Puro: Respondendo com base em todo o banco de dados.")
 
-    # Exibe histórico
+    # Histórico
     for msg in st.session_state.messages_to_display:
         role = "user" if isinstance(msg, HumanMessage) else "assistant"
         with st.chat_message(role):
             st.markdown(msg.content)
+
+    # Titulo
+    is_new_chat = False
+    try:
+        current_title = session_manager.get_session_title(st.session_state.active_session_id)
+        if current_title == "Novo Chat":
+            is_new_chat = True
+    except Exception as e:
+        st.warning(f"Não foi possível verificar o título do chat: {e}")
 
     # Entrada do usuário
     if prompt := st.chat_input("Digite sua pergunta..."):
@@ -144,30 +175,32 @@ else:
 
         with st.spinner("Pensando..."):
 
-            # Decide qual método da ProcessQuestion chamar
-            if st.session_state.current_session_is_form and st.session_state.current_session_chunks:
-                # --- Caminho 1: MODO FORMULÁRIO ---
+            if st.session_state.current_fixed_context:
                 answer = pq.generate_answer(
-                    question=prompt,  # Passa o prompt original
-                    context_chunks=st.session_state.current_session_chunks,  # Passa os chunks
+                    question=prompt,
+                    context_chunks=st.session_state.current_fixed_context,  # <-- CORREÇÃO
                     session_id=st.session_state.active_session_id,
                     user_id=current_user_id,
                 )
             else:
-                # --- Caminho 2: MODO RAG PURO ---
                 answer = pq.process_user_question(
                     prompt,
                     st.session_state.active_session_id,
                     current_user_id
                 )
 
-        # Adiciona mensagens ao histórico local (para exibição)
         st.session_state.messages_to_display.append(HumanMessage(content=prompt))
         st.session_state.messages_to_display.append(AIMessage(content=answer))
 
-        # Adiciona mensagens ao banco de dados
         session_obj = session_manager.get_session(st.session_state.active_session_id)
         session_obj.add_message(HumanMessage(content=prompt))
         session_obj.add_message(AIMessage(content=answer))
+
+        if is_new_chat:
+            try:
+                new_title = session_manager.generate_chat_title(prompt)
+                session_manager.update_session_title(st.session_state.active_session_id, new_title)
+            except Exception as e:
+                st.error(f"Erro ao gerar título do chat: {e}")
 
         st.rerun()

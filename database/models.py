@@ -42,6 +42,8 @@ class Session(Base):
     __tablename__= "sessions"
     id = Column(String, primary_key=True)
     name = Column(String, nullable=False)
+    fixed_context = Column(JSONB, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
 
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
     user = relationship("User", back_populates="sessions")

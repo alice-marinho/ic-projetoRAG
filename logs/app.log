@@ -10983,3 +10983,271 @@ Decisï¿½o: YES
 [INFO] [rag.retriever] Fallback: Executando busca de texto direta...
 [INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
 [INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.chat.conversation_history] Sessão 64541ef2 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Monte uma prova para o curso do ensino médio Técnico em Informática com questões que avaliem a capacidade de interpretação de texto da disciplina Língua Portuguesa 1 aplicada a problemas de lógica de programação da disciplina de Algoritmos'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Sessão e9c151bc criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Monte uma prova para o curso do ensino médio Técnico em Informática com questões que avaliem a capacidade de interpretação de texto da disciplina Língua Portuguesa 1 aplicada a problemas de lógica de programação da disciplina de Algoritmos'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT langchain_pg_collection.uuid AS langchain_pg_collection_uuid, langchain_pg_collection.name AS langchain_pg_collection_name, langchain_pg_collection.cmetadata AS langchain_pg_collection_cmetadata 
+FROM langchain_pg_collection 
+WHERE langchain_pg_collection.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'child_chunks', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8).
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.chat.conversation_history] Sessão 9f01ff57 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Monte uma prova para o curso do ensino médio Técnico em Informática com questões que avaliem a capacidade de interpretação de texto da disciplina Língua Portuguesa 1 aplicada a problemas de lógica de programação da disciplina de Algoritmos'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.chat.conversation_history] Sessão f7e8b6d6 criada para o usuário 3.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fornecidos.
+[INFO] [main] context_chunks é uma lista de dicionários.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fornecidos.
+[INFO] [main] context_chunks é uma lista de dicionários.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [rag.chat.conversation_history] Sessão f0c0c312 criada para o usuário 3.
+[ERROR] [rag.chat.conversation_history] Erro ao carregar sessões do usuário 3: (psycopg2.OperationalError) could not translate host name "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [rag.chat.conversation_history] Erro ao carregar sessões do usuário 3: (psycopg2.OperationalError) could not translate host name "ep-autumn-cell-ack6650d-pooler.sa-east-1.aws.neon.tech" to address: Name or service not known
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+[ERROR] [main] PERMISSÃO NEGADA: Usuário 3 tentou acessar sessão f0c0c312 que não lhe pertence.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.chat.conversation_history] Sessão 0e01daff criada para o usuário 3.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.chat.conversation_history] Sessão 5a2d7549 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'olá'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ (psycopg2.OperationalError) could not receive data from server: Software caused connection abort (0x00002745/10053)
+SSL SYSCALL error: Software caused connection abort (0x00002745/10053)
+
+[SQL: SELECT langchain_pg_collection.uuid AS langchain_pg_collection_uuid, langchain_pg_collection.name AS langchain_pg_collection_name, langchain_pg_collection.cmetadata AS langchain_pg_collection_cmetadata 
+FROM langchain_pg_collection 
+WHERE langchain_pg_collection.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'child_chunks', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8).
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Sessão 3c0b0dcf criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Olá tudo bem?'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retriever] Self-Query encontrou 4 chunks. Buscando pais...
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.chat.conversation_history] Sessão 4823064e criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Olá quero fazer uma atividade '----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retriever] Self-Query encontrou 4 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 4823064e atualizado para 'Quero fazer uma atividade'
+[INFO] [rag.chat.conversation_history] Sessão 74e221ab criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Olá Quero fazer uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT langchain_pg_collection.uuid AS langchain_pg_collection_uuid, langchain_pg_collection.name AS langchain_pg_collection_name, langchain_pg_collection.cmetadata AS langchain_pg_collection_cmetadata 
+FROM langchain_pg_collection 
+WHERE langchain_pg_collection.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'child_chunks', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8).
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 74e221ab atualizado para 'Quero fazer uma atividade'
+[INFO] [rag.chat.conversation_history] Sessão d33fdcce criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Olá Quero fazer uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retriever] Self-Query encontrou 4 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão d33fdcce atualizado para 'Quero fazer uma atividade'
+[INFO] [rag.chat.conversation_history] Sessão 31156090 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Ola quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT langchain_pg_collection.uuid AS langchain_pg_collection_uuid, langchain_pg_collection.name AS langchain_pg_collection_name, langchain_pg_collection.cmetadata AS langchain_pg_collection_cmetadata 
+FROM langchain_pg_collection 
+WHERE langchain_pg_collection.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'child_chunks', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8).
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 31156090 atualizado para 'Preciso de uma atividade.'
+[INFO] [rag.chat.conversation_history] Sessão 56def479 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Olá quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT langchain_pg_collection.uuid AS langchain_pg_collection_uuid, langchain_pg_collection.name AS langchain_pg_collection_name, langchain_pg_collection.cmetadata AS langchain_pg_collection_cmetadata 
+FROM langchain_pg_collection 
+WHERE langchain_pg_collection.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'child_chunks', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8).
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 56def479 atualizado para 'Preciso de uma atividade.'
+[INFO] [rag.chat.conversation_history] Sessão 552bf203 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Olá Quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retriever] Self-Query encontrou 4 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 552bf203 atualizado para 'Preciso de uma atividade.'
+[INFO] [rag.chat.conversation_history] Sessão 9cd6d556 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Olá Quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retriever] Self-Query encontrou 4 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 9cd6d556 atualizado para 'Preciso de uma atividade.'
+[INFO] [rag.chat.conversation_history] Sessão 3750f8ab criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retriever] Self-Query encontrou 4 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 3750f8ab atualizado para 'Ideias para atividade divertida'
+[INFO] [rag.chat.conversation_history] Sessão acba4a59 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT langchain_pg_collection.uuid AS langchain_pg_collection_uuid, langchain_pg_collection.name AS langchain_pg_collection_name, langchain_pg_collection.cmetadata AS langchain_pg_collection_cmetadata 
+FROM langchain_pg_collection 
+WHERE langchain_pg_collection.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'child_chunks', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8).
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão acba4a59 atualizado para 'Ideias para atividade divertida'
+[INFO] [rag.chat.conversation_history] Sessão 53831f85 criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[INFO] [rag.retriever] Self-Query encontrou 4 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 53831f85 atualizado para 'Ideias para atividade'
+[INFO] [rag.chat.conversation_history] Sessão 741be51e criada para o usuário 3.
+[INFO] [rag.retriever] ===== Iniciando recuperação de contexto para a pergunta: ====
+ 'Quero uma atividade'----------
+[INFO] [rag.retriever] Tentativa 1: Executando com Self-Query...
+[ERROR] [rag.retriever] O Self-Query Retriever falhou com uma exceção:
+
+ (psycopg2.OperationalError) SSL connection has been closed unexpectedly
+
+[SQL: SELECT langchain_pg_collection.uuid AS langchain_pg_collection_uuid, langchain_pg_collection.name AS langchain_pg_collection_name, langchain_pg_collection.cmetadata AS langchain_pg_collection_cmetadata 
+FROM langchain_pg_collection 
+WHERE langchain_pg_collection.name = %(name_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'name_1': 'child_chunks', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/e3q8).
+
+ ==== Acionando fallback. ====
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[WARNING] [rag.retriever] Self-Query não retornou resultados. Acionando rota de Fallback.
+[INFO] [rag.retriever] Fallback: Executando busca de texto direta...
+[INFO] [rag.retriever] Fallback encontrou 10 chunks. Buscando documentos pais...
+[INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
+[INFO] [rag.chat.conversation_history] Título da sessão 741be51e atualizado para 'Ideias para atividade divertida'
+[INFO] [rag.chat.conversation_history] Título da sessão 741be51e atualizado para 'Olá 2'

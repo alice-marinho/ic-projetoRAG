@@ -90,12 +90,22 @@ if curso_escolhido:
 
             if st.button("🚀 Enviar todas ao Chat"):
                 # Armazena todos os conteúdos e metadados na sessão
-                st.session_state["selected_chunks"] = [i["content"] for i in itens_selecionados]
-                st.session_state["metadata_list"] = [
-                    {"curso": i["curso"], "periodo": i["periodo"], "componente": i["componente"]}
-                    for i in itens_selecionados
-                ]
-                st.session_state["from_form"] = True
+                session_manager = st.session_state.session_manager
+                current_user_id = st.session_state["user_id"]
+
+                new_session_id = session_manager.create_session(
+                    user_id=current_user_id,
+                    name="Chat Interdisciplinar",
+                    fixed_context=itens_selecionados
+                )
+
+                st.session_state.transition_session_id = new_session_id
+                if "from_form" in st.session_state:
+                    del st.session_state["from_form"]
+                if "selected_chunks" in st.session_state:
+                    del st.session_state["selected_chunks"]
+
                 st.success("Sessão criada! Iniciando o chat interdisciplinar...")
                 time.sleep(1)
+
                 st.switch_page("pages/1_Chat.py")

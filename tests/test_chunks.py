@@ -1,5 +1,5 @@
-from database.models import ParentDocument, ChildChunk
-from database.database import SessionLocal
+from backend.database.models import ParentDocument, ChildChunk
+from backend.database.database import SessionLocal
 
 db = SessionLocal()
 

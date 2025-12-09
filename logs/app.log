@@ -11251,3 +11251,1176 @@ WHERE langchain_pg_collection.name = %(name_1)s
 [INFO] [rag.retriever] Rerank selecionou 3 chunks. Buscando pais...
 [INFO] [rag.chat.conversation_history] Título da sessão 741be51e atualizado para 'Ideias para atividade divertida'
 [INFO] [rag.chat.conversation_history] Título da sessão 741be51e atualizado para 'Olá 2'
+[INFO] [rag.retriever] Inicializando RAGRetriever...
+[INFO] [rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [rag.chat.conversation_history] Sessão d7a1ba0f criada para o usuário 3.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [main] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [utils.data_processing] Diretório 'C:\Estudos\pesquisa\rag-project\storage\chroma_db' não encontrado. Iniciando recriação total...
+[INFO] [utils.data_processing] Banco Vetorial 
+[INFO] [utils.data_processing] Processando todos os 803 documentos carregados...
+[INFO] [ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Presencial', 'CH Ensino', 'CH a Distância'] removidas.
+[INFO] [ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\data\processed\dados_limpos.json
+[INFO] [ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: Recebeu 185 pais para salvar.
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a2d73af6-0bf0-4844-bd11-3a928ed53c1b
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3911f08f-f714-4c9a-971f-debd00156210
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d881443c-2f8a-45fe-8083-c98f95873551
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f2158448-c280-421e-8450-881011f126f8
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6bc30891-617b-4117-bbf4-dcf5ed5730e6
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a2589523-030d-4907-8968-d8297fe12e15
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 96fd1f65-4852-47ed-a363-b73d653a20d8
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3dcde8de-b30d-4907-b3fc-574570f3afc3
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 24ea206d-6699-460e-a520-c5f2fa7b4390
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7e4a85ed-6181-4c82-9cf4-dd739b073ffb
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d55da671-b49c-4cf7-a630-dc89ab82741d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1d7eab43-33f7-47a2-a72a-d655b535d11d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 10d6f816-6fa2-4d0d-a042-2e7ba98e6f7a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = faef425b-1df9-48d6-b0c3-f454581eafce
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e53f7bea-f14e-46fb-a15c-ceb6eea8528d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 27c3d5e2-0b28-4ea1-88d1-4ff06612dc4f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f769d709-f908-415c-af25-0a38b9e57b62
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = eb66be0e-852a-49ab-b47a-3719f9021f2e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7828fac5-e61c-4ef6-980a-9cc9d458e8a4
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 55c4f4f5-cd53-451c-ac33-5e1246bc46e1
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f1e821f7-e394-4843-9807-c284062c3b67
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7898f761-116c-4035-bbdc-e9b2ae509cb4
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 52acedde-eb40-4a85-81aa-080f82f959fd
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 66e6ed43-2597-40d8-94d3-b872b789e2f4
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c31f330a-f652-4e80-bde7-a70633911784
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b18f6aa9-8095-4e61-8914-17b9c00ed5a7
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f620112b-e11e-4671-b005-72947824c51c
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 273f6f82-5e06-4617-bce6-7e0ff4ea56c8
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d0ad8c27-7b57-45c7-892b-62cb91a03d90
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 085e3007-09d0-4a37-a7b1-b3752543d3cc
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 18313591-942b-4ae3-b302-4128a7ec3049
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b73bc262-9d83-4ee5-807a-16b14c0e1db7
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 999a2d2f-236f-4004-9405-715869e737ae
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2c9390bf-039e-4690-b3b2-341e9a05f34c
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b623a197-e00a-4b89-97c5-177489d59acc
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 90539db6-a7ef-4a60-b28e-c0d894b79d8b
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 23ff470d-0a65-44d6-a4a0-f66d80147547
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5daf3fe0-7293-489c-9bbd-f8a81db5b8bd
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a1f995f3-59fc-4cad-bfca-754ac89a94d0
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1870abdd-dff5-459b-bd83-59a5ba06f66d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 33dfc58e-d98a-465a-8871-a7222996e71e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 787531a1-8ddd-41b3-baf7-ca0e46f163be
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 97c3fe8c-bc4b-46b0-a34f-ec4d82cc3af6
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c3a773fb-b2b5-47ae-aec3-41a7d5638a73
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3fbfdc7b-b0b4-415d-83c8-4d0ea8fc36bc
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 36aa3f8d-d361-4eab-b36e-b7ec85e2478f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b7c35de8-2e5d-490a-97a0-02660b71cda7
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = de22ba48-0add-458c-8187-d4a3f6c9acb7
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e70e659a-17bf-4c5c-9dae-33ee07d47c15
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1dfd658d-ef54-4138-a5b3-84ea46e2a9ac
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 59342e20-bc18-4095-af88-999d73d6e0cb
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b9690cad-47cb-4898-877b-604d7d64e95e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 20fdec76-a280-464a-9a03-e9fc3a0e3e24
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2bfa5054-a077-4dac-a45a-c7a403cb3c19
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 542ee61e-3459-4462-8603-f5b4ceaaa1c9
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 70adb2b4-ab70-4d1a-844c-11fe18b7ca70
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 77d05eaa-58af-4b2b-b4a1-789e1242daf7
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0963ca7c-2a25-489d-9acf-40d687234397
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8186f024-846b-401f-be10-93c52d0f3d33
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9ff6878c-0341-4325-984b-7b7f6d484b7f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3bc68dac-4958-47ed-884d-0eb16e173b76
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a8c4c8e4-5167-4891-853a-283979da300a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 77e447ff-cf68-4562-a00b-08778c2b1116
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 03f4101c-ed0f-4154-a645-6546163cb12f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0f14cd92-099a-440e-a69d-750a4df0c595
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5b39de26-ecb7-49f7-ae73-22557a6d6d73
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0fff8b34-a7f4-4295-8179-d2ca3959177d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a46dd668-6e6c-4d7b-b55c-6e86aae63c0e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 63e93ecb-e896-46a5-99a2-ef86990ae913
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 935122e9-a214-4baf-83ed-0f3022d932ad
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 13e8ce7d-a1ea-4e21-8b88-deb38a95d0bc
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b9b4a74e-068f-49a7-a70a-de0964cfe571
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 02f61af1-1d49-417e-b09b-b720385e0db5
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = af3adc9e-24a7-4829-bed5-f4b96843df1c
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 247c9536-6232-4354-ad56-ac0b3eacbfdd
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 81982e25-493a-477c-8053-98ebfb9cc1fd
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d5953c14-df5d-4d0e-8349-c5b24b917cb6
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8ac0a113-c8eb-4259-8204-a04b26cebf7a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 792a1b2c-04c5-416a-b839-271b3828bbaa
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 36550d31-a0e8-4ae0-bd99-c14c9efb1afb
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 51bd737e-0417-405b-abc6-ae51f1e67af5
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f59be066-3d4d-4a07-83d3-283bbc3633ba
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ebb9e094-ee19-4c66-a97e-2e9040f9202d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 12a35796-5aa5-42f7-b67b-d5e4c224d8a1
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d102122d-94de-4113-9b82-86295b9de913
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c6beb099-eab1-4a5e-951e-d5c6f816acf2
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ae78ec2c-e635-44a0-b7a9-fbacc4231f96
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 33ceb28f-7eae-49c3-8609-2627bcc7d75e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 48dae99a-b52c-4bb3-970c-a13b832407c4
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 12a70971-7082-4f9e-a114-e8f3ca2719db
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0ae05561-788d-4d2d-9dae-a59915c93a80
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f21b35f9-c8e4-4ce0-b903-443c0a163b8e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 59528592-6102-4956-ac4c-eb0778c820b4
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4c7d2af9-2a4a-4f0c-bca6-a41d1eec9514
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 11b7bcdc-cc9d-4b63-9c4e-4c2e0072e44a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 624e31ae-e878-416c-93ae-b353cb4c0a9a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7fcb967e-f776-4dda-8cef-23d08cc8e2e2
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 48dd43d7-8880-4865-8f7a-640e6970643c
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9f9e1dc7-c8b3-46d0-bf99-137e74d197a6
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b5d3af50-3d77-4e2e-8bd9-1ae46c5ecb13
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e6126faa-d7cb-43bb-a126-7b6135589a44
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a999f726-c015-416a-8e8b-84b96594609d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0366d1de-3828-4b41-a698-94bab25bfcd6
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c8fb46f0-d9eb-4030-be77-bc1afcd1b9c2
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f5f69980-8f5b-42e5-98dd-e46f16b3fe44
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e10d2ea3-d549-4b80-9212-1a45c017ab5f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0d097ba4-e115-4d49-b0f0-1b32f208d550
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ed0d84ab-de17-4803-9dfa-5e46db6389e8
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e89c4268-73e0-4cf2-a464-2221c0d60321
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 99fe2872-ef25-4cb7-94cf-b2e4f6d00981
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 80fe363f-43a2-402f-9dca-1c65429f92a3
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7d27ccce-391a-4213-9a8d-4e776288ec5f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b692d32d-12e1-4320-8be1-138cc6380ba0
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 37364187-b66e-41b4-a9fe-1636860101c0
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cb594864-7bb5-4073-9e2f-678cde08ea36
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ebacddc3-0dfa-4cf3-9e7b-cf6c0e89d33b
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 38333cd8-1a6e-482e-b691-e456bb46afee
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 725feb15-4c81-4798-b967-6fe9548e2351
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a082e65b-3b39-4296-b162-df088155e0da
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7ecc8c69-f62e-4d87-983f-63efb9dedda1
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ff37f3ac-d762-4d6c-946a-439bfe5bd2e9
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 23217e66-e503-4739-b79b-0324e9abb816
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 97ceacd7-29ba-4746-b566-56a7d49fae42
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = caf9329a-1a3f-486e-8a84-8d4f26a067d3
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c8f5313b-a025-48da-ad35-d3be56adad29
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 26bae24a-b73b-4f52-9db2-eee13bf26581
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0085bc4d-d63a-48a6-a2ea-b5bd62553f38
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 78eace04-c843-468f-bc87-0c1219567c3a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a615fc01-4ad0-4235-9842-ec67c86de449
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b1843929-f972-4839-9bbe-cde892aad298
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = acf8c16e-32e2-48f0-a3b9-a6ccdaa8c5da
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b3be15ca-243c-4938-95a0-96ec095fa508
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 63902623-f6d5-4586-958a-1c5d771a897f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 53f6bce0-4a0b-4806-8c53-3fd733c2a193
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6df87d32-a8d6-4e1e-81ec-4908cf2f7aa2
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2c3a0534-d8a9-413e-bb4d-37549d76a9f3
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 472d8e89-7a54-4315-8163-78c42b522054
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cfc5a78a-33bf-4cb9-bcc7-8e466c943f1a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d2f9e1b9-d102-429a-b9c7-559138bd307e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0389a4fe-c61f-4291-bb8d-7404714010cd
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 98a7d7e5-ebe5-4af5-8ee7-04eda782c2e5
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9d84743b-cc03-4e31-9a1c-7186ffb7d516
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2556d8e9-395f-453c-9ade-f39309e1bc9f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = eb13c7a6-f158-4023-b40c-8edb182cb87d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e73141f9-c196-46bc-9197-a0391a9dc6a7
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fb0ed6b3-175c-4f3c-9d22-b0095e73caa6
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e81a95b0-4a88-4ecb-bdf2-7a35dcba4241
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = df4cd90c-d2fd-48bb-b58c-ba4e005c1c64
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4ef24e14-d3ae-440d-8b3b-0871a105b34a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 17602d76-9636-43b0-a05c-780238daae3f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ba9a270e-45e4-4ab0-a10d-02e49e9972d1
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 66e45a10-0ee2-4c70-beed-ae763b286ea8
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6b568b9c-0509-4143-89b4-8228d90b7177
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e0d33dd1-6246-4801-8040-71a17ab7562d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7bb890df-70e5-4b1f-8749-55f477b4aeb4
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = eb19ad99-7618-44e8-b1e7-af12215ec4e3
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4944a7bc-67ca-45bf-9f09-99cb66e03c8a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = de78b3ad-2564-4771-9945-6705071f932a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3c0286a6-5bfc-478a-847c-0bd19ee60911
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ed4ce19d-e2d9-40c1-935f-76336ee8edec
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 11080309-14d2-41f1-9239-c23965481129
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 29be7c4b-de73-44a5-94b2-5c7260e2517b
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 16423df3-d348-4158-aab5-fd1d97172cad
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c30b5a36-b759-4d9b-be68-b960a794d0d7
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2272f115-0973-45a2-90aa-6763b88679a5
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = eb395ad5-5594-4c50-90ae-2b9ec11e64fc
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 074ae63e-0c9c-4045-85de-5481d64fe63d
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b5c43418-6179-4a33-b7bf-ee8245b008cc
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c56d37ac-d2de-42cf-8d72-5c7e0d81712f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9c088b7b-0441-4d10-8e74-68674ef73104
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c342137f-3991-4931-8ee6-d7452e660321
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f68f227c-a18d-4f44-98c3-9c2425c04464
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8a383f65-4baa-4c8a-bef4-5ec50400974a
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 343cdee6-7ef0-4c0f-af46-02c07e949524
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 60f67d13-d48f-464b-80f6-13c905cc202f
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a89bc459-1cf7-492e-9e01-fb438b226039
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4592fc68-1544-4799-9532-64bc891cc851
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1d18d973-fcfe-4178-b9dc-b52ee892e2e3
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 82a4b62f-dfc1-41af-8255-7eae7b407303
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3f8870ba-b89c-4ef8-a134-c77d8e3e0bbd
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a23ed27c-aea7-4db3-a48c-5eb62861485e
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bc8f3a1d-904c-46fc-bed5-6b94a7d7c287
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e43cd523-f6ba-4efb-80b6-502d02841fa1
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0b820f03-08b4-402b-a1a6-de1f3a0656c6
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = eacf40b0-334e-4619-986c-499e08d6cc03
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [vectorstore.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 185 pais salvos.
+[INFO] [utils.data_processing] Recriação total concluída. Banco vetorial e arquivo de hash criados.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.chat.conversation_history] Sessão 38fe56fb criada para o usuário 3.
+[INFO] [backend.src.process_question] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [backend.src.process_question] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [backend.src.rag.chat.conversation_history] Sessão 24b8f647 criada para o usuário 3.
+[INFO] [backend.src.process_question] Gerando resposta interdisciplinar com 8 chunks fixos.
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Limpando (TRUNCATE) tabela: child_chunk...
+[ERROR] [backend.src.utils.data_processing] !!!!!!!!!!!!!! ERRO AO LIMPAR O BANCO VETORIAL !!!!!!!!!!!!!!
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.UndefinedTable) relation "child_chunk" does not exist
+
+[SQL: TRUNCATE TABLE "child_chunk" RESTART IDENTITY;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Limpando (TRUNCATE) tabela: langchain_pg_embedding...
+[INFO] [backend.src.utils.data_processing] Limpando (TRUNCATE) tabela: parent_documents...
+[INFO] [backend.src.utils.data_processing] Limpando (TRUNCATE) tabela: langchain_pg_collection...
+[ERROR] [backend.src.utils.data_processing] !!!!!!!!!!!!!! ERRO AO LIMPAR O BANCO VETORIAL !!!!!!!!!!!!!!
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.FeatureNotSupported) cannot truncate a table referenced in a foreign key constraint
+DETAIL:  Table "langchain_pg_embedding" references "langchain_pg_collection".
+HINT:  Truncate table "langchain_pg_embedding" at the same time, or use TRUNCATE ... CASCADE.
+
+[SQL: TRUNCATE TABLE "langchain_pg_collection" RESTART IDENTITY;]
+(Background on this error at: https://sqlalche.me/e/20/tw8g)
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[INFO] [backend.src.utils.data_processing] >>> SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 19 documentos carregados...
+[ERROR] [backend.src.utils.data_processing] Falha na extração para PPC_ADS_Cubatão_2023.pdf durante o rebuild: [Errno 2] No such file or directory: 'C:\\Estudos\\pesquisa\\rag-project\\backend\\data\\processed\\dados_brutos.json'
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Nenhuma coluna de carga horária encontrada para somar.
+[ERROR] [backend.src.ingestion.cleanner] Erro ao processar dados com pandas: Cannot save file into a non-existent directory: 'C:\Estudos\pesquisa\rag-project\backend\data\processed'
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 19 documentos carregados...
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Presencial', 'CH a Distância', 'CH Ensino'] removidas.
+[INFO] [backend.src.ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\backend\data\processed\dados_limpos.json
+[INFO] [backend.src.ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Recebeu 7 pais para salvar.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6b6c3f15-81e2-4388-bfbf-556af9e5c369
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 77111839-9d25-4d88-a67a-d28fae6c579d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 35724de5-cca9-45b6-a7ff-be4582199910
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2fb3848e-78bb-414a-b486-ee0eb92fb73a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ce5c8af5-e105-4343-9e0d-dce6026c6335
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e60e1561-6d5c-4ab3-9dae-77bfc5a2c9d5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4f0f7106-43ee-4f08-8a0c-54dc959eb142
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 7 pais salvos.
+[INFO] [backend.src.utils.data_processing] Recriação total concluída. Banco vetorial recriado.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 760 documentos carregados...
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Presencial', 'CH a Distância', 'CH Ensino'] removidas.
+[INFO] [backend.src.ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\backend\data\processed\dados_limpos.json
+[INFO] [backend.src.ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Recebeu 172 pais para salvar.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 42f6ad4a-40a0-44df-b2eb-1b9c0b8a0ceb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ebd45691-af36-4755-bc4b-069d82fcc66c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4b6b2253-f8f9-4357-b089-042ea7ea8dc2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9d3f3e5d-b719-4ac3-b2fb-f561166704f2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a7020829-380d-4c96-96ec-80faa44ab386
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8c5e8d1a-5355-4e37-a673-0d8c7dc099a4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 273a9c65-95a5-4a87-b9b6-aaa5ed63822b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3a6e9557-2345-45b8-8ece-08432f211c3b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 38fbeb89-709d-4ba7-9647-34979368f9df
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 85356a41-eebc-48e8-8ad7-2366a9cad025
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = de1a9c97-6873-4496-b767-053259c2b752
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 73ae1cba-e6b3-42c5-b032-3b7c5f3da561
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = df2c2025-883a-4354-af5d-b086f4d319f6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d5094759-6654-4e97-a956-578c19f600eb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d5f95aea-557e-4dd2-9f54-61eb0d2e0699
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 49f36538-7a1d-41dc-93b8-c5c1723a921c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8e9529ad-c26d-4146-b10a-38658f5e93f3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 692d23f9-64b7-4536-8c2c-2ecb51d09bdb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4ec2fc55-adf7-4f7b-8a20-e33757062500
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ee010ae5-a0d2-4a44-b3c9-269e20f7925c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2b6fe3c5-b0a0-42f2-b7c3-260215207ad3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c88e5058-a917-4120-9c5a-387d1a811351
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2a667c70-5a73-40ed-9786-ffba290b0d7a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ca5840d6-eb66-44df-b66a-a96c17c58390
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = da8aee78-9e5a-43d6-bd7e-a4b78e508bf1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8efc8fe7-920a-417a-8761-959fac3c6f0a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ca1c2602-f976-4ac4-a047-096aa0fe31b6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dbab3176-80b8-4c8e-b8ee-a21b5f9f9b43
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1f43856d-1634-4fa8-b784-34ee8b42648d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2bcab16f-2b00-413b-96c6-68bd1477ac2d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1b8ed03f-706f-42cb-9aaf-2feaeebba464
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d9b60f15-f15b-482b-a090-fe9b60625566
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 05db4c8e-97a3-4240-8e6e-6823524e4c4c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1b6597c2-6054-491b-845d-e998c2062eaa
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ebcf48dd-238c-4131-8fe8-de7131a6e147
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 293227d9-dc49-4e8e-a694-d19c2ac77470
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2431f89e-b43b-4bfd-b0da-45a960bfa542
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a1fc6eff-f91c-488d-98bd-1812bd88c117
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 828d50b3-811d-4163-9f3f-b525e7ff83dd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 50b55f27-c28c-44af-95ea-249340e77bda
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9eef630e-d467-4c7a-94dc-5a8fdcf126c7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 123d088f-6454-475f-b4c6-5d937f736fd0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9e813350-a532-4a37-bf1a-4968a31933b0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4aaa2e01-8b71-4bfd-b77b-a3ef10f040be
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dad8aba6-be63-419e-a69f-19e2c2bd75ae
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ee6753e5-2899-4b8d-8c34-3fbe6862195b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 00006aa4-198d-4e35-a5ad-03cbe05cfaca
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ffc43b76-dadc-4617-bdbb-c112720f087a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ba1ed8eb-d383-4a04-8478-613dfb6b0a24
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e9726be6-02f4-48e4-a2ae-d88d8e3177c1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e6a21ce4-60b8-4c11-b6c2-cec71b07e04f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 904a0533-b7e1-48a3-a4a8-096e6f3a8ac6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 15305eff-0d9b-4975-b2ad-b64108fcd8e2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d314df1d-a909-43cc-9056-4e6cd3c6a6da
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 052acb43-7f76-41bc-ad61-bbf9d869aa33
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8b5f97d8-9531-4e64-8326-6eacf694022c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 23242acb-6524-4e55-94f8-81f6227cdccf
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 04056481-902f-443d-b037-e4cb66b3f17a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 784850ed-be08-462f-8bbd-dc891e5273d4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a2c6985f-1fcd-4729-828f-659946397cfc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 05899942-1bcf-4ba4-ab48-efef1022978f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 349ec4c1-f09f-48a6-853b-3df63a756eb3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3731fc16-fce1-490f-989e-9b7221f3a361
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4678ebc7-5d8f-4f34-9acb-0cd64967b92b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 19ed66ed-8a90-497e-a965-d4062fa2fce7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 54cf0a4d-f992-41ec-b8c2-451faa063271
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6557b96e-2071-4c89-bdb0-3a3a0b75199a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5a8c2c93-4885-4a38-a339-7bb6efc7583e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 903594f2-74ee-44cd-9e60-975b5f623ec3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = db4f992f-5a7b-4624-ba96-9c84106acade
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9c867469-b827-410b-bd31-1d1d7e73f6e9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1baaa1cc-7909-423b-a3d2-e917eb7fa60b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cf98fe86-3731-4b2f-85e6-022fb2b06064
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d2333535-f9c1-44a7-9baf-ccef144a239d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7ffb97d6-a4f5-4a25-93d3-0ff4fb9f5390
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9a4b77b1-6c41-4d4f-b12a-72e66e55d004
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 60190a63-44cb-47d9-9e08-c05734ef4103
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6e5e79cf-39a5-493f-9eec-22ef6a8a8a4f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b51c8afa-9607-40c1-84f8-ecb8c9c45a1b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b092f545-e2d7-49be-b7cd-6ac14774c425
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cafab799-e1de-48e3-97c7-5d72b2827a2d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = abb856a0-6306-4207-b868-ad268a609184
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 78407018-7a92-429d-ba02-71050d03b080
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3aa76147-8a6e-476d-b5b4-677d9d44c1e9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 88ef2be5-4ba9-4780-a876-4786990183b1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 102d64e9-3128-48c9-bdad-0b8386a01c6c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9584f5ef-cfb2-4d66-bebf-a3c585475018
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8cb12c9b-1b8f-4ea2-8a7c-bdeac8579925
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = acd3b511-31f4-4bb0-9640-6b21423acfb9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c8167f12-1f80-43b5-80f7-4e050de18155
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fc3a4697-5072-4a7c-9812-ed34cd604ffb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d5e8bb64-cde7-4b0f-b6e7-80d6559585fa
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b24f76e2-ae0d-45a0-b9b0-92ce077334f6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cf52829f-1966-4d7b-8092-b4c821fa1a65
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 43a1ccf8-0858-435e-9205-f383d48bdb6a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = aa59c997-5713-4dc8-8f9f-da4144f603cb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3c2a8212-5e25-4e85-b00a-c81abbb40cd7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 01905575-4460-4347-b9c6-2d4dcdbe5f5f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0b573ab5-55e0-4aa5-858f-5a990c712cb4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 17548b2a-0d25-4113-841d-e4a700534597
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2dd85563-1487-4f77-aa3e-df728c74b01c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ceac9f80-72ac-478d-a30d-a54b46601a73
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 95f054cc-d15a-4e32-a7a5-4cde68a72fc4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7fac893f-74c8-42bd-bb10-aa018aa64a88
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 98ff1821-26f6-4335-b2d5-1d6d5ecfd965
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3fcb9b7c-13f7-4add-bd6e-b620f0ef782d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b0eeca3e-c712-4c3a-a2e1-779601134475
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = eeff019e-a794-4e3d-a13a-e5d3d90be28f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f0f73a97-8626-4033-a5c4-cde84ae9e13f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 37ec3c86-19ca-49ee-a4b8-6a82d349be3a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 54efd6d1-b20e-4865-ac7f-a7a277cc4c06
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 61c43ff4-b44c-4f1b-855a-0c07acd1ce21
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ae2f8934-e248-4007-8a8e-18d1cad2ac22
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b89d9f25-0426-4946-b449-94bdd28fc2df
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5198ec6d-9195-416b-bd01-a3b4774fc1e7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6c6daaaf-adbc-4312-a822-aa1e9369a346
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cdd3f494-4000-46b7-ae9c-8b8f386b3399
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 54e1003d-9065-4924-aca7-f4c3e7cd83e2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 17541f6d-06c7-4144-bc3f-477bff65df36
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2199200f-d213-4c3b-9243-519328d05f68
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 881df99c-7f87-4369-965e-3c5f2c4eaf9c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dc803e1d-4a4a-4d1a-b3bc-ecd62faefa6f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 74fee9b7-33c8-476c-a6a9-c3765fc9b865
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7a3a943a-9365-48d8-96cf-0af5b6000d55
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d791fb37-bd69-4660-9f49-940266112de1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0ae21de0-c19f-414a-9b58-85bc0b1d9662
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4bc63337-2fb0-41aa-a586-b5814f5ec99f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d5e4e638-9797-41de-8823-38323e4a71db
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5237543c-75d7-4079-99df-e88ac6b68ae3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8e06e7c1-4742-422e-94db-975d369e7d73
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c887f3c0-5eb1-489d-96ef-6989b1cd1dc2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 372de4c3-4149-43bd-9b82-3564ba0ae02e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 30cf9b3e-4ae9-400b-8345-da166fd245fd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 36814e64-c3cc-455a-9271-82b03f9e8755
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cedd71e0-e43c-499a-9ac6-774d4656d68f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 40365f65-b03a-4b6e-b9db-2f59f264f8f1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fa1f0e0a-4cdf-473e-9717-86453c33c35c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a62502f9-cd23-4148-9050-b5919a0bbef0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9001e554-a75b-4fe3-bb8d-8d84f6bec186
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = acec3347-1207-4260-98fe-505ad5e2c795
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 113f95e7-c718-421a-800f-31d11f71d7f1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4b9435bb-a16d-4883-83d1-3bd3a11b66af
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a41eeb39-0324-4fa2-accf-6aa9355c2a9d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6753b418-151c-4490-ba8a-fb68b850516c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 53e6c1e5-3296-42d8-8598-f6e28e4c9caa
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a07c3065-2423-4954-9de5-397c7c02d17f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c5fa2270-2bf8-4b25-b812-1a24d916c2c8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4b349e3b-4d22-4c36-aef2-3ab8160fc9d2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2e8354f2-529f-460e-a9c1-8a93c3b8f13d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b9dce908-705a-4f19-9efa-b5e1e0f2f1f9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 31c871ab-dd33-4d7e-b6d8-1ab0f3e167d1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 13166235-97fd-4884-a11f-d576b3977117
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 55900470-30eb-4c18-98ef-424dcf43861b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6a5790b4-0811-4f94-a69f-00b9e94cba72
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4629269f-0dc5-4d78-8ffa-68908a4958d5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a87b6a68-8a78-4d6c-9021-a3290fc19cce
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a25c4237-3bdb-478f-ba9b-39edc5c538ec
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a41ee00c-6826-4e1c-9a7a-3e75a2e8da1a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9e810a49-0f5a-455a-94a9-2325371c62ef
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 075dacf1-3431-4e4c-bbd2-50cc4165a008
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2ec4b606-3b99-46bf-bde9-76d84cd9516a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9374bb29-4e26-4b74-a757-3d2f79292864
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d854ce85-d35e-4e0c-ace0-c2b954f78d14
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5af06257-e4e8-4ab6-9664-54a6db0776d1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9a169e9f-a005-4c8f-b381-d76c95e62b8c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5abf0a3a-af5e-496d-9ec4-e50a8d3d6100
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e2d17a9f-dc98-4b14-93b8-f477139d2db6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 27b56cdd-0d21-4086-81e3-1f1f212b3c51
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8f78bf6f-f309-4ca2-89fc-3baab1f699e5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9982b89e-ed0f-4a8d-8cce-e159c87172c5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7c697cac-fbf5-4616-bb40-9d29194962ad
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a81845a8-f35e-4d51-b9da-cf222ff9c7b8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 172 pais salvos.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.UndefinedTable) relation "langchain_pg_embedding" does not exist
+
+[SQL: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.SyntaxError) syntax error at or near "EXISTS"
+LINE 1: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding", "parent_d...
+                          ^
+
+[SQL: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.SyntaxError) syntax error at or near "EXISTS"
+LINE 1: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding", "parent_d...
+                          ^
+
+[SQL: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.SyntaxError) syntax error at or near "EXISTS"
+LINE 1: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART ID...
+                          ^
+
+[SQL: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.SyntaxError) syntax error at or near "EXISTS"
+LINE 1: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART ID...
+                          ^
+
+[SQL: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.SyntaxError) syntax error at or near "EXISTS"
+LINE 1: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART ID...
+                          ^
+
+[SQL: TRUNCATE TABLE IF EXISTS "langchain_pg_embedding" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "langchain_pg_embedding" RESTART IDENTITY CASCADE;
+[WARNING] [backend.src.utils.data_processing] Tabela 'langchain_pg_embedding' não existe, pulando.
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "parent_documents" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.InFailedSqlTransaction) current transaction is aborted, commands ignored until end of transaction block
+
+[SQL: TRUNCATE TABLE "parent_documents" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/2j85)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] Executando: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;
+[ERROR] [backend.src.utils.data_processing] ERRO AO LIMPAR O BANCO VETORIAL
+[ERROR] [backend.src.utils.data_processing] Erro: (psycopg2.errors.UndefinedTable) relation "langchain_pg_embedding" does not exist
+
+[SQL: TRUNCATE TABLE "langchain_pg_embedding", "parent_documents", "langchain_pg_collection" RESTART IDENTITY CASCADE;]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+[ERROR] [backend.src.utils.data_processing] Falha ao limpar o banco. Abortando o processamento.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 760 documentos carregados...
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Presencial', 'CH Ensino', 'CH a Distância'] removidas.
+[INFO] [backend.src.ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\backend\data\processed\dados_limpos.json
+[INFO] [backend.src.ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Recebeu 172 pais para salvar.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 54484ce1-f0ad-4a35-aba6-dd2d9371b190
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1341527c-a31e-4e7e-91f6-732cb6dc132c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5a083f1b-e1a5-4d34-a1bf-e24598e82533
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dd501476-b0f5-4f5a-8896-9b55edf60c7f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b3ce23a8-f87a-4715-8176-b2ea7b622980
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4f5a3477-e2b8-4035-b428-8fbc7a297cfd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e5d23a70-1a69-4983-a966-d8a3cf72ad42
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1d5118c7-5b39-431b-9612-eca54173fac6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 29d2c236-19af-4824-bc7c-04ebf5dc384a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b7a8e6f5-1eed-4366-8901-57351ec0d30b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b87c31a6-be82-4f1e-860a-38604801971f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = db44fe3e-a2ae-491f-af28-374bb93cf7bf
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 79da539f-0fcc-4243-bf06-3bea6536a346
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 89e7591a-2bb0-4ade-971b-c3e732193da5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d8039012-c7a0-46a7-a59b-7bd7ea86a601
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = efb7926e-5e94-4255-b505-202c86a61207
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d90a2a7c-19f3-4503-9517-f564da38ce41
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 06324ff6-4df6-4ded-802f-c767aa66ced0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 14ab60a4-b9ce-4a31-918a-2c7564a09ba2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 97544a6a-048d-467e-88a4-05da5a6679b7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 96ababe6-b9c0-45c2-8f50-85e1a244a0e0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b4b90729-2932-43ec-9141-0a9766939fee
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 20a5b436-a371-4b14-8604-aa684d50c60a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 79a8f1f9-52fa-4239-a7d2-58f9fa08d5b8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d05b913c-2081-4e79-aad3-f195bed565ce
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 45132c8d-f03a-4061-9788-92ee7eef435d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1d60a483-b63a-46c2-a931-870847867f87
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6e57ce8a-52c1-4414-8c19-a56ec728f5dd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3be4dc32-1c70-482e-9def-acc818261782
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c1e5d995-868a-479e-836c-80aef2e7c724
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 19244aee-cf73-4fee-804c-fde08dfbb3d3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 37f99a07-9cf1-49a5-bb33-4c8d129ce364
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f715474f-3413-4e92-82be-d97a92341cc9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 32f18c6d-27cd-432c-abd4-33e248cf2c5b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a400e6cb-b625-41c2-8b07-081ab0438147
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 45b88591-ad17-4d3e-bcbb-f767bae34f40
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ebde665c-a4cf-4e0a-a64f-d6002aae6672
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e207d9ec-bad7-4bfe-8d0d-67e9a8159882
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4a1bcea5-767e-4f93-92b4-8e03baa1ed8c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1e792915-ed83-40ab-8bc3-859b73186ca9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4de14194-4f8d-4f6a-85c8-9a94ba53664d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = acb7d33a-b594-4809-b2b4-79a5be5ca08a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 710fc279-ca74-4415-90d8-26d25c557b01
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 16d84404-76f5-4274-ae53-008ea0cf106f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d91b92fd-2d1b-4418-8b56-045414d4e79c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 15db4497-b4ab-4574-9f8d-de8fc117cc29
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b06cbfab-015b-427e-8ffb-c129050c1585
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a4c496fa-04d7-42dc-85d6-6929040e234c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bb224f2e-f569-4df4-83f4-a5d515cc1b83
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = eecca2bf-c415-47d0-8be5-f22f1a77dc96
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 386b3f2b-f172-4aac-8aa4-37e96bfba5ba
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ab9e5f37-1f3b-4de2-86b0-4ff771984f6f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 88c08c97-1ed6-4fd8-a948-4ea6ef184084
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3abf357f-c8d5-46c8-9189-16d4867eb96b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 321efa71-768e-42af-8aaf-45f3519f01b4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7044c9fd-eceb-453d-b27e-c93031b78084
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8205bd2d-d2ba-4203-8ef8-2baeb8c3176a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f9a78f8d-4e1b-4698-89d6-6fbe0af00fa6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 60f65089-3690-4d11-8079-64106990555b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 45ebf73c-d5d3-4930-8c55-68c2e5944702
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c5bc8898-ce01-4b1b-a2ff-abe2164753a3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b0574ca5-a0ac-44c1-8e19-756e38c190c9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a9540939-8553-4c0f-9867-1232cc82d661
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9b19a436-acf9-4bb0-8a2c-0b58ce1f442e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 105fc36e-76df-4ee5-b05d-f40b01dfde32
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f534af57-37a8-4d83-acbf-cda96e5e23e7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8ef71baf-983d-49f5-8f20-bbd55fe288e5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 80512aa6-d67d-469e-ad08-ace101506e0b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0b49d2b6-fb0d-4f21-8b32-9f05edf3a75b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f2c8ce47-db22-488a-a0fc-15c4e41f14e0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b3cd8d7a-81cf-4183-9a3a-d3d089474fb3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 30f045e3-d979-40ad-af2b-528571ff2ea1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 05d73a19-e115-438c-b662-a96b66276908
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 94d0c996-1c96-4dcc-8346-61a4bd2e346c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d36262a2-549a-46fc-99b9-8f7b9ce7a7c6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4a1278eb-d6c1-4701-89c2-34d144ded75f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 28176ee9-f937-46e1-a993-cd8df7695e22
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a604c570-1131-4dda-9e88-c1e3372fa356
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1c611d12-b50f-4834-9250-33b826e31823
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 246809a7-45bf-4bc8-904d-f234cfc799a3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e51da5c1-bee3-401a-a015-af7258d71a48
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c9ffaf34-6fb6-477d-91a5-4f951c228669
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3c9af27b-1e0b-433a-8fe0-fc50d2b2024c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8a1d2da0-158a-4c65-ab7c-d5369251c17d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c3a5f183-ab10-40ab-a23c-1ef0974b115e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 13d564bb-dc32-49d4-a7ec-06e7dc4aa0d9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8593d324-8018-4f31-baf1-a5d40fd9a891
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = af9f42a3-b50e-413b-841e-c5a81af81767
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bde6217d-3736-4515-a5e8-ff9655473517
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = de51bd90-f856-47ff-b57d-b1f1f3cb6159
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9fb0a1e3-bf31-4cc8-a13b-1f1dbd342737
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0f4cef17-f71d-4b56-9c43-8f6f762169e4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 49950dce-6486-4d1c-bbdf-63b4dd47ac4f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3a8d4629-6571-4de2-a169-962bbaf61bdd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b9b42822-c0d7-4803-b3f0-cac5a6943b8b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cee67158-762b-46ec-b9e8-370e77c66f5d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e1e53743-2268-4da7-ac88-7987944a110f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d04c0be2-4a11-40b9-9e0a-c972824c67d4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d941fd14-70cd-42b7-b3be-bab378c1ab57
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 98a24a6f-fff3-4aec-a1b7-bb265778ff75
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 656df762-eac5-4205-8256-f8cb615f9b48
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e8d5886f-2f22-4ef9-a249-9e57da46a84d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 788864de-e3cc-4d73-975d-56f57ca42ecd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = caff1041-ab24-4a3b-8dd1-abc8cfded59a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a5685ec5-d741-4524-941d-2b25b6c40631
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2dafe6bd-0c48-4f07-bf10-b4d2f612d651
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 30972543-d366-4522-9925-0a7228839016
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e4dc1ade-418b-4dbf-814a-1e1ce60a56ae
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bf61675c-940f-445c-b432-e55c00b27f39
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9ff37821-c508-48b6-8ed7-b379ab8dde87
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2c2c0a1d-a48f-4c47-a8e4-d57dd9cc4c8d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f6b66418-f1f4-4595-8924-c7708c171b9a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6a06be68-1f6d-4dfa-a827-5ff32753c6c6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8788f393-5623-4fae-868f-52f010ba16e3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c2a0939c-3340-4da2-9840-e51eeb84df3e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2df86808-33b9-4c8b-86bf-f39990c189e5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c553a238-8953-4384-bdeb-dfa4d5690fb1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0ba86d9d-5fbe-4ea9-a534-ebad8d2d588e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 211e0ca1-1f41-404f-8e06-f29a206029d8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fb998b35-3e4b-4188-b010-ac7983934646
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 15fe2cf0-dd98-49be-ae7a-5776fc0855ae
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 520cb6a6-6ae2-44da-af86-f614d7417563
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 614883ec-086d-47de-8371-191a65686d5b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 20314954-7b30-4919-8b65-1e1827e05c3c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 71fbba20-a1e5-4779-906c-1c6803efcceb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 34b82dbc-d9c1-4720-971a-dfa5de430799
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ecf2c826-afac-45ef-a31a-5878b20d64eb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4146be28-57be-4fe4-8662-d2d94a4f4a76
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = be12f36c-e010-4ab9-8182-be462ab2583a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 497f8ee4-cb8c-42b0-a94f-f1caca093f9d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0a9a8ef1-10aa-419e-ab9f-9312903ff166
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5ceb5421-23ba-4a48-97a0-ecc90d59f0f1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ea497c9f-8668-4da0-973d-fd01dc9d11a0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 041d18db-a010-48be-a837-62dd615c6159
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d9f19639-4470-4680-8b4d-a5b6e7cf5c8d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e7269e89-f57a-4449-ab37-b8dae83c7aca
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cfa5aaf0-8123-4046-ae16-16ea3451c990
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 084346d2-bf45-4ab7-a0c7-3c54eaa51111
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bec14680-cfb6-4fdb-943d-1ed4b8ecf596
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bfc0a2cf-ea31-471d-b7a4-d4c3eb0d9caf
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 42884e7a-4355-47ae-a530-d69bb444cb96
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3c6b41b3-f683-482b-9dd1-98298806370b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c2ffbdcd-e038-401d-a570-b08d15eca6d5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 69b1b67f-a798-441b-815b-733baa1c9017
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b3682ae9-c5ff-440c-8d8a-a94160c7152b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ae7e5411-53c3-4949-a0f2-d489af354fe9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2ca7bd19-acc5-493d-8886-420a82048393
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bcaab597-4d01-4196-adeb-dc99a8ec3e72
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 61f5d616-df3c-4131-9a23-53c9698a9c78
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 099cc7da-5cea-48fc-b0ec-c51994caa163
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d5dcd4ac-afc6-4fd8-8acb-819d5f3fc98b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 071bc8f9-8442-4b42-9684-273e7dc7b46f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 37eefbac-fcf1-411b-98bd-9faff9315dbb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 988cf6fd-6aba-47ba-aa03-4b42b63eaab9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 22446ecc-dfb5-4138-a31f-7ce1b5e0dc5d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f63007e0-91d4-4da8-a54c-294c435de42d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e20cedb0-2ba0-488a-85cd-8fb226c4b24e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8f727ea6-564c-49e2-a82a-ccc7e0b30323
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7be67f7a-29a1-419f-989e-c9cc7545f5e5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fe8c2dbd-556f-491c-8334-e9f4323c5651
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0a5cf6d0-0d99-49fa-9eea-3075ea65bc36
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e415a4b4-f216-482e-9c07-1d361879f2e3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0360384b-c443-4478-ad91-59b01c3a611a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ac78059d-b16e-4a6b-bcf7-e6503d102f06
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f264cd16-fbd3-4212-a01c-389ac901b7cc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f5303d67-1992-415f-87b6-19a733109399
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 27367023-5a1b-463d-8888-004948331a9e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3b445322-46b8-4b2a-840f-ad18d1a62009
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c69f14b3-540c-48fe-8a23-3eb18457cfee
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ee46e09a-b0b5-4e7e-b264-9f5a1c61ac8c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 96f73696-06b0-4d36-8ed7-9c3daa00d380
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 53346023-ce8e-4c46-a8f3-6522c4b4acaa
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 172 pais salvos.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 760 documentos carregados...
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Presencial', 'CH Ensino', 'CH a Distância'] removidas.
+[INFO] [backend.src.ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\backend\data\processed\dados_limpos.json
+[INFO] [backend.src.ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Recebeu 172 pais para salvar.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0ea3c927-a300-4c00-8eb9-75f357db8541
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 09be409e-1ced-441b-8fd0-5f60e9a9d69a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f4b770eb-3637-4bab-970c-8b0fec0c253c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4dd58816-d8fb-4e33-9c1e-0e1dc383c5b4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 55608a28-0ff9-43a3-bb1f-2dbeb4c069a0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 72cd3674-8842-4a06-b040-0d097e66e275
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2fed88dd-84bc-42b6-8c1d-96478e14702c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a7721014-7e82-4f22-9add-8804460afdb7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ee226925-373f-43a3-bc86-a11a69c91cb8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cb29dac3-0603-4b97-b8ec-6b494891c9fd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8a557576-a7c6-4c6a-9c37-c496cb8bd5f2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3e118ee7-2f8f-4282-bff9-e124c0e0f0d3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d34e0eb5-38ba-4e50-b22c-1320d5ddc0cc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 887fd217-ad15-4f8f-8473-da3e4ba93770
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dfd42b3f-5181-44b2-a471-d51192bbb8bf
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b8b795d3-dfb2-4c51-97e1-62f4ce78b0d5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 98ac7a3e-ec9f-40a0-a080-7ae09c76a4e5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9bd86acd-5173-4242-b05f-6f1326af1e4a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a4fb47e0-8bb6-46c8-a237-963467b1a8ad
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 01372919-387c-469a-86ca-c597f7ad4cf9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9bcf47eb-df9a-4926-8caa-dd2b11a7683f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8fd61918-8cce-49cd-82ab-10ee208e64ea
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cf8ff3ea-c3e8-4ea8-a157-66e4f530d756
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d5bcd84d-a365-4c07-a618-ca371ddb92fe
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fc1011ad-e62a-4ea6-bc7a-7d5bee787f5b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 58125cec-aabc-40c3-ae1c-86ddfdc47e1d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a78624cb-0f2e-43d3-82d8-6c07651be436
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5c5a5f1d-13ae-4dd7-a3d9-831ddd083fba
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7ba36107-3e88-4a76-a4f1-179c6820ae15
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 40a547b3-bb20-4ab7-8518-0c0a5f726804
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f40d351e-4010-49d2-8a22-a76d62487686
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 286f056d-b5f8-4989-95fd-c35132dd3d69
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2df7a5d2-b805-406e-ad78-82aaccf455c4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1288b047-9bae-4d8f-a671-9ae91ebfe4c6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fbeea68c-a28c-4f00-a7a5-e3b3a364309d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 81ac991d-3809-4675-8da3-3d4cc59cee74
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5a86aa24-162e-4345-a53a-0edfcb120cb6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c650b82b-d121-4576-935a-ab3f553a41ed
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d603b8a6-9f2f-4484-8bab-8ba575251186
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b46a2b7f-e60d-4301-b236-6c0f823726e3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 82746852-e897-4211-8803-d14a78283d4a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6224eb5b-eb13-4f72-a749-97660ee00348
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d621a553-c125-40a8-acbc-67e6d0d63a05
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 77d6d029-e6c0-450f-bb8e-c621ce5a1371
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2d578f93-f35c-431d-9937-12cca5b19601
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d1e655ef-3334-48a1-b053-ce899359dbf3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5fe15975-e8a5-41a0-9c94-84a57a79f7eb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9de1c5d4-0a23-4c79-8c5f-6da7f86e357d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f2aa0162-7e31-4a0d-8a1d-bfb38bc326d2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a81cd45b-70a6-4eeb-b839-cdcdc53c7450
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b1b9ba34-6b7f-44bd-9b69-a7b1727e5ad3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1c7bb936-6e5c-4fbd-b83b-4ded8097b616
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9a4329ce-392e-4cea-b2f9-909a16f28bbb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c7958f01-3525-4a4f-82ab-a77686efd06c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 934405e7-598b-453b-8fa8-2af696bc8f0d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6a7f1628-62ba-4911-96dc-c7a0ad00cf8d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 59fd41e3-40ac-46fd-9089-7e48c74a8553
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bb5c6fa4-1f76-4ed4-83ab-bbac291c0bb1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fb8d6be8-8545-46cf-bb8f-aa5195ef6c49
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 392352f6-817d-4332-b2ca-216c53649765
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e06e48f1-4635-4ee1-a687-4f4e7bb4914d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c2100bf3-a52c-4c5a-a307-cb24eeb2a6e7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d0e51a27-aa0c-49ac-84e1-a95e4481c996
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 51eecbe4-9c45-4910-922f-e44367834de1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 01f799fa-dcf7-4d37-826b-e6e4f834791b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 05b42ea5-114c-4820-8e22-eaa1dd47c703
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d38a11e7-2bfa-4c3a-b770-05ec3f43aef9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a43806e5-17c2-4231-8ff0-c85000838423
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ea30d32b-e174-41ff-a644-2bd292785e7c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7bb25388-ef8d-4014-9e3d-a43022c0d755
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e8d4f533-f5ed-42c9-963e-ccc6709ab584
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 87bd0bd1-452c-4f4a-8654-9998f298a681
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4af18dd5-4622-48fe-a1e9-2be17c10fa29
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6e4dd2d7-9907-45e4-ab3e-cf66245a67e8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 085d92b5-afc9-45e4-afe4-def7f2912c61
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ddf15192-dbc2-4d53-b7ce-b3f045d1cd2f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b4415dfd-0984-4f35-bbee-6e7d6c9c8d81
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 95986b22-ed90-4680-aa2c-119d13ac2213
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9b086190-3c5c-4499-8822-71da7e9a7aee
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 85e518bd-b8bf-4af3-8a37-24cb7205234c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 44bb1cac-c14a-4782-90a7-7d3f28e59112
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4ec96ea6-4557-447a-a937-50df59c84cea
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ffc938ac-7595-4e2e-a1bb-22f3744c20a8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 98d9fe4a-65e1-486f-ab96-dc6abe1f8be7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 605108df-b0ba-4d75-a66f-0141b6853f77
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6afb9f3e-1d7f-4b49-ab86-041340f618e3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 890c6505-5740-4ed9-b3ad-09af278bbe6d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2cc4a8d3-8919-4df3-acba-ea8e328006d9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 17446fc1-bac7-48a8-8f70-53c9fffd43a1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8f48dd36-0b1c-4711-9cfa-7d707fff03b7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3e3aeea5-6603-44c5-94ba-2f9cbd72e5b2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f0262656-d75e-4f88-898a-bcaec31676dc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 183ed2eb-eb1b-440c-a55a-b1e212ae1c56
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 98c85fce-c91a-4981-aa74-e7faa0dc59b9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 35901cd3-cb5e-40b8-b0e3-23358d39e092
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6e8ffac3-83fd-4b98-a063-b05afafec9c5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a3f2f3c8-e530-43bd-9833-7376e37b753f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e14a9bbe-4558-4fbc-aa12-e30a532b2a79
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5e7bc615-2f73-4855-b5f3-ee6ff27800d8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f8a2e572-1c97-4c01-8cc2-496586e2649e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4b11cdb2-0791-4045-bcf4-a3ffcce7d260
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 24ce7024-14aa-48ec-b64c-3abe17a0c606
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0afbdcf2-1168-4d6e-ba74-acf8ba4b8175
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7b757630-f632-4778-94f6-9f8ca3dd28b0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dd3fc8bb-76df-4263-9764-9e0ba0980607
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 694ea6a7-3dbb-4f95-9987-023b9522bfea
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8da2f388-edf7-4e96-9bd1-770bc34ba913
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3cc060d7-a94e-44ff-a54b-948f2cf05351
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a733485b-755d-4e5d-9f0f-e8718bb09d0e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5f3dabde-2c5d-45ca-8979-8ecfc6a353ab
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6b0f1e43-3ec0-46a0-b333-051239f42ff7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = df10adc1-1e6d-42f5-a666-7e8a2a949df6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b967519d-3dbe-434f-874b-3e372a21ffec
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2f4103e8-62b0-4697-b4bb-f9ce6217be57
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = aa31acfa-d791-44ea-bcb7-232ac1ec5e57
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 64e894f0-8f5d-47c6-ba3c-058edbb5a233
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c3b0cac9-df10-45c8-84e9-34f85e6aa328
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a0c470c4-d19b-4268-b973-27d5021823c9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c54ab74a-645d-4c75-a2c9-0229148239f6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8ad50729-0c83-4f48-a3da-d61607e4067d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 306f29f1-c41f-437f-a0c5-750cc345c47d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ce170ad6-30ea-4c91-9af9-4078c76bc85e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 30082120-436d-4828-a77c-7568fe97f7cb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fb3b6397-d7cd-4901-8cf5-535d64c78459
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 80157591-be9d-465f-a78e-8ea456f1197e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 66525558-df21-4637-b0e1-6640760f3bad
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2ed1ef48-cc9d-44bc-a8ba-c07159bb9881
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a90a744f-8c6b-4f9f-b130-defcdb722159
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 91c4de74-19e1-449c-936f-74995be486d5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dcd75914-0b69-44de-ba94-83713f102545
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e864c74b-3395-43cf-8384-189a46e1c572
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9c141c3e-7a96-4b44-8e8d-72940981bb4e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a3c3ed04-0995-440d-b66f-d10d5d4717df
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e1f20049-9fcf-41d7-be0f-07232ab76cd1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c1033a2b-7792-4568-a0a0-3ad42054af4c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9b9e72e9-9600-4115-bf9f-8ea57a7ab28a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a1336b19-8997-4abc-858a-b7fd3d657b2b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 04169acd-9add-40ca-84c5-b2dfb01ad9a4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 902a9011-f6c7-4731-ba6c-6ea9878fb17e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0034aa75-1a1f-47f4-87ba-fa82b84ae5a9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 349d67cf-e690-4c28-9b61-8d9782e7546b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a813e6de-26ce-4e96-8d33-b1fe40698591
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6e892cb6-0f0d-44c1-a2b3-dbd52c377013
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 717d326d-1dc9-4c16-a99d-d1cedc8d9a14
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 32772047-b03e-4472-b006-170b30d68c69
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8c0ed238-8245-481c-96e8-f317d3d4cb62
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0bbb5caf-b87d-40e3-8f4f-1122bb42cf07
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 132cce8e-68bd-487f-820d-e177b238da2e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e97676f2-5e38-4135-8b1a-c38b27002761
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c7b71d77-75ea-4d0a-89c1-7e76f609ed90
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c4318cf2-6d0a-492b-bffb-87f8b41c1a0a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 999f761a-7c0a-4587-9765-9b89168b9ee0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 99847e30-f5c3-4a11-ba13-6f73106a6fcc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bab6f660-2a88-40e1-8013-229723f7c1bc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 61eb7b6c-ca6f-4984-84d7-743d60ef703a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a13e0665-4fbc-4ac4-8f8b-2fbd42d618c7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d05e61ea-0771-40de-9a85-541caa988fe9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1b8799a1-4645-4d12-92a8-336582890f7e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 10b674bd-6d26-4fe9-9e77-7c8ce88865a7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e1dfc5be-4cb4-4a7c-b889-371c650eac3f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 243dd10f-5bd6-4a22-bc89-a402d8431138
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cb65fa02-47a6-4c3d-bd71-7ca98e28b157
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a70185fe-4d83-4781-a565-0ab83d4f5acd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5dc7880e-ae3c-47ed-9b14-3a231b2d77cc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9930fa4c-1296-4bdd-9a75-63c1dae9652b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b1a177f6-927d-4c38-bb0f-f75db84f74cd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 14015c1d-d065-4e7c-8d6e-ce1c687c77a9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9695e3b7-dd91-4eb0-a0a1-8b4255cc1d73
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c8ac84f4-52fb-4ae4-a890-ff1e7ddb5874
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2c17f1b0-5a87-4896-af8f-0ba6aef69f5b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e901e6e4-3721-4238-86bc-8967f45b6e23
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6b35821a-8181-41aa-9392-43c97c4463bb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 172 pais salvos.
+[INFO] [backend.src.utils.data_processing] Recriação total concluída. Banco vetorial recriado.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.chat.conversation_history] Título da sessão 38fe56fb atualizado para 'Chat Interdisciplinar 2'
+[INFO] [backend.src.rag.chat.conversation_history] Sessão 3a119220 criada para o usuário 3.
+[INFO] [backend.src.rag.agents.retrieval_decision_agent] 
+
+Decisão: NO
+
+
+[INFO] [backend.src.process_question] Decisão: Recuperação não é necessária. Usando cache de contexto.
+[WARNING] [backend.src.process_question] Nenhum contexto encontrado para gerar a resposta
+[INFO] [backend.src.rag.chat.conversation_history] Título da sessão 3a119220 atualizado para 'Saudação Simples'
+[INFO] [backend.src.rag.chat.conversation_history] Sessão e0d52ce7 criada para o usuário 3.
+[INFO] [backend.src.process_question] Gerando resposta interdisciplinar com 2 chunks fixos.
+[INFO] [backend.src.process_question] Gerando resposta interdisciplinar com 2 chunks fixos.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.chat.conversation_history] Sessão 3d9afe0a criada para o usuário 3.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.chat.conversation_history] Título da sessão 3d9afe0a atualizado para 'Chat Interdisciplinaaar'
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 694 documentos carregados...
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Presencial', 'CH a Distância', 'CH Ensino'] removidas.
+[INFO] [backend.src.ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\backend\data\processed\dados_limpos.json
+[INFO] [backend.src.ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Recebeu 63 pais para salvar.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a085522f-7496-4fed-9b47-f8cfd6768d90
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1bfe7d95-bc8a-40d2-bb9a-8b333f6fce2b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1c78aa94-246d-4bcc-b9dd-cfdb9e3b987b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 77ca6eda-df39-46ae-a623-144f7a142f4d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 300dff10-9ecc-43a2-9c81-44908caf5553
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cc2afcfe-c4bd-487c-b638-2e18c9170b29
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = afdf2f60-2f42-4c32-938e-7a7752c12d39
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ffaa275a-1dd9-4a3d-9b06-6884efc19e6a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5843bd43-5733-4cfc-9c06-afd68e20856b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2cb8d3c8-a89b-4ff4-978d-b30760e39594
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6dcb42c0-4b30-40fe-b54d-e927b88d5e1f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ce6b06f1-b7e3-443b-8fa0-f6d67bff032f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ad491ab9-0864-4958-8159-5cbac826836f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0082ddfa-6c88-41ee-a3a0-47a27bdba50d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8e8235d1-e506-4132-a4fc-d3d0f033cd09
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 477d8866-a69a-44c9-93cd-c5f05d66faff
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d895f4ff-7130-4251-b596-de238c92bed8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 45c1cf9a-6609-47e3-9dbc-8a940fb75939
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b4d88c42-3572-4110-8c92-4638190af620
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5494fd1c-b73b-47b5-bee5-a5db55b36fff
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0be8e7b3-411f-4684-801c-1de6d907627e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 13475c95-6983-42fc-936c-d543ad36954b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ca7a2afa-bf15-4912-9147-24ae0555f34f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b1583cbb-8c6b-4565-95cd-1accf7089f9b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2e272bb9-97e7-45b1-8d34-b22b039318c3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 51b0f359-23b2-4b68-befe-95d4aff73d8a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 63052f18-9fff-4ea9-8b62-8cb9636fb8fb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bd5bec74-f010-4727-8c77-debec91251da
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a21a674e-3dd9-49b9-b0a3-6e5b87f1b22b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = caae39e4-811f-4395-b6a5-bec2cd6d8f15
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3eca482c-716e-4a7a-9d6f-f2d9b6d82360
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d87488d4-c447-4cd6-a1a9-f85fde153ad9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cd74fe37-a35d-4ae9-bea1-36c1ddaeba77
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 72ee8df0-9b7b-4971-ad8a-7549f7eda736
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d659c6f4-0f79-4ec1-8fdb-00bb1fa82bfc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 853394af-a20d-468c-baee-c4a7acb8297c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 73a56bcf-da9e-4f54-9011-6aba90ad391d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f0c9f6c0-2cfd-4a87-bfae-d57b22708bcb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5b002359-0fe1-464a-b49a-ab05f27a93e1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 32281b6b-88da-41f0-8e6a-8c37ecfef293
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d14acb40-0dce-43dc-8c9d-8da9e9c868d5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b56bb93d-8c4c-4151-b559-99e2ffcd3164
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bbe6f0c4-3ae3-4078-a408-1a52e00729c5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 3c7110c3-846e-4b62-bbc6-55c143f1fc64
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7bdb60e3-f0ef-4e5e-aeea-a53ed0309cdd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1e7bb8a1-a54a-4134-ad12-3d369c285d35
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8715c66c-5f48-4868-9b70-084481f9fbf7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7bf959b7-efe0-4129-9965-f11ea59cc998
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9e1ac8c1-a7ea-4526-b985-ac1ed7b59a42
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5484b232-f7f1-44a8-be6c-9d30541e5047
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b6705a28-f444-405a-b8ac-1e9641fe3fd6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b381e3ea-020f-43ac-82e5-4d84999b9757
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c0b91033-6e98-4351-8538-a311fa3c9cac
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 608baf54-fd56-4ed5-b19c-9c8a57a74ec8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c7bf9be1-e28c-4670-bf33-60eb54499f03
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fb1def44-9136-4d4e-9324-dd3f28126562
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d627db44-2a47-4873-b5de-b5fc7481acc9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 99619a43-095e-4efc-a4f5-101f4093d76f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 12e989db-5c36-48a6-a522-679579afcd9e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 37e2b767-4ea2-4118-8101-a372ddbf5c65
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5c703937-fa22-401a-83e6-12282e618862
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ac197de4-1ac2-4424-bbec-477e52595327
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 452ac03f-902a-40c4-9fb2-4719ef6ddaf1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 63 pais salvos.
+[INFO] [backend.src.utils.data_processing] Recriação total concluída. Banco vetorial recriado.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 694 documentos carregados...
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH Presencial', 'CH a Distância', 'CH Ensino'] removidas.
+[INFO] [backend.src.ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\backend\data\processed\dados_limpos.json
+[INFO] [backend.src.ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Recebeu 63 pais para salvar.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 49893c1d-fd83-4795-81bd-1fb45edf74ff
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a63528fc-4238-4e00-a4d4-43fc6ce02416
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8dd20472-1364-47e5-beb4-ae0755a85669
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c1e69124-8cf1-42d6-a9d9-1edca9988ee3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 700d27a3-a368-4b53-95e7-bc556bd214e3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0e455961-2b21-40ae-b0e7-f7cf153d5ce6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1a7e7fe2-4f33-401c-958f-e523cb8173c2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fc0345b0-2697-418a-8cbb-1eb4eac8cc78
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 933129e2-3791-4630-bba1-0375a2644a8f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e6f2ad1e-0986-47d3-80ea-544cd627e122
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7f11be7b-2834-42d6-b2dc-8f0fddce84a9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7a187ded-ffa9-4bd9-86cf-e7135e4bad18
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 09b677b0-b12a-4ebe-916d-16e7989782ee
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e40f4939-313b-45c2-8e10-eda53028be53
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 08a5df05-4266-494e-bef5-2b64982603a5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 71f57b40-8c16-4f95-a52c-32b368a4f305
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 11ef8ce9-4a7f-47a7-b4f6-47a9358e9159
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2cc5132c-9e05-4b73-a746-52cc1de482d9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6f3fb28e-3c45-4073-acb3-04213f736e18
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 840c6ef3-61c2-475f-89b3-e159d3965cf3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b94ca830-4fe6-47b2-a1c0-ad4d20601b42
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 783af1e8-05b2-47e5-a823-0a009a8a3a1b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 84595f0e-1322-415c-bac4-adc8caada3f2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ac1a3555-6c11-435b-b3de-41f8e50fc0ac
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9d7585b2-795f-478f-ad0d-5379f2aba6dd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 240bef46-f7f0-4c18-8b12-ebaf3a7f221b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fd2db1c4-1375-4f09-a4b0-8bf29bf9f4d9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 563b2d0b-fb91-4bed-a36c-084d7901c9e6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4c562e62-bb85-4330-a474-48fc9c3ba0d0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 03b0d577-a5f8-4580-9366-f46912de828e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5df15990-8250-4399-b596-45151276f81a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c568c69b-7387-4a16-9368-be666f0104f2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cd879cc2-e09e-4a63-ac2a-a488ce32bf3c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 50e4aa32-f099-494c-900a-03ff79ad3bdd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7c572def-1feb-48b2-99be-7a689e92ae19
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 20a871b2-7f39-4acd-82f3-1da1abbad515
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f8c79c40-2a86-418c-b22c-f6352f938050
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 673ed53a-f080-4243-afe2-995ae35799c0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c89cec4b-2570-4f80-a32a-b4e09c2f8311
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6b44f949-89e8-47fb-b466-fc3db4f8f29f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a6160600-d8f0-4541-a146-56850e073cd5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ee64cbed-887c-471e-8da2-25e0f25f0497
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 0dc4b1f9-bcce-4310-bd80-c46e51320515
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6e0abc2c-3562-4c76-aa3c-bbdecef4db47
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 712cefc7-c67e-4bdc-b172-15d401097ed2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = bdb333ee-5a59-4c1d-9b49-b81eb62a2df4
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 90cbba49-0ef8-460b-bbdb-46efffe3bf1d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 03791c36-3a53-4908-b6e7-da48d572cce5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 9cb21ae9-10d9-40b6-9971-eac287af9e91
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 983a0a50-a1a8-4324-bab8-d9d801181b17
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c096906a-f02e-48bd-9ff5-d15849bcbc13
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 144c6e3f-1dd8-48eb-9326-7dd90001c3c1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 85948624-989e-489d-a795-5334b369a0b8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5e88b5aa-d4f6-413f-b77d-d250d2134515
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 4f8c9369-a5ed-49cf-a3b8-eb01478d5341
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2352a075-3a65-4779-8b98-484cf40fcfaa
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 368552ff-4206-43de-9b77-2b7b6dd4a317
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 49385e97-575e-46d3-9ddc-f12ee83fc692
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f97c1a65-7703-41ab-ace0-4803f252e7d3
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cb4c14c8-588f-40f7-a017-7979c213623c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d7dd38d0-80fd-4808-a833-018e6301b5cc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8fdd3863-310c-4478-80b6-65d5d34eb1e0
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5add6927-901f-4772-ac3f-5ad8bd1aae40
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 63 pais salvos.
+[INFO] [backend.src.utils.data_processing] Recriação total concluída. Banco vetorial recriado.
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] ========================================
+[INFO] [backend.src.utils.data_processing] Modo REBUILD TOTAL iniciado...
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.utils.data_processing] Processando todos os 287 documentos carregados...
+[INFO] [backend.src.ingestion.cleanner] Iniciando limpeza com pandas...
+[INFO] [backend.src.ingestion.cleanner] Coluna 'Carga Horária Total' criada e colunas ['CH a Distância', 'CH Ensino', 'CH Presencial'] removidas.
+[INFO] [backend.src.ingestion.cleanner] JSON limpo salvo: C:\Estudos\pesquisa\rag-project\backend\data\processed\dados_limpos.json
+[INFO] [backend.src.ingestion.cleanner] CSV salvo com sucesso.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Recebeu 58 pais para salvar.
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d27b6ce3-8159-43c8-99ad-eb6612b1dfb9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 62967e5e-7d79-4ad8-81eb-3dd527ecfdfe
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = c34fffff-6ac9-4d39-8800-1395416669cc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 68647b2d-2e22-4d60-b5d6-01033f5b20b6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 417f5848-4f0f-4859-b98d-06554fa5dddb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fb34b4aa-36fd-4d3c-a5b1-058583d0a570
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 52cd92ec-2f2c-407e-a598-9373ad7efbf7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7e4a3a86-add2-4049-9e0c-b5af9a6c1adc
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 89dcae94-1a37-47a9-83e0-4acd868ce37a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dbe2971f-7de9-40bb-8a32-1a592e2a989e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 1f27f9d6-3226-42e7-ac78-3758d52ebafa
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 43331569-fad1-48a3-aa59-bd34ab672895
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = faf93186-8f55-431a-9edd-beb985a86b1a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7135ffc1-ff11-4420-840d-3a5a4c8f4746
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 41313360-f407-467a-9e08-3e37b6508bf5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 681fbfff-9a2c-4f36-a14b-fdd90dafa5e8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = f40ab724-c116-40e7-8dbc-2b8349cbbc3f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = e548a710-a0c0-44ef-b196-fff9abcf4029
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 53a362ae-d435-4656-af5a-c7207254d3b9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 449573d9-69cc-4d73-8b58-31534699a743
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 107efc10-9635-453e-9768-3828d119b6f9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 456238aa-9f30-4fac-b793-487eb99ac381
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 49e37b41-cd3d-4b8c-ad14-367e56ce8834
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 40090a27-31a4-47ea-86df-602c101c6c97
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 97a84975-0b4f-4aed-8d94-a3f393b83c9a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dedc735e-324d-4a20-bd01-e4afe04fbbee
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 390994c8-eabe-4f58-a9e5-88d29189b8d7
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 35c40b97-929f-4c9a-838b-ed5c1e35605f
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5701c8a9-029b-449c-88bc-9b2fcd7dcd63
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 5038ccf2-e1d2-4fce-b963-62522884eb83
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2d0b3d49-ce5e-4d1b-85ac-1a0bee7483e6
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 94583365-60f6-4c17-b2f0-c5754e55a5fa
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = fd32d8b7-854a-48d4-84f0-053a7629e431
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 371e38bc-ebd9-4af7-bb80-c8cbf63b047d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = feff7ee5-5f39-4dcd-9fc9-6df9fecff708
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d35df7f4-d07b-4396-9af1-e4848d1df185
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 045e6a10-879d-4bf5-ab4a-7bc2c4379765
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = dd63bad6-6d3e-425e-b72d-b08dc812515e
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6e892721-8172-4668-a4fa-31221a2cd35c
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ed465b2b-e7c8-46f3-8fdf-f62d7ec3f3ce
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 95d423de-5c76-4421-bab3-fa8df2b2a10d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = b88f9c44-d37e-4601-94c2-7c0e12fdd9fd
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = beadd95f-5073-4fbf-a527-e9c885eb1569
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 24844d3a-d183-44e4-8f89-2fe4571e09ae
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ba6e44fe-244c-44e4-b68c-5522501be425
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = ca764e93-394d-4ec1-a576-07abe4b68196
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 56128f89-b45f-41d0-8925-042069696f0a
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 97776610-bbbf-4e7e-b9cd-eee177d0bfa1
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 90941008-9fbe-4ab6-b92e-3ef49464c8eb
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 2ae68362-b60e-4501-9270-654df54b2103
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 6864e7d5-a159-40f6-b634-561b6da077d5
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = a9c369d8-3e37-480c-a4a0-d181fe0644c8
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = d632e3f3-f00c-4d9e-83f3-3574a342fc1b
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 8430a337-f100-45ab-9403-938b42197ad9
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = cd90ea51-3930-4ecb-8b0f-731f5a38d90d
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 45278a96-b4bc-4012-bc8c-261b0757e056
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 20e7f34a-7c40-4da3-a80e-bb956ddf29ce
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: 'session.merge(parent)' concluído para ID = 7d8f9a08-6089-431d-8d09-25c1b10dabb2
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: Tentando session.commit() para todos os pais...
+[INFO] [backend.database.postgres_db] DOCSTORE MSET: COMMIT BEM-SUCEDIDO. 58 pais salvos.
+[INFO] [backend.src.utils.data_processing] Recriação total concluída. Banco vetorial recriado.
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[WARNING] [backend.src.utils.data_processing] INICIANDO LIMPEZA TOTAL DO BANCO VETORIAL...
+[INFO] [backend.src.utils.data_processing] SUCESSO: Conteúdo do banco vetorial limpo.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.rag.chat.conversation_history] Sessão 54e2f98c criada para o usuário 3.
+[INFO] [backend.src.rag.retriever] Inicializando RAGRetriever...
+[INFO] [backend.src.rag.retriever] RAGRetriever inicializado com sucesso.
+[INFO] [backend.src.process_question] Gerando resposta interdisciplinar com 4 chunks fixos.
+[INFO] [backend.src.rag.chat.conversation_history] Título da sessão 54e2f98c atualizado para 'Ensino e Literatura'

@@ -1,11 +1,8 @@
-from kubernetes.config.kube_config_test import TEST_DATA
-
 import json
 import pytest
 
-from main import ProcessQuestion
-from rag.query_transformations.sub_query_decomposition import get_sub_queries
-from src.rag import RAGRetriever
+from backend.src.process_question import ProcessQuestion
+from backend.src.rag import RAGRetriever
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent

@@ -1,6 +1,6 @@
 import pytest
 
-from rag.routing.router import get_router_decision
+from backend.src.rag.routing.router import get_router_decision
 
 # esperado = "simples" ou "composta"
 TEST_QUERIES = [

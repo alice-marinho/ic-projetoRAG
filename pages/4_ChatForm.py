@@ -3,13 +3,15 @@ import sys
 import os
 from langchain.schema import HumanMessage, AIMessage
 
+from backend.src.process_question import ProcessQuestion
+
 # Caminhos do projeto
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if PROJECT_ROOT not in sys.path:
     sys.path.append(PROJECT_ROOT)
 
-from main import ProcessQuestion
-from rag.chat.conversation_history import SessionManager
+
+from backend.src.rag.chat.conversation_history import SessionManager
 
 # --- CONFIG INICIAL ---
 st.set_page_config(page_title="Chat Interdisciplinar", layout="wide")

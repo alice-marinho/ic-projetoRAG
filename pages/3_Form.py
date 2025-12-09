@@ -1,8 +1,9 @@
 import streamlit as st
 from sqlalchemy import text
-from database.database import sqlal_engine
-from main import ProcessQuestion
-from rag.chat.conversation_history import SessionManager
+
+from backend.database.database import sqlal_engine
+from backend.src.process_question import ProcessQuestion
+from backend.src.rag.chat.conversation_history import SessionManager
 from langchain.schema import HumanMessage, AIMessage
 import time
 

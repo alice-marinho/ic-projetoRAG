@@ -1,6 +1,9 @@
 import streamlit as st
 import sys, os
 
+from backend.auth import user_service
+from backend.database.database import SessionLocal
+
 project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if project_root not in sys.path:
     sys.path.append(project_root)
@@ -9,8 +12,7 @@ if project_root not in sys.path:
 src_root = os.path.join(project_root, 'src')
 if src_root not in sys.path:
     sys.path.append(src_root)
-from auth import user_service
-from database.database import SessionLocal
+
 
 
 st.set_page_config(page_title="Cadastro", layout="centered")
@@ -36,7 +38,7 @@ try:
                 st.error("Este email já está cadastrado.")
             else:
                 # create_user por padrão salva como is_active=False
-                user_service.create_user(db, name, email, password)
+                user_service.create_user(db, name, email, password, is_active=False)
                 st.success("Cadastro realizado com sucesso! Aguarde a aprovação do administrador.")
                 st.info("Você será notificado por email (ou contate seu admin).")
 finally:
